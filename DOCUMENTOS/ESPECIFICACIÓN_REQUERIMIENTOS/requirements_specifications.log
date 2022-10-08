@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.10.8)  8 OCT 2022 16:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.10.8)  8 OCT 2022 16:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -249,10 +249,7 @@ LaTeX Info: Redefining \% on input line 35.
 [1]
 LaTeX Info: Redefining \. on input line 59.
 LaTeX Info: Redefining \% on input line 59.
- [2]
-LaTeX Info: Redefining \. on input line 59.
-LaTeX Info: Redefining \% on input line 59.
- [3] (requirements_specifications.aux
+ [2] (requirements_specifications.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
@@ -263,7 +260,7 @@ Here is how much of TeX's memory you used:
  22400 multiletter control sequences out of 15000+600000
  477678 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,6n,62p,297b,391s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 55i,6n,62p,246b,391s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/PC_WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb><C:/Users/PC_WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmcsc10.pfb><C:/Users/PC_WIN10/AppData/Local/Programs/MiKTeX/fo
@@ -271,9 +268,9 @@ nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/PC_WIN10/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/PC_WIN10/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/PC_WIN1
 0/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on requirements_specifications.pdf (4 pages, 162325 bytes).
+Output written on requirements_specifications.pdf (3 pages, 159352 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
+ 45 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
