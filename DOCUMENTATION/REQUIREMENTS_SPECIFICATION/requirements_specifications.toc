@@ -14,8 +14,8 @@
 \contentsline {subsection}{\numberline {2.6}Requisitos Futuros}{6}{}%
 \contentsline {section}{\numberline {3}Requisitos Específicos}{6}{}%
 \contentsline {subsection}{\numberline {3.1}Interfaces Externas}{6}{}%
-\contentsline {subsection}{\numberline {3.2}Funciones}{6}{}%
-\contentsline {subsection}{\numberline {3.3}Requisitos de Rendimiento}{6}{}%
-\contentsline {subsection}{\numberline {3.4}Restricciones de Diseño}{6}{}%
-\contentsline {subsection}{\numberline {3.5}Atributos del Sistema}{6}{}%
-\contentsline {subsection}{\numberline {3.6}Otros Requisitos}{6}{}%
+\contentsline {subsection}{\numberline {3.2}Funciones}{7}{}%
+\contentsline {subsection}{\numberline {3.3}Requisitos de Rendimiento}{7}{}%
+\contentsline {subsection}{\numberline {3.4}Restricciones de Diseño}{7}{}%
+\contentsline {subsection}{\numberline {3.5}Atributos del Sistema}{7}{}%
+\contentsline {subsection}{\numberline {3.6}Otros Requisitos}{7}{}%

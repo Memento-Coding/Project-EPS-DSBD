@@ -36,11 +36,11 @@
 \section{Introducción}
 Esta es la Especificación de Requisitos de Software para \emph{Borvo-Medicinae Operam}, un producto de software encargado de la gestión de información de la EPS ``Esperar para Salvarse''. Este documento ha sido elaborado a partir del estándar \textit{IEEE 830}.
 \subsection{Propósito}
-Definir y presentar de forma ordenada los requisitos y especificaciones que deberá cumplir el software \emph{Borvo-Medicinae Operam}, que elaboraremos para la EPS ``Esperar para Salvarse'', el cual permitirá gestionar la información de trabajadores, beneficiarios e instituciones externas asociadas a ella.
+Definir y presentar de forma ordenada los requisitos y especificaciones que deberá cumplir el software \emph{Borvo-Medicinae Operam}, que elaboraremos para la EPS ``Esperar para Salvarse'', el cual permitirá gestionar la información de cotizantes, beneficiarios e instituciones externas asociadas a ella.
 \subsection{Ámbitos del Sistema}
-Con \emph{Borvo-Medicinae Operam} buscamos desarrollar un software web que sirva para mejorar los procesos y subprocesos de la EPS, con tal de fortalecer la gestión de la información de sus trabajadores, beneficiarios y las IPS asociadas para brindar un servicio oportuno.\\
+Con \emph{Borvo-Medicinae Operam} buscamos desarrollar un software web que sirva para mejorar los procesos y subprocesos de la EPS, con tal de fortalecer la gestión de la información de sus cotizantes, beneficiarios y las IPS asociadas para brindar un servicio oportuno.\\
 
-Los usuarios tienen diferentes funciones según su rol: los administradores podrán gestionar afiliados, empresas IPS, contratos, órdenes de servicio y generar reporte de afiliados por estado, órdenes por paciente y afiliados por empresa, los trabajadores pueden consultar su propia información y el banco puede cargar la información de los pagos que reportan las empresas, los cuales pueden hacerse individualmente o cargarse en bloque desde archivos.
+Los usuarios tienen diferentes funciones según su rol: los administradores podrán gestionar afiliados, empresas, IPS, contratos, órdenes de servicio y generar reporte de afiliados por estado, órdenes por paciente y afiliados por empresa, los trabajadores pueden consultar su propia información y el banco puede cargar la información de los pagos que reportan las empresas, los cuales pueden hacerse individualmente o cargarse en bloque desde archivos.
 \subsection{Definiciones, Acrónimos y Abreviaturas}
 \begin{itemize}
 \item \textbf{EPS:} Entidad Promotora de Salud.
@@ -69,10 +69,13 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 \emph{Borvo-Medicinae Operam} está planeado como un software independiente, que no requiere sistemas externos para su funcionamiento e interacción. 
 \subsection{Funciones del Producto}
 \vspace{5mm}
+\begin{figure}[h]
 {\includegraphics[width=1 \textwidth]{IMAGES/use_cases_diagram.png} \par}
+\caption{Diagrama de Casos de Uso.}
+\end{figure}
 \subsection{Características de los Usuarios}
 \begin{center}
-\begin{tabular}{|l| p{12cm}|}
+\begin{tabular}{|p{3.5cm}| p{11.5cm}|}
 \hline 
 \multicolumn{2}{|c|}{\textbf{Administrador}} \\ 
 \hline 
@@ -85,7 +88,7 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 \end{tabular}
 \vspace{5mm}
 
-\begin{tabular}{|l| p{12cm}|}
+\begin{tabular}{|p{3.5cm}| p{11.5cm}|}
 \hline 
 \multicolumn{2}{|c|}{\textbf{Trabajador}} \\ 
 \hline 
@@ -98,7 +101,7 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 \end{tabular}
 \vspace{5mm}
 
-\begin{tabular}{|l| p{12cm}|}
+\begin{tabular}{|p{3.5cm}| p{11.5cm}|}
 \hline 
 \multicolumn{2}{|c|}{\textbf{Banco}} \\ 
 \hline 
@@ -128,6 +131,82 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 Texto
 \section{Requisitos Específicos}
 \subsection{Interfaces Externas}
+\begin{center}
+\begin{tabular}{|p{5.5cm}| p{9.5cm}|}
+\hline 
+\multicolumn{2}{|c|}{\textbf{Nombre del Requisito}}\\ 
+\hline 
+\textbf{Descripción} & • \\ 
+\hline 
+\textbf{Pre-condición} & • \\ 
+\hline 
+\textbf{Flujo de Eventos} & • \\ 
+\hline 
+\textbf{Flujo Alterno} & • \\ 
+\hline 
+\textbf{Post-condición}  & • \\ 
+\hline 
+\textbf{Requisitos No Funcionales} & • \\ 
+\hline 
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|p{5.5cm}| p{9.5cm}|}
+\hline 
+\multicolumn{2}{|c|}{\textbf{Nombre del Requisito}}\\ 
+\hline 
+\textbf{Descripción} & • \\ 
+\hline 
+\textbf{Pre-condición} & • \\ 
+\hline 
+\textbf{Flujo de Eventos} & • \\ 
+\hline 
+\textbf{Flujo Alterno} & • \\ 
+\hline 
+\textbf{Post-condición}  & • \\ 
+\hline 
+\textbf{Requisitos No Funcionales} & • \\ 
+\hline 
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|p{5.5cm}| p{9.5cm}|}
+\hline 
+\multicolumn{2}{|c|}{\textbf{Nombre del Requisito}}\\ 
+\hline 
+\textbf{Descripción} & • \\ 
+\hline 
+\textbf{Pre-condición} & • \\ 
+\hline 
+\textbf{Flujo de Eventos} & • \\ 
+\hline 
+\textbf{Flujo Alterno} & • \\ 
+\hline 
+\textbf{Post-condición}  & • \\ 
+\hline 
+\textbf{Requisitos No Funcionales} & • \\ 
+\hline 
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|p{5.5cm}| p{9.5cm}|}
+\hline 
+\multicolumn{2}{|c|}{\textbf{Nombre del Requisito}}\\ 
+\hline 
+\textbf{Descripción} & • \\ 
+\hline 
+\textbf{Pre-condición} & • \\ 
+\hline 
+\textbf{Flujo de Eventos} & • \\ 
+\hline 
+\textbf{Flujo Alterno} & • \\ 
+\hline 
+\textbf{Post-condición}  & • \\ 
+\hline 
+\textbf{Requisitos No Funcionales} & • \\ 
+\hline 
+\end{tabular}
+\end{center}
 \subsection{Funciones}
 \subsection{Requisitos de Rendimiento}
 \subsection{Restricciones de Diseño}
