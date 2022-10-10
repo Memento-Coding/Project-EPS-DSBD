@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.10.9)  9 OCT 2022 19:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.10.9)  9 OCT 2022 20:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -374,19 +374,19 @@ LaTeX Info: Redefining \% on input line 429.
 File: IMAGES//entity_relationship_model.png Graphic file (type png)
 <use IMAGES//entity_relationship_model.png>
 Package pdftex.def Info: IMAGES//entity_relationship_model.png  used on input l
-ine 435.
+ine 434.
 (pdftex.def)             Requested size: 390.0pt x 555.82045pt.
-LaTeX Info: Redefining \. on input line 438.
-LaTeX Info: Redefining \% on input line 438.
+LaTeX Info: Redefining \. on input line 437.
+LaTeX Info: Redefining \% on input line 437.
  [13]
-Overfull \vbox (21.40376pt too high) has occurred while \output is active []
+Overfull \vbox (47.15376pt too high) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 438.
-LaTeX Info: Redefining \% on input line 438.
+LaTeX Info: Redefining \. on input line 437.
+LaTeX Info: Redefining \% on input line 437.
 
 [14 <./IMAGES//entity_relationship_model.png>]
-LaTeX Info: Redefining \. on input line 444.
-LaTeX Info: Redefining \% on input line 444.
+LaTeX Info: Redefining \. on input line 440.
+LaTeX Info: Redefining \% on input line 440.
  [15]
 (requirements_specifications.aux
 LaTeX Info: Redefining \. on input line 8.
@@ -394,7 +394,7 @@ LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
  4142 strings out of 478338
- 66719 string characters out of 2832416
+ 67019 string characters out of 2832416
  383672 words of memory out of 3000000
  22531 multiletter control sequences out of 15000+600000
  477678 words of font info for 58 fonts, out of 8000000 for 9000
@@ -408,7 +408,7 @@ ez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/U
 sers/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmsl12.pfb><C:/Users/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmti12.pfb>
-Output written on requirements_specifications.pdf (16 pages, 409012 bytes).
+Output written on requirements_specifications.pdf (16 pages, 408954 bytes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
