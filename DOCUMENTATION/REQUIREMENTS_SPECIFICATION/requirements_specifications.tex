@@ -3,31 +3,34 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{enumerate}
 \usepackage[spanish]{babel}
 \usepackage{graphicx}
+\usepackage{float}
+\graphicspath{ {IMAGES/} }
 \pagestyle{headings}
-\author{Juan Sebastian Gonzalez Camacho (1968220)}
-\title{Requirements_Specification}
+\author{Juan Sebastian Gonzalez Camacho (1968220), Andrés Felipe Ruíz Buriticá (1968171), Jhoan Sebastian Rojas Holguin (1958337), Carlos Alberto Delgado Galeano (1968127), Jesus Alberto Gil Ayala (1968231)}
+\title{Borvo MO - Requirements Specification}
 \begin{document}
 \begin{titlepage}
 \centering
-{\includegraphics[width=0.18 \textwidth]{IMAGES/logo.png} \par}
+{\includegraphics[width=0.18 \textwidth]{logo.png} \par}
 \vfill
 {\bfseries\LARGE Universidad del Valle\par}
 {\Large Sede Tuluá\par}
 \vfill
 {\scshape\Large Ingeniería de Sistemas \par}
 \vfill
-{\scshape\Huge Borvo-Medicinae Operam \par}
+{\scshape\Huge Borvo - Medicinae Operam \par}
 \vfill
 {\itshape\Large Proyecto Final de Bases de Datos y Desarrollo de Software I \par}
 \vfill
 {\Large Autores: \par}
 {\Large Juan Sebastian González Camacho - 1968220 \par}
-{\Large Carlos Alberto Delgado Galeano - 1968127 \par}
-{\Large Jesús Alberto Gil Ayala - 1968231 \par}
 {\Large Andrés Felipe Ruíz Buriticá - 1968171 \par}
 {\Large Jhoan Sebastian Rojas Holguin - 1958337 \par}
+{\Large Carlos Alberto Delgado Galeano - 1968127 \par}
+{\Large Jesús Alberto Gil Ayala - 1968231 \par}
 \vfill
 {\Large 9 de Octubre del 2022 \par}
 \end{titlepage}
@@ -57,6 +60,21 @@ Los usuarios tienen diferentes funciones según su rol: los administradores podr
 \item \textbf{JavaScript:} Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dimámico.
 \item Aquí se van agregando otras abreviaturas, acrónimos y definiciones.
 \end{itemize}
+\subsection{Equipo de Desarrollo de Software}
+Nuestra empresa desarrolladora, Memento Coding, es una idea que nació de un grupo de estudiantes de Ingeniería de Sistemas de la Universidad del Valle apasionados por el desarrollo de aplicaciones web:
+
+\begin{itemize}
+\item Juan Sebastian Gonzalez Camacho (1968220)
+\item Andrés Felipe Ruíz Buriticá (1968171)
+\item Jhoan Sebastian Rojas Holguin (1958337)
+\item Carlos Alberto Delgado Galeano (1968127)
+\item Jesus Alberto Gil Ayala (1968231)
+\end{itemize}
+\begin{figure}[H]
+\centering
+{\includegraphics[width=0.5 \textwidth]{logo_memento} \par}
+\caption{Logo de nuestra empresa Memento Coding}
+\end{figure}
 \subsection{Referencias}
 \begin{itemize}
 \item Especificación de Requisitos según el estándar de IEEE 830.
@@ -69,8 +87,9 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 \emph{Borvo-Medicinae Operam} está planeado como un software independiente, que no requiere sistemas externos para su funcionamiento e interacción. 
 \subsection{Funciones del Producto}
 \vspace{5mm}
-\begin{figure}[h]
-{\includegraphics[width=1 \textwidth]{IMAGES/use_cases_diagram.png} \par}
+\begin{figure}[H]
+\centering
+{\includegraphics[width=1 \textwidth]{use_cases_diagram.png} \par}
 \caption{Diagrama de Casos de Uso.}
 \end{figure}
 \subsection{Características de los Usuarios}
@@ -128,89 +147,298 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 \item Los equipos en donde se utilice el software deben contar con un mínimo de recursos, navegador y una buena conexión a Internet.
 \end{itemize}
 \subsection{Requisitos Futuros}
-Texto
 \section{Requisitos Específicos}
 \subsection{Interfaces Externas}
+\subsection{Funciones}
 \begin{center}
 \begin{tabular}{|p{5.5cm}| p{9.5cm}|}
 \hline 
-\multicolumn{2}{|c|}{\textbf{Nombre del Requisito}}\\ 
+\multicolumn{2}{|c|}{\textbf{CU\#1 - GestionarIPS}} \\ 
 \hline 
-\textbf{Descripción} & • \\ 
+\textbf{Descripción} & Permite registrar una IPS dentro del sistema. \\ 
 \hline 
-\textbf{Pre-condición} & • \\ 
+\textbf{Actores} & Es iniciado por Administrador. \\ 
 \hline 
-\textbf{Flujo de Eventos} & • \\ 
+\textbf{Pre-condición} & El administrador debe haberse autenticado de forma exitosa en el sistema de acuerdo a su perfil. \\ 
 \hline 
-\textbf{Flujo Alterno} & • \\ 
+\textbf{Flujo de Eventos} & Flujo Principal (P):
+
+\textbf{P1.} El administrador selecciona la opción de Registrar nueva IPS.
+
+\textbf{P2.} El sistema despliega un formulario para registrar la IPS.
+
+\textbf{P3.} El administrador ingresa el NIT, razón social, nivel de atención y servicios que presta la IPS.
+
+\textbf{P4.} El administrador da clic en el botón Guardar para enviar el formulario.
+
+\textbf{P5.} El sistema valida los datos (A1).
+
+\textbf{P6.} El sistema muestra el mensaje de confirmación.
+\\
 \hline 
-\textbf{Post-condición}  & • \\ 
+\textbf{Flujo Alterno} &  Flujo Alterno (A):
+
+\textbf{A1.} La IPS ya está registrada.
+
+	En P5:
+	
+	5.1. Si el NIT corresponde a una IPS ya registrada, el sistema debe mostrar un mensaje indicando esto.
+	
+	5.2. Si es error de digitación, retorna a P2 para ingresar nuevamente los dato sen el formulario. \\ 
 \hline 
-\textbf{Requisitos No Funcionales} & • \\ 
+\textbf{Post-condición}  & Registro exitoso de la IPS dentro del sistema. \\ 
+\hline 
+\textbf{Requisitos No Funcionales} & Ninguno \\ 
 \hline 
 \end{tabular}
 \vspace{5mm}
 
 \begin{tabular}{|p{5.5cm}| p{9.5cm}|}
 \hline 
-\multicolumn{2}{|c|}{\textbf{Nombre del Requisito}}\\ 
+\multicolumn{2}{|c|}{\textbf{CU\#2 - ReportarPagoAportes}} \\ 
 \hline 
-\textbf{Descripción} & • \\ 
+\textbf{Descripción} & Permite reportar dentro del sistema el pago de aportes que hace cada cotizante. \\ 
 \hline 
-\textbf{Pre-condición} & • \\ 
+\textbf{Actores} & Es iniciado por Banco. \\ 
 \hline 
-\textbf{Flujo de Eventos} & • \\ 
+\textbf{Pre-condición} & El banco debe haberse autenticado de forma exitosa en el sistema de acuerdo a su perfil. \\ 
 \hline 
-\textbf{Flujo Alterno} & • \\ 
+\textbf{Flujo de Eventos} & Flujo Principal (P):
+
+\textbf{P1.} El banco selecciona la opción de Reporte pago de aportes.
+
+\textbf{P2.} El sistema despliega un formulario para hacer el reporte del pago.
+
+\textbf{P3.} El banco ingresa la fecha de pago, el valor pagado, la información del cotizante y la información de la empresa que hace el pago (si el cotizante es dependiente).
+
+\textbf{P4.} El banco da clic en el botón Guardar para enviar el formulario.
+
+\textbf{P5.} El sistema valida los datos (A1).
+
+\textbf{P6.} El sistema muestra un mensaje de confirmación.
+\\
 \hline 
-\textbf{Post-condición}  & • \\ 
+\textbf{Flujo Alterno} &  Flujo Alterno (A):
+
+\textbf{A1.} El pago de aportes ya se ha realizado.
+
+	En P5:
+	
+	5.1. Si no hay un pago de aportes pendiente, el sistema debe mostrar un mensaje indicando esto.
+	
+	5.2. Si es error de digitación, retorna a P2 para ingresar nuevamente los dato sen el formulario. \\ 
 \hline 
-\textbf{Requisitos No Funcionales} & • \\ 
+\textbf{Post-condición}  & Reporte de pago de aportes realizados durante el mes. \\ 
+\hline 
+\textbf{Requisitos No Funcionales} & Ninguno \\ 
 \hline 
 \end{tabular}
 \vspace{5mm}
 
 \begin{tabular}{|p{5.5cm}| p{9.5cm}|}
 \hline 
-\multicolumn{2}{|c|}{\textbf{Nombre del Requisito}}\\ 
+\multicolumn{2}{|c|}{\textbf{CU\#3 - ConsultarInformacionPropia}} \\ 
 \hline 
-\textbf{Descripción} & • \\ 
+\textbf{Descripción} & Permite consultar la información del cotizante actualmente autenticado. \\ 
 \hline 
-\textbf{Pre-condición} & • \\ 
+\textbf{Actores} & Es iniciado por Cotizante. \\ 
 \hline 
-\textbf{Flujo de Eventos} & • \\ 
+\textbf{Pre-condición} & El cotizante debe haberse autenticado de forma exitosa en el sistema de acuerdo a su perfil. \\ 
 \hline 
-\textbf{Flujo Alterno} & • \\ 
+\textbf{Flujo de Eventos} & Flujo Principal (P):
+
+\textbf{P1.} El cotizante selecciona la opción de Ver Perfil.
+
+\textbf{P2.} El sistema despliega una página con la información del cotizante y sus beneficiarios (si los tiene).
+\\
 \hline 
-\textbf{Post-condición}  & • \\ 
+\textbf{Flujo Alterno} &  Flujo Alterno (A):
+\\ 
 \hline 
-\textbf{Requisitos No Funcionales} & • \\ 
+\textbf{Post-condición}  & El cotizante consulta su propia información que está guardada en el sistema. \\ 
+\hline 
+\textbf{Requisitos No Funcionales} & Ninguno \\ 
 \hline 
 \end{tabular}
 \vspace{5mm}
 
 \begin{tabular}{|p{5.5cm}| p{9.5cm}|}
 \hline 
-\multicolumn{2}{|c|}{\textbf{Nombre del Requisito}}\\ 
+\multicolumn{2}{|c|}{\textbf{CU\#4 - IniciarSesión}} \\ 
 \hline 
-\textbf{Descripción} & • \\ 
+\textbf{Descripción} & Permite al usuario ingresar al sistema según su rol. \\ 
 \hline 
-\textbf{Pre-condición} & • \\ 
+\textbf{Actores} & Es iniciado por Administrador, Cotizante o Banco. \\ 
 \hline 
-\textbf{Flujo de Eventos} & • \\ 
+\textbf{Pre-condición} & El usuario debe estar previamente registrado en el sistema. \\ 
 \hline 
-\textbf{Flujo Alterno} & • \\ 
+\textbf{Flujo de Eventos} & Flujo Principal (P):
+
+\textbf{P1.} El usuario solicita al sistema entrar en la aplicación.
+
+\textbf{P2.} El sistema despliega un login en el que solicita al usuario introducir su usuario y contraseña.
+
+\textbf{P3.} El usuario da clic en ingresar.
+
+\textbf{P4.} El sistema comprueba los datos introducidos.
+
+\textbf{P5.} Si los datos son correctos, el sistema ingresa a la página de inicio para el rol del usuario que ingresó.
+\\
 \hline 
-\textbf{Post-condición}  & • \\ 
+\textbf{Flujo Alterno} &  Flujo Alterno (A):
+
+\textbf{A1.} El nombre de usuario o contraseña son incorrectos.
+
+	En P4:
+	
+	4.1. Si el usuario es incorrecto, el sistema muestra un mensaje indicando que el usuario es incorrecto y retorna a P2.
+	
+	4.2. Si la contraseña es incorrecta, el sistema muestra un mensaje indicando que la contraseña es incorrecta y retorna a P2. \\ 
 \hline 
-\textbf{Requisitos No Funcionales} & • \\ 
+\textbf{Post-condición}  & El usuario ingresa al sistema. \\ 
+\hline 
+\textbf{Requisitos No Funcionales} & Ninguno \\ 
+\hline 
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|p{5.5cm}| p{9.5cm}|}
+\hline 
+\multicolumn{2}{|c|}{\textbf{CU\#5 - GestionarBeneficiario}} \\ 
+\hline 
+\textbf{Descripción} & Permite registrar la información de las personas que son beneficiarios de los afiliados titulares. \\ 
+\hline 
+\textbf{Actores} & Es iniciado por Administrador. \\ 
+\hline 
+\textbf{Pre-condición} & El administrador debe haberse autenticado de forma exitosa en el sistema de acuerdo a su perfil. \\ 
+\hline 
+\textbf{Flujo de Eventos} & Flujo Principal (P):
+
+\textbf{P1.} El administrador debe seleccionar la opción Gestionar beneficiario en el sistema.
+
+\textbf{P2.} El sistema despliega un formulario para registrar los datos de los beneficiarios.
+
+\textbf{P3.} El administrador registra DNI, Nombres, Apellidos, Fecha de Nacimiento, Ciudad de Residencia, Teléfono, e-mail, Dirección, Género, Estado Civil, Estado Actual, Parentesco con el cotizante.
+
+\textbf{P4.} El administrador da clic en el botón Guardar para enviar el formulario.
+
+\textbf{P5.} El sistema valida los datos (A1).
+
+\textbf{P6.} El sistema muestra el mensaje de confirmación.
+\\
+\hline 
+\textbf{Flujo Alterno} &  Flujo Alterno (A):
+
+\textbf{A1.} El beneficiario ya se encontraba registrado.
+
+	En P4:
+	
+	4.1. Si el DNI corresponde a un beneficiario ya registrado, el sistema debe mostrar un mensaje indicando esto.
+	
+	4.2. Si es error de digitación, retorna a P2 para ingresar nuevamente los datos en el formulario. \\ 
+\hline 
+\textbf{Post-condición}  & El beneficiario queda registrado en el sistema. \\ 
+\hline 
+\textbf{Requisitos No Funcionales} & Ninguno \\ 
+\hline 
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|p{5.5cm}| p{9.5cm}|}
+\hline 
+\multicolumn{2}{|c|}{\textbf{CU\#6 - GestionarAfiliado}} \\ 
+\hline 
+\textbf{Descripción} & Permite registrar la información de las personas que los afiliados. \\ 
+\hline 
+\textbf{Actores} & Es iniciado por Administrador. \\ 
+\hline 
+\textbf{Pre-condición} & El administrador debe haberse autenticado de forma exitosa en el sistema de acuerdo a su perfil. \\ 
+\hline 
+\textbf{Flujo de Eventos} & Flujo Principal (P):
+
+\textbf{P1.} El administrador debe seleccionar la opción Gestionar afiliado en el sistema.
+
+\textbf{P2.} El sistema despliega un formulario para registrar los datos de los afiliados.
+
+\textbf{P3.} El administrador registra DNI, Nombres, Apellidos, Fecha de Nacimiento, Ciudad de Residencia, Teléfono, e-mail, Dirección, Género, Estado Civil, Estado Actual, Fecha de Primera Afiliación, Salario, Rango Salarial.
+
+\textbf{P4.} El administrador da clic en el botón Guardar para enviar el formulario.
+
+\textbf{P5.} El sistema valida los datos (A1).
+
+\textbf{P6.} El sistema muestra el mensaje de confirmación.
+\\
+\hline 
+\textbf{Flujo Alterno} &  Flujo Alterno (A):
+
+\textbf{A1.} El afiliado ya se encontraba registrado.
+
+	En P4:
+	
+	4.1. Si el DNI corresponde a un afiliado ya registrado, el sistema debe mostrar un mensaje indicando esto.
+	
+	4.2. Si es error de digitación, retorna a P2 para ingresar nuevamente los datos en el formulario. \\ 
+\hline 
+\textbf{Post-condición}  & El afiliado queda registrado en el sistema. \\ 
+\hline 
+\textbf{Requisitos No Funcionales} & Ninguno \\ 
+\hline 
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|p{5.5cm}| p{9.5cm}|}
+\hline 
+\multicolumn{2}{|c|}{\textbf{CU\#7 - GestionarEmpresa}} \\ 
+\hline 
+\textbf{Descripción} & Permite registrar la información de las empresas a las que pertenecen los afiliados. \\ 
+\hline 
+\textbf{Actores} & Es iniciado por Administrador. \\ 
+\hline 
+\textbf{Pre-condición} & El administrador debe haberse autenticado de forma exitosa en el sistema de acuerdo a su perfil. \\ 
+\hline 
+\textbf{Flujo de Eventos} & Flujo Principal (P):
+
+\textbf{P1.} El administrador debe seleccionar la opción Gestionar empresa en el sistema.
+
+\textbf{P2.} El sistema despliega un formulario para registrar los datos de las empresas.
+
+\textbf{P3.} El administrador registra NIT, Ciudad, Teléfono, Razón social, Nombre del contacto.
+
+\textbf{P4.} El administrador da clic en el botón Guardar para enviar el formulario.
+
+\textbf{P5.} El sistema valida los datos (A1).
+
+\textbf{P6.} El sistema muestra el mensaje de confirmación.
+\\
+\hline 
+\textbf{Flujo Alterno} &  Flujo Alterno (A):
+
+\textbf{A1.} La empresa ya se encontraba registrada.
+
+	En P4:
+	
+	4.1. Si el NIT corresponde a una empresa ya registrada, el sistema debe mostrar un mensaje indicando esto.
+	
+	4.2. Si es error de digitación, retorna a P2 para ingresar nuevamente los datos en el formulario. \\ 
+\hline 
+\textbf{Post-condición}  & La empresa queda registrada en el sistema. \\ 
+\hline 
+\textbf{Requisitos No Funcionales} & Ninguno \\ 
 \hline 
 \end{tabular}
 \end{center}
-\subsection{Funciones}
 \subsection{Requisitos de Rendimiento}
+Ninguno
 \subsection{Restricciones de Diseño}
+\begin{figure}[H]
+\centering
+{\includegraphics[width=1 \textwidth]{entity_relationship_model.png} \par}
+\caption{Modelo Entidad - Relación.}
+\end{figure}
 \subsection{Atributos del Sistema}
+Ninguno
 \subsection{Otros Requisitos}
-
+Ninguno
+\section{Apéndices}
+Nothing
 \end{document}

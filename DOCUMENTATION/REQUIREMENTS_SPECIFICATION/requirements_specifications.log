@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.10.9)  9 OCT 2022 13:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.10.9)  9 OCT 2022 19:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -119,6 +119,11 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 mb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerat
+e.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks23
+)
 (C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.
 sty
 Package: babel 2022/06/26 3.77 The Babel package
@@ -143,7 +148,7 @@ File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
 (C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\
 spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
-\es@quottoks=\toks23
+\es@quottoks=\toks24
 \es@quotdepth=\count273
 Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
@@ -162,7 +167,7 @@ Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 (C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyva
 l.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks24
+\KV@toks@=\toks25
 )
 (C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graph
 ics.sty
@@ -185,48 +190,57 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 \Gin@req@height=\dimen149
 \Gin@req@width=\dimen150
 )
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/float\float.st
+y
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count274
+\float@exts=\toks26
+\float@box=\box53
+\@float@everytoks=\toks27
+\@floatcapt=\box54
+)
 (C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3ba
 ckend-pdftex.def
 File: l3backend-pdftex.def 2022-07-01 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count274
-\l__pdf_internal_box=\box53
+\l__color_backend_stack_int=\count275
+\l__pdf_internal_box=\box55
 ) (requirements_specifications.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
 \openout1 = `requirements_specifications.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
 
 (C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\su
 pp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count275
+\scratchcounter=\count276
 \scratchdimen=\dimen151
-\scratchbox=\box54
-\nofMPsegments=\count276
-\nofMParguments=\count277
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count278
+\scratchbox=\box56
+\nofMPsegments=\count277
+\nofMParguments=\count278
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count279
 \MPscratchDim=\dimen152
-\MPnumerator=\count279
-\makeMPintoPDFobject=\count280
-\everyMPtoPDFconversion=\toks26
+\MPnumerator=\count280
+\makeMPintoPDFobject=\count281
+\everyMPtoPDFconversion=\toks29
 )
 (C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\e
 pstopdf-base.sty
@@ -238,15 +252,15 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 pdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-<IMAGES/logo.png, id=1, 1204.5pt x 1720.4275pt>
-File: IMAGES/logo.png Graphic file (type png)
-<use IMAGES/logo.png>
-Package pdftex.def Info: IMAGES/logo.png  used on input line 14.
+<IMAGES//logo.png, id=1, 1204.5pt x 1720.4275pt>
+File: IMAGES//logo.png Graphic file (type png)
+<use IMAGES//logo.png>
+Package pdftex.def Info: IMAGES//logo.png  used on input line 17.
 (pdftex.def)             Requested size: 70.19714pt x 100.25476pt.
  [1
 
 {C:/Users/Juan González/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./I
-MAGES/logo.png>] (requirements_specifications.toc
+MAGES//logo.png>] (requirements_specifications.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
@@ -264,92 +278,139 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write3
 \openout3 = `requirements_specifications.toc'.
 
-LaTeX Info: Redefining \. on input line 35.
-LaTeX Info: Redefining \% on input line 35.
+LaTeX Info: Redefining \. on input line 38.
+LaTeX Info: Redefining \% on input line 38.
  [1]
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
 [2]
-LaTeX Info: Redefining \. on input line 70.
-LaTeX Info: Redefining \% on input line 70.
+<IMAGES//logo_memento.png, id=20, 2007.5pt x 1505.625pt>
+File: IMAGES//logo_memento.png Graphic file (type png)
+<use IMAGES//logo_memento.png>
+Package pdftex.def Info: IMAGES//logo_memento.png  used on input line 75.
+(pdftex.def)             Requested size: 195.0pt x 146.22923pt.
+LaTeX Info: Redefining \. on input line 78.
+LaTeX Info: Redefining \% on input line 78.
  [3]
-<IMAGES/use_cases_diagram.png, id=23, 787.94376pt x 683.55376pt>
-File: IMAGES/use_cases_diagram.png Graphic file (type png)
-<use IMAGES/use_cases_diagram.png>
-Package pdftex.def Info: IMAGES/use_cases_diagram.png  used on input line 73.
+<IMAGES//use_cases_diagram.png, id=24, 787.94376pt x 683.55376pt>
+File: IMAGES//use_cases_diagram.png Graphic file (type png)
+<use IMAGES//use_cases_diagram.png>
+Package pdftex.def Info: IMAGES//use_cases_diagram.png  used on input line 92.
 (pdftex.def)             Requested size: 390.0pt x 338.32365pt.
-
-Overfull \hbox (60.79132pt too wide) in paragraph at lines 78--90
- [] 
- []
-
-LaTeX Info: Redefining \. on input line 90.
-LaTeX Info: Redefining \% on input line 90.
-[4 <./IMAGES/use_cases_diagram.png>]
-Overfull \hbox (60.79132pt too wide) in paragraph at lines 91--103
- [][] 
- []
-
-
-Overfull \hbox (60.79132pt too wide) in paragraph at lines 104--116
- [][] 
- []
-
-LaTeX Info: Redefining \. on input line 132.
-LaTeX Info: Redefining \% on input line 132.
-[5]
-Overfull \hbox (60.79132pt too wide) in paragraph at lines 135--153
+LaTeX Info: Redefining \. on input line 95.
+LaTeX Info: Redefining \% on input line 95.
+ [4 <./IMAGES//logo_memento.png>]
+Overfull \hbox (60.79132pt too wide) in paragraph at lines 97--109
  [] 
  []
 
 
-Overfull \hbox (60.79132pt too wide) in paragraph at lines 154--172
+Overfull \hbox (60.79132pt too wide) in paragraph at lines 110--122
+ [][] 
+ []
+
+LaTeX Info: Redefining \. on input line 122.
+LaTeX Info: Redefining \% on input line 122.
+[5 <./IMAGES//use_cases_diagram.png>]
+Overfull \hbox (60.79132pt too wide) in paragraph at lines 123--135
  [][] 
  []
 
 
-Overfull \hbox (60.79132pt too wide) in paragraph at lines 173--191
- [][] 
+Overfull \hbox (60.79132pt too wide) in paragraph at lines 154--195
+ [] 
  []
 
-
-Overfull \hbox (60.79132pt too wide) in paragraph at lines 192--209
- [][] 
- []
-
-LaTeX Info: Redefining \. on input line 216.
-LaTeX Info: Redefining \% on input line 216.
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
 [6]
-LaTeX Info: Redefining \. on input line 216.
-LaTeX Info: Redefining \% on input line 216.
- [7] (requirements_specifications.aux
+Overfull \hbox (60.79132pt too wide) in paragraph at lines 196--237
+ [][] 
+ []
+
+LaTeX Info: Redefining \. on input line 237.
+LaTeX Info: Redefining \% on input line 237.
+[7]
+Overfull \hbox (60.79132pt too wide) in paragraph at lines 238--264
+ [][] 
+ []
+
+LaTeX Info: Redefining \. on input line 264.
+LaTeX Info: Redefining \% on input line 264.
+[8]
+Overfull \hbox (60.79132pt too wide) in paragraph at lines 265--304
+ [][] 
+ []
+
+LaTeX Info: Redefining \. on input line 304.
+LaTeX Info: Redefining \% on input line 304.
+[9]
+Overfull \hbox (60.79132pt too wide) in paragraph at lines 305--346
+ [][] 
+ []
+
+LaTeX Info: Redefining \. on input line 346.
+LaTeX Info: Redefining \% on input line 346.
+[10]
+Overfull \hbox (60.79132pt too wide) in paragraph at lines 347--388
+ [][] 
+ []
+
+LaTeX Info: Redefining \. on input line 388.
+LaTeX Info: Redefining \% on input line 388.
+[11]
+Overfull \hbox (60.79132pt too wide) in paragraph at lines 389--429
+ [][] 
+ []
+
+LaTeX Info: Redefining \. on input line 429.
+LaTeX Info: Redefining \% on input line 429.
+[12]
+<IMAGES//entity_relationship_model.png, id=56, 805.0075pt x 1147.28625pt>
+File: IMAGES//entity_relationship_model.png Graphic file (type png)
+<use IMAGES//entity_relationship_model.png>
+Package pdftex.def Info: IMAGES//entity_relationship_model.png  used on input l
+ine 435.
+(pdftex.def)             Requested size: 390.0pt x 555.82045pt.
+LaTeX Info: Redefining \. on input line 438.
+LaTeX Info: Redefining \% on input line 438.
+ [13]
+Overfull \vbox (21.40376pt too high) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 438.
+LaTeX Info: Redefining \% on input line 438.
+
+[14 <./IMAGES//entity_relationship_model.png>]
+LaTeX Info: Redefining \. on input line 444.
+LaTeX Info: Redefining \% on input line 444.
+ [15]
+(requirements_specifications.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 4009 strings out of 478338
- 63846 string characters out of 2832416
- 384955 words of memory out of 3000000
- 22406 multiletter control sequences out of 15000+600000
- 478015 words of font info for 59 fonts, out of 8000000 for 9000
+ 4142 strings out of 478338
+ 66719 string characters out of 2832416
+ 383672 words of memory out of 3000000
+ 22531 multiletter control sequences out of 15000+600000
+ 477678 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,9n,62p,547b,395s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\Juan González\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
-pi600\tcrm1200.pk><C:/Users/Juan González/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Juan González/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Juan González
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Use
-rs/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmr17.pfb><C:/Users/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmsl12.pfb><C:/Users/Juan González/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on requirements_specifications.pdf (8 pages, 232071 bytes).
+<C:/Users/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmbx12.pfb><C:/Users/Juan González/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Juan González/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Juan Gonzál
+ez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/U
+sers/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmsl12.pfb><C:/Users/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmti12.pfb>
+Output written on requirements_specifications.pdf (16 pages, 409012 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
+ 93 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
