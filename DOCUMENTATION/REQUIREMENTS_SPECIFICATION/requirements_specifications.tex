@@ -7,6 +7,7 @@
 \usepackage[spanish]{babel}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{array}
 \graphicspath{ {IMAGES/} }
 \pagestyle{headings}
 \author{Juan Sebastian Gonzalez Camacho (1968220), Andrés Felipe Ruíz Buriticá (1968171), Jhoan Sebastian Rojas Holguin (1958337), Carlos Alberto Delgado Galeano (1968127), Jesus Alberto Gil Ayala (1968231)}
@@ -86,12 +87,15 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 \subsection{Perspectiva del Producto}
 \emph{Borvo-Medicinae Operam} está planeado como un software independiente, que no requiere sistemas externos para su funcionamiento e interacción. 
 \subsection{Funciones del Producto}
-\vspace{5mm}
-\begin{figure}[H]
-\centering
-{\includegraphics[width=1 \textwidth]{use_cases_diagram.png} \par}
-\caption{Diagrama de Casos de Uso.}
-\end{figure}
+\begin{itemize}
+\item Gestionar los afiliados de la EPS, que pueden ser trabajadores dependientes o independientes.
+\item Gestionar los beneficiarios que tiene cada afiliado cotizante.
+\item Gestionar las empresas en las que los trabajadores tienen contratos.
+\item Gestionar las IPS que prestan servicios a sus afiliados.
+\item Gestionar las órdenes médicas que entregan las IPS.
+\item Generar reportes de afiliados y órdenes médicas.
+\item Reportar el pago de aportes cada mes.
+\end{itemize}
 \subsection{Características de los Usuarios}
 \begin{center}
 \begin{tabular}{|p{3.5cm}| p{11.5cm}|}
@@ -109,7 +113,7 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 
 \begin{tabular}{|p{3.5cm}| p{11.5cm}|}
 \hline 
-\multicolumn{2}{|c|}{\textbf{Trabajador}} \\ 
+\multicolumn{2}{|c|}{\textbf{Cotizante}} \\ 
 \hline 
 \textbf{Nivel Educativo} & Educación secundaria.\\ 
 \hline 
@@ -149,11 +153,302 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 \subsection{Requisitos Futuros}
 \section{Requisitos Específicos}
 \subsection{Interfaces Externas}
-\subsection{Funciones}
+\subsection{Requisitos Funcionales}
 \begin{center}
-\begin{tabular}{|p{5.5cm}| p{9.5cm}|}
+\begin{tabular}{|m{5.5cm}|m{9.5cm}|}
+\hline
+\textbf{Identificador} & RF-01\\
+\hline
+\textbf{Nombre} & Gestionar afiliados cotizantes de la EPS.\\
+\hline
+\textbf{Descripción} & El sistema debe permitir gestionar toda la información de los cotizantes de la EPS: Tipo de documento, número de documento de identidad, apellidos, nombres, fecha de nacimiento, género, dirección, ciudad de residencia, teléfono, estado civil, correo electrónico, fecha de la primera afiliación, estado actual (Activo, Inactivo, Retirado), salario, rango salarial. La gestión de esta información está constituida por 4 subrequisitos funcionales:
+\begin{itemize}
+\item RF-01.1: Registrar cotizante.
+\item RF-01.2: Consultar cotizante.
+\item RF-01.3: Modificar cotizante.
+\item RF-01.4: Eliminar cotizante.
+\end{itemize}\\
+\hline
+\textbf{Prioridad} & Alta.\\
+\hline
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}|m{9.5cm}|}
+\hline
+\textbf{Identificador} & RF-02\\
+\hline
+\textbf{Nombre} & Gestionar los beneficiarios que tiene cada cotizante.\\
+\hline
+\textbf{Descripción} & El sistema debe permitir gestionar la información de los  beneficiarios que puede tener cada cotizante: Tipo y número de documento de identidad, apellidos, nombres, fecha de nacimiento, género, dirección, ciudad de residencia, teléfono, estado civil, correo electrónico y parentesco con el cotizante y estado actual. La gestión de esta información está constituida por 4 subrequisitos funcionales:
+\begin{itemize}
+\item RF-02.1: Registrar beneficiario.
+\item RF-02.2: Consultar beneficiario.
+\item RF-02.3: Modificar beneficiario.
+\item RF-02.4: Eliminar beneficiario.
+\end{itemize}\\
+\hline
+\textbf{Prioridad} & Alta.\\
+\hline
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}|m{9.5cm}|}
+\hline
+\textbf{Identificador} & RF-03\\
+\hline
+\textbf{Nombre} & Gestionar las empresas que contratan a los cotizantes.\\
+\hline
+\textbf{Descripción} & El sistema debe permitir gestionar la información de las empresas que contratan a los cotizantes dependientes: Nit, razón social, ciudad, dirección, teléfono, nombre del contacto. En el caso de los trabajadores independientes se debe registrar el mismo cotizante como empresa, registrando el RUT en lugar del Nit y se crea un contrato. La gestión de esta información está constituida en 4 subrequisitos funcionales:
+\begin{itemize}
+\item RF-03.1: Registrar empresa.
+\item RF-03.2: Consultar empresa.
+\item RF-03.3: Modificar empresa.
+\item RF-03.4: Eliminar empresa.
+\end{itemize}\\
+\hline
+\textbf{Prioridad} & Alta.\\
+\hline
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}|m{9.5cm}|}
+\hline
+\textbf{Identificador} & RF-04\\
+\hline
+\textbf{Nombre} & Gestionar las IPS que prestan los servicios a sus afiliados.\\
+\hline
+\textbf{Descripción} & El sistema debe permitir gestionar la información de las IPS que están contratadas por la EPS: Nit, razón social, nivel de atención, servicios que presta. La gestión de esta información está dividida en 4 subrequisitos funcionales:
+\begin{itemize}
+\item RF-04.1: Registrar IPS.
+\item RF-04.2: Consultar IPS.
+\item RF-04.3: Modificar IPS.
+\item RF-04.4: Eliminar IPS.
+\end{itemize}\\
+\hline
+\textbf{Prioridad} & Alta.\\
+\hline
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}|m{9.5cm}|}
+\hline
+\textbf{Identificador} & RF-05\\
+\hline
+\textbf{Nombre} & Gestionar órdenes de servicio.\\
+\hline
+\textbf{Descripción} & El sistema debe permitir gestionar la información de las órdenes de servicio que llevan los afiliados a la EPS, que les entrega la IPS en donde fueron atendidos: Código y fecha de la orden, nombre del médico que la formula, diagnóstico, descripción de los servicios formulados. La gestión de esta información se divide en 2 subrequisitos funcionales:
+\begin{itemize}
+\item RF-05.1: Registrar órden.
+\item RF-05.2: Consultar órden.
+\end{itemize}\\
+\hline
+\textbf{Prioridad} & Alta.\\
+\hline
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}|m{9.5cm}|}
+\hline
+\textbf{Identificador} & RF-06\\
+\hline
+\textbf{Nombre} & Generar reportes de afiliados.\\
+\hline
+\textbf{Descripción} & El sistema debe permitir generar los siguientes reportes de los afiliados:
+\begin{itemize}
+\item RF-06.1: Listado de afiliados por estado.
+\item RF-06.2: Listado de afiliados activos de una IPS.
+\item RF-06.3: Listado de afiliados inactivos.
+\item RF-06.4: Listado de afiliados independientes organizados por estado.
+\end{itemize}\\
+\hline
+\textbf{Prioridad} & Alta.\\
+\hline
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}|m{9.5cm}|}
+\hline
+\textbf{Identificador} & RF-07\\
+\hline
+\textbf{Nombre} & Generar reportes de órdenes de servicio.\\
+\hline
+\textbf{Descripción} & El sistema debe permitir generar un reporte de todas las órdenes de servicio por paciente.\\
+\hline
+\textbf{Prioridad} & Alta.\\
+\hline
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}|m{9.5cm}|}
+\hline
+\textbf{Identificador} & RF-08\\
+\hline
+\textbf{Nombre} & Reportar pago de aportes.\\
+\hline
+\textbf{Descripción} & El sistema debe permitir al banco reportar mensualmente el pago de aportes de cada empleado con contrato activo, este reporte debe incluir la fecha de pago, el valor pagado, la información del cotizante y la información de la empresa que hace el pago. Los trabajadores independientes también deben reportar mensualmente su pago de aportes. Este se puede hacer individual o en bloque de archivos.\\
+\hline
+\textbf{Prioridad} & Alta.\\
+\hline
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}|m{9.5cm}|}
+\hline
+\textbf{Identificador} & RF-09\\
+\hline
+\textbf{Nombre} & El cotizante puede consultar su propia información.\\
+\hline
+\textbf{Descripción} & El sistema debe permitir a cada cotizante consultar su propia información.\\
+\hline
+\textbf{Prioridad} & Media.\\
+\hline
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}|m{9.5cm}|}
+\hline
+\textbf{Identificador} & RF-10\\
+\hline
+\textbf{Nombre} & Generar listado de pago de aportes.\\
+\hline
+\textbf{Descripción} & El sistema debe permitir generar un listado de los aportes recibidos por un afiliado en un período de tiempo determinado.\\
+\hline
+\textbf{Prioridad} & Media.\\
+\hline
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}|m{9.5cm}|}
+\hline
+\textbf{Identificador} & RF-11\\
+\hline
+\textbf{Nombre} & Generar listado de citas.\\
+\hline
+\textbf{Descripción} & El sistema debe permitir generar un listado de citas en una fecha e IPS en particular.\\
+\hline
+\textbf{Prioridad} & Media.\\
+\hline
+\end{tabular}
+\vspace{5mm}
+\end{center}
+\subsection{Requisitos No Funcionales}
+\begin{center}
+\begin{tabular}{|m{5.5cm}|m{9.5cm}|}
+\hline
+\textbf{Identificador} & RNF-01\\
+\hline
+\textbf{Nombre} & Diseño de interfaz amigable.\\
+\hline
+\textbf{Descripción} & El software debe ser sencillo e intuitivo para una mejor comprensión de los usuarios.\\
+\hline
+\textbf{Categoría} & Usabilidad.\\
+\hline
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}|m{9.5cm}|}
+\hline
+\textbf{Identificador} & RNF-02\\
+\hline
+\textbf{Nombre} & Software ágil.\\
+\hline
+\textbf{Descripción} & El software debe generar la información y mostrar formularios y guías claros y concisos.\\
+\hline
+\textbf{Categoría} & Usabilidad.\\
+\hline
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}|m{9.5cm}|}
+\hline
+\textbf{Identificador} & RNF-03\\
+\hline
+\textbf{Nombre} & Disponible.\\
+\hline
+\textbf{Descripción} & El software estará en funcionamiento todo el tiempo.\\
+\hline
+\textbf{Categoría} & Desempeño.\\
+\hline
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}|m{9.5cm}|}
+\hline
+\textbf{Identificador} & RNF-04\\
+\hline
+\textbf{Nombre} & Tolerante al error.\\
+\hline
+\textbf{Descripción} & El sistema proveerá información con respecto al error en la ejecución de alguna función y añadirá una recomendación.\\
+\hline
+\textbf{Categoría} & Desempeño.\\
+\hline
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}|m{9.5cm}|}
+\hline
+\textbf{Identificador} & RNF-05\\
+\hline
+\textbf{Nombre} & Permisos de usuario.\\
+\hline
+\textbf{Descripción} & El sistema solicitará usuario y contraseña para determinar los permisos según el perfil de usuario.\\
+\hline
+\textbf{Categoría} & Seguridad.\\
+\hline
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}|m{9.5cm}|}
+\hline
+\textbf{Identificador} & RNF-06\\
+\hline
+\textbf{Nombre} & Personal autorizado.\\
+\hline
+\textbf{Descripción} & Al sistema solo pueden ingresar los usuarios autorizados que están registrados en la base de datos.\\
+\hline
+\textbf{Categoría} & Seguridad.\\
+\hline
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}|m{9.5cm}|}
+\hline
+\textbf{Identificador} & RNF-07\\
+\hline
+\textbf{Nombre} & Tiempo de respuesta\\
+\hline
+\textbf{Descripción} & El sistema debe enviar una respuesta en el acceso y uso de sus funciones en no más de 10 segundos.\\
+\hline
+\textbf{Categoría} & Eficiencia.\\
+\hline
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}|m{9.5cm}|}
+\hline
+\textbf{Identificador} & RNF-08\\
+\hline
+\textbf{Nombre} & Acceso desde varios dispositivos.\\
+\hline
+\textbf{Descripción} & El sistema debe ser un aplicativo web que permita ingresar desde cualquier dispositivo.\\
+\hline
+\textbf{Categoría} & Portabilidad.\\
+\hline
+\end{tabular}
+\vspace{5mm}
+\end{center}
+\subsection{Diagrama de Casos de Uso}
+\begin{figure}[H]
+\centering
+{\includegraphics[width=1 \textwidth]{use_cases_diagram.png} \par}
+\caption{Diagrama de Casos de Uso.}
+\end{figure}
+\subsection{Especificación de Casos de Uso}
+\begin{center}
+\begin{tabular}{|m{5.5cm}| m{9.5cm}|}
 \hline 
-\multicolumn{2}{|c|}{\textbf{CU\#1 - GestionarIPS}} \\ 
+\multicolumn{2}{|c|}{\textbf{CU-01 GestionarIPS}} \\ 
 \hline 
 \textbf{Descripción} & Permite registrar una IPS dentro del sistema. \\ 
 \hline 
@@ -193,9 +488,9 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 \end{tabular}
 \vspace{5mm}
 
-\begin{tabular}{|p{5.5cm}| p{9.5cm}|}
+\begin{tabular}{|m{5.5cm}| m{9.5cm}|}
 \hline 
-\multicolumn{2}{|c|}{\textbf{CU\#2 - ReportarPagoAportes}} \\ 
+\multicolumn{2}{|c|}{\textbf{CU-02 ReportarPagoAportes}} \\ 
 \hline 
 \textbf{Descripción} & Permite reportar dentro del sistema el pago de aportes que hace cada cotizante. \\ 
 \hline 
@@ -235,9 +530,9 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 \end{tabular}
 \vspace{5mm}
 
-\begin{tabular}{|p{5.5cm}| p{9.5cm}|}
+\begin{tabular}{|m{5.5cm}| m{9.5cm}|}
 \hline 
-\multicolumn{2}{|c|}{\textbf{CU\#3 - ConsultarInformacionPropia}} \\ 
+\multicolumn{2}{|c|}{\textbf{CU-03 ConsultarInformacionPropia}} \\ 
 \hline 
 \textbf{Descripción} & Permite consultar la información del cotizante actualmente autenticado. \\ 
 \hline 
@@ -262,9 +557,9 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 \end{tabular}
 \vspace{5mm}
 
-\begin{tabular}{|p{5.5cm}| p{9.5cm}|}
+\begin{tabular}{|m{5.5cm}| m{9.5cm}|}
 \hline 
-\multicolumn{2}{|c|}{\textbf{CU\#4 - IniciarSesión}} \\ 
+\multicolumn{2}{|c|}{\textbf{CU-04 IniciarSesión}} \\ 
 \hline 
 \textbf{Descripción} & Permite al usuario ingresar al sistema según su rol. \\ 
 \hline 
@@ -302,9 +597,9 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 \end{tabular}
 \vspace{5mm}
 
-\begin{tabular}{|p{5.5cm}| p{9.5cm}|}
+\begin{tabular}{|m{5.5cm}| m{9.5cm}|}
 \hline 
-\multicolumn{2}{|c|}{\textbf{CU\#5 - GestionarBeneficiario}} \\ 
+\multicolumn{2}{|c|}{\textbf{CU-05 GestionarBeneficiario}} \\ 
 \hline 
 \textbf{Descripción} & Permite registrar la información de las personas que son beneficiarios de los afiliados titulares. \\ 
 \hline 
@@ -344,9 +639,9 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 \end{tabular}
 \vspace{5mm}
 
-\begin{tabular}{|p{5.5cm}| p{9.5cm}|}
+\begin{tabular}{|m{5.5cm}| m{9.5cm}|}
 \hline 
-\multicolumn{2}{|c|}{\textbf{CU\#6 - GestionarAfiliado}} \\ 
+\multicolumn{2}{|c|}{\textbf{CU-06 GestionarAfiliado}} \\ 
 \hline 
 \textbf{Descripción} & Permite registrar la información de las personas que los afiliados. \\ 
 \hline 
@@ -386,9 +681,9 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 \end{tabular}
 \vspace{5mm}
 
-\begin{tabular}{|p{5.5cm}| p{9.5cm}|}
+\begin{tabular}{|m{5.5cm}| m{9.5cm}|}
 \hline 
-\multicolumn{2}{|c|}{\textbf{CU\#7 - GestionarEmpresa}} \\ 
+\multicolumn{2}{|c|}{\textbf{CU-07 GestionarEmpresa}} \\ 
 \hline 
 \textbf{Descripción} & Permite registrar la información de las empresas a las que pertenecen los afiliados. \\ 
 \hline 
@@ -427,14 +722,25 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 \hline 
 \end{tabular}
 \end{center}
-\subsection{Requisitos de Rendimiento}
-\subsection{Restricciones de Diseño}
+\subsection{Aspectos de Diseño}
 \begin{figure}[H]
 \centering
-{\includegraphics[width=1 \textwidth]{entity_relationship_model.png} \par}
+{\includegraphics[width=1\textwidth]{Entity_relationship_diagram.pdf} \par}
 \caption{Modelo Entidad - Relación.}
 \end{figure}
 \subsection{Atributos del Sistema}
+El control de permisos está determinado por un login con usuario y contraseña, dependiendo el rol que cumpla cada usuario así mismo será la interfaz con sus funciones. Este software cuenta con 3 tipos de usuario:
+\begin{itemize}
+\item Administrador: Puede gestionar afiliados, empresas, IPS, contratos, órdenes de servicio, generar reporte de afiliados por estado, órdenes por paciente, afiliados por empresa.
+\item Cotizante: Puede consultar su propia información.
+\item Banco: Puede cargar la información de los pagos que reportan las empresas, las cuales pueden hacerse individualmente o cargarse en bloque desde archivos.
+\end{itemize}
 \subsection{Otros Requisitos}
 \section{Apéndices}
+\subsection{Mockups de Interfaz de Usuario}
+\begin{figure}[H]
+\centering
+{\includegraphics[width=1 \textwidth]{Mockup.jpg} \par}
+\caption{Mockup de interfaz de login y panel principal.}
+\end{figure}
 \end{document}

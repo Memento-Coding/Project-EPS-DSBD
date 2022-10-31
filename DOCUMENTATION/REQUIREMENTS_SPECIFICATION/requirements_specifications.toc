@@ -15,9 +15,12 @@
 \contentsline {subsection}{\numberline {2.6}Requisitos Futuros}{6}{}%
 \contentsline {section}{\numberline {3}Requisitos Específicos}{6}{}%
 \contentsline {subsection}{\numberline {3.1}Interfaces Externas}{6}{}%
-\contentsline {subsection}{\numberline {3.2}Funciones}{6}{}%
-\contentsline {subsection}{\numberline {3.3}Requisitos de Rendimiento}{14}{}%
-\contentsline {subsection}{\numberline {3.4}Restricciones de Diseño}{14}{}%
-\contentsline {subsection}{\numberline {3.5}Atributos del Sistema}{15}{}%
-\contentsline {subsection}{\numberline {3.6}Otros Requisitos}{15}{}%
-\contentsline {section}{\numberline {4}Apéndices}{15}{}%
+\contentsline {subsection}{\numberline {3.2}Requisitos Funcionales}{6}{}%
+\contentsline {subsection}{\numberline {3.3}Requisitos No Funcionales}{10}{}%
+\contentsline {subsection}{\numberline {3.4}Diagrama de Casos de Uso}{12}{}%
+\contentsline {subsection}{\numberline {3.5}Especificación de Casos de Uso}{12}{}%
+\contentsline {subsection}{\numberline {3.6}Aspectos de Diseño}{20}{}%
+\contentsline {subsection}{\numberline {3.7}Atributos del Sistema}{21}{}%
+\contentsline {subsection}{\numberline {3.8}Otros Requisitos}{22}{}%
+\contentsline {section}{\numberline {4}Apéndices}{22}{}%
+\contentsline {subsection}{\numberline {4.1}Mockups de Interfaz de Usuario}{22}{}%
