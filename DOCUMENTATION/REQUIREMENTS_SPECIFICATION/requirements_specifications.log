@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.10.9)  31 OCT 2022 01:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.10.9)  2 NOV 2022 23:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -119,6 +119,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 mb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/hyphenat\hyphe
+nat.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language79
+LaTeX Info: Redefining \_ on input line 43.
+)
 (C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerat
 e.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
@@ -129,7 +135,7 @@ sty
 Package: babel 2022/06/26 3.77 The Babel package
 \babel@savecnt=\count271
 \U@D=\dimen148
-\l@unhyphenated=\language79
+\l@unhyphenated=\language80
 
 (C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbab
 el.def)
@@ -210,48 +216,381 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \backup@length=\skip53
 \ar@cellbox=\box56
 )
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/listings\listi
+ngs.sty
+\lst@mode=\count275
+\lst@gtempboxa=\box57
+\lst@token=\toks29
+\lst@length=\count276
+\lst@currlwidth=\dimen153
+\lst@column=\count277
+\lst@pos=\count278
+\lst@lostspace=\dimen154
+\lst@width=\dimen155
+\lst@newlines=\count279
+\lst@lineno=\count280
+\lst@maxwidth=\dimen156
+
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmi
+sc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count281
+\lst@skipnumbers=\count282
+\lst@framebox=\box58
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/listings\listi
+ngs.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcol
+orbox.sty
+Package: tcolorbox 2022/06/24 version 5.1.1 text color boxes
+
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer
+\pgf.sty
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\
+pgfrcs.sty
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilitie
+s\pgfutil-common.tex
+\pgfutil@everybye=\toks30
+\pgfutil@tempdima=\dimen157
+\pgfutil@tempdimb=\dimen158
+
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilitie
+s\pgfutil-common-lists.tex))
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilitie
+s\pgfutil-latex.def
+\pgfutil@abb=\box59
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilitie
+s\pgfrcs.code.tex
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revi
+sion.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer
+\pgfcore.sty
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlaye
+r\pgfsys.sty
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemla
+yer\pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilitie
+s\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks31
+\pgfkeys@temptoks=\toks32
+
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilitie
+s\pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks33
+))
+\pgf@x=\dimen159
+\pgf@y=\dimen160
+\pgf@xa=\dimen161
+\pgf@ya=\dimen162
+\pgf@xb=\dimen163
+\pgf@yb=\dimen164
+\pgf@xc=\dimen165
+\pgf@yc=\dimen166
+\pgf@xd=\dimen167
+\pgf@yd=\dimen168
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count283
+\c@pgf@countb=\count284
+\c@pgf@countc=\count285
+\c@pgf@countd=\count286
+\t@pgf@toka=\toks34
+\t@pgf@tokb=\toks35
+\t@pgf@tokc=\toks36
+\pgf@sys@id@count=\count287
+
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemla
+yer\pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemla
+yer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemla
+yer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemla
+yer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count288
+\pgfsyssoftpath@bigbuffer@items=\count289
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemla
+yer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.
+sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\c
+olor.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex-dev/graphics\m
+athcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
+er\pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
+math.code.tex
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
+mathcalc.code.tex
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
+mathutil.code.tex)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
+mathparser.code.tex
+\pgfmath@dimen=\dimen169
+\pgfmath@count=\count290
+\pgfmath@box=\box60
+\pgfmath@toks=\toks37
+\pgfmath@stack@operand=\toks38
+\pgfmath@stack@operation=\toks39
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
+mathfunctions.code.tex
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
+mathfunctions.basic.code.tex)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
+mathfunctions.trigonometric.code.tex)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
+mathfunctions.random.code.tex)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
+mathfunctions.comparison.code.tex)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
+mathfunctions.base.code.tex)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
+mathfunctions.round.code.tex)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
+mathfunctions.misc.code.tex)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
+mathfunctions.integerarithmetics.code.tex)))
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
+mathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count291
+))
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
+int.code.tex)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
+er\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen170
+\pgf@picmaxx=\dimen171
+\pgf@picminy=\dimen172
+\pgf@picmaxy=\dimen173
+\pgf@pathminx=\dimen174
+\pgf@pathmaxx=\dimen175
+\pgf@pathminy=\dimen176
+\pgf@pathmaxy=\dimen177
+\pgf@xx=\dimen178
+\pgf@xy=\dimen179
+\pgf@yx=\dimen180
+\pgf@yy=\dimen181
+\pgf@zx=\dimen182
+\pgf@zy=\dimen183
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
+er\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen184
+\pgf@path@lasty=\dimen185
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
+er\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen186
+\pgf@shorten@start@additional=\dimen187
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
+er\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box61
+\pgf@hbox=\box62
+\pgf@layerbox@main=\box63
+\pgf@picture@serial@count=\count292
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
+er\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen188
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
+er\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen189
+\pgf@pt@y=\dimen190
+\pgf@pt@temp=\dimen191
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
+er\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
+er\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
+er\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
+er\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen192
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
+er\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen193
+\pgf@sys@shading@range@num=\count293
+\pgf@shadingcount=\count294
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
+er\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
+er\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box64
+))
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
+er\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
+er\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
+er\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
+er\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)))
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\
+pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box65
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\
+pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibil
+ity\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen194
+\pgf@nodesepend=\dimen195
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibil
+ity\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+))
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim
+.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks40
+\verbatim@line=\toks41
+\verbatim@in@stream=\read4
+)
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/environ\enviro
+n.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\tri
+mspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etool
+box.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count295
+)
+\tcb@titlebox=\box66
+\tcb@upperbox=\box67
+\tcb@lowerbox=\box68
+\tcb@phantombox=\box69
+\c@tcbbreakpart=\count296
+\c@tcblayer=\count297
+\c@tcolorbox@number=\count298
+\tcb@temp=\box70
+\tcb@temp=\box71
+\tcb@temp=\box72
+\tcb@temp=\box73
+)
 (C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3ba
 ckend-pdftex.def
 File: l3backend-pdftex.def 2022-07-01 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count275
-\l__pdf_internal_box=\box57
+\l__color_backend_stack_int=\count299
+\l__pdf_internal_box=\box74
 ) (requirements_specifications.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
 \openout1 = `requirements_specifications.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Info: Redefining \. on input line 15.
-LaTeX Info: Redefining \% on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Info: Redefining \. on input line 18.
+LaTeX Info: Redefining \% on input line 18.
 
 (C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\su
 pp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count276
-\scratchdimen=\dimen153
-\scratchbox=\box58
-\nofMPsegments=\count277
-\nofMParguments=\count278
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count279
-\MPscratchDim=\dimen154
-\MPnumerator=\count280
-\makeMPintoPDFobject=\count281
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count300
+\scratchdimen=\dimen196
+\scratchbox=\box75
+\nofMPsegments=\count301
+\nofMParguments=\count302
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count303
+\MPscratchDim=\dimen197
+\MPnumerator=\count304
+\makeMPintoPDFobject=\count305
+\everyMPtoPDFconversion=\toks43
 )
 (C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\e
 pstopdf-base.sty
@@ -263,10 +602,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 pdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-<IMAGES//logo.png, id=1, 1204.5pt x 1720.4275pt>
+\c@lstlisting=\count306
+<IMAGES//logo.png, id=4, 1204.5pt x 1720.4275pt>
 File: IMAGES//logo.png Graphic file (type png)
 <use IMAGES//logo.png>
-Package pdftex.def Info: IMAGES//logo.png  used on input line 18.
+Package pdftex.def Info: IMAGES//logo.png  used on input line 21.
 (pdftex.def)             Requested size: 70.19714pt x 100.25476pt.
  [1
 
@@ -286,258 +626,485 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
-\tf@toc=\write3
-\openout3 = `requirements_specifications.toc'.
+\tf@toc=\write4
+\openout4 = `requirements_specifications.toc'.
 
-LaTeX Info: Redefining \. on input line 39.
-LaTeX Info: Redefining \% on input line 39.
+LaTeX Info: Redefining \. on input line 42.
+LaTeX Info: Redefining \% on input line 42.
  [1]
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-LaTeX Info: Redefining \. on input line 58.
-LaTeX Info: Redefining \% on input line 58.
+LaTeX Info: Redefining \. on input line 61.
+LaTeX Info: Redefining \% on input line 61.
 [2]
-<IMAGES//logo_memento.png, id=20, 2007.5pt x 1505.625pt>
+Overfull \hbox (21.48492pt too wide) in paragraph at lines 61--62
+[]\OT1/cmr/bx/n/12 Software: \OT1/cmr/m/n/12 Con-jun-to de pro-gra-mas y ru-ti-
+nas que per-mi-ten a la compu-tado-ra
+ []
+
+
+Overfull \hbox (6.05461pt too wide) in paragraph at lines 62--63
+[]\OT1/cmr/bx/n/12 Front-end: \OT1/cmr/m/n/12 Es la par-te de una apli-ca-ci^^S
+on que in-ter-act^^Sua con los usua-rios,
+ []
+
+
+Overfull \hbox (22.43245pt too wide) in paragraph at lines 62--63
+\OT1/cmr/m/n/12 te-cla-do, mo-vi-mien-tos, des-pla-za-mien-tos, efec-tos vi-sua
+-les... y otros ele-men-tos
+ []
+
+
+Overfull \hbox (3.10132pt too wide) in paragraph at lines 63--64
+\OT1/cmr/m/n/12 pa-san en una web pe-ro que no ve-mos co-mo, por ejem-plo, la c
+o-mu-ni-ca-ci^^Son
+ []
+
+<IMAGES//logo_memento.png, id=23, 2007.5pt x 1505.625pt>
 File: IMAGES//logo_memento.png Graphic file (type png)
 <use IMAGES//logo_memento.png>
-Package pdftex.def Info: IMAGES//logo_memento.png  used on input line 76.
+Package pdftex.def Info: IMAGES//logo_memento.png  used on input line 79.
 (pdftex.def)             Requested size: 195.0pt x 146.22923pt.
-LaTeX Info: Redefining \. on input line 79.
-LaTeX Info: Redefining \% on input line 79.
- [3]
-LaTeX Info: Redefining \. on input line 92.
-LaTeX Info: Redefining \% on input line 92.
- [4 <./IMAGES//logo_memento.png>]
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 101--113
+LaTeX Info: Redefining \. on input line 82.
+LaTeX Info: Redefining \% on input line 82.
+[3]
+Overfull \hbox (16.81802pt too wide) in paragraph at lines 94--95
+[]\OT1/cmr/m/n/12 Gestionar los afi-lia-dos de la EPS, que pue-den ser tra-ba-j
+a-do-res de-pen-dien-tes
+ []
+
+LaTeX Info: Redefining \. on input line 95.
+LaTeX Info: Redefining \% on input line 95.
+[4 <./IMAGES//logo_memento.png>]
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 104--116
  [] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 114--126
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 117--129
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 127--139
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 130--142
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 144.
-LaTeX Info: Redefining \% on input line 144.
+LaTeX Info: Redefining \. on input line 147.
+LaTeX Info: Redefining \% on input line 147.
 [5]
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 158--176
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
+[]|\OT1/cmr/m/n/12 El sis-te-ma de-be per-mi-tir ges-tio-nar to-da la
+ []
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 167--168
+\OT1/cmr/m/n/12 in-for-ma-ci^^Son de los co-ti-zan-tes de la EPS: Ti-po
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 167--168
+\OT1/cmr/m/n/12 ape-lli-dos, nom-bres, fe-cha de na-ci-mien-to, g^^Sene-ro,
+ []
+
+
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 161--179
  [] 
  []
 
-LaTeX Info: Redefining \. on input line 176.
-LaTeX Info: Redefining \% on input line 176.
+LaTeX Info: Redefining \. on input line 179.
+LaTeX Info: Redefining \% on input line 179.
 [6]
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 177--195
+Underfull \hbox (badness 6284) in paragraph at lines 186--187
+\OT1/cmr/m/n/12 Ti-po y n^^Sume-ro de do-cu-men-to de iden-ti-dad,
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 186--187
+\OT1/cmr/m/n/12 ape-lli-dos, nom-bres, fe-cha de na-ci-mien-to, g^^Sene-ro,
+ []
+
+
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 180--198
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 196--214
+Underfull \hbox (badness 1436) in paragraph at lines 205--206
+\OT1/cmr/m/n/12 de las em-pre-sas que con-tra-tan a los co-ti-zan-tes
+ []
+
+
+Underfull \hbox (badness 1708) in paragraph at lines 205--206
+\OT1/cmr/m/n/12 tra-ba-ja-do-res in-de-pen-dien-tes se de-be re-gis-trar el
+ []
+
+
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 199--217
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 214.
-LaTeX Info: Redefining \% on input line 214.
+LaTeX Info: Redefining \. on input line 217.
+LaTeX Info: Redefining \% on input line 217.
 [7]
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 215--233
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 218--236
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 234--250
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 237--253
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 250.
-LaTeX Info: Redefining \% on input line 250.
+LaTeX Info: Redefining \. on input line 253.
+LaTeX Info: Redefining \% on input line 253.
 [8]
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 251--269
+Underfull \hbox (badness 1755) in paragraph at lines 260--261
+[]|\OT1/cmr/m/n/12 El sis-te-ma de-be per-mi-tir ge-ne-rar los si-guien-tes
+ []
+
+
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 254--272
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 270--282
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 273--285
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 283--295
+Underfull \hbox (badness 7851) in paragraph at lines 292--293
+[]|\OT1/cmr/m/n/12 El sis-te-ma de-be per-mi-tir al ban-co re-por-tar
+ []
+
+
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 286--298
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 295.
-LaTeX Info: Redefining \% on input line 295.
+LaTeX Info: Redefining \. on input line 298.
+LaTeX Info: Redefining \% on input line 298.
 [9]
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 296--308
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 299--311
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 309--321
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 312--324
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 322--334
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 325--337
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 337--349
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 340--352
  [] 
  []
 
-LaTeX Info: Redefining \. on input line 349.
-LaTeX Info: Redefining \% on input line 349.
+LaTeX Info: Redefining \. on input line 352.
+LaTeX Info: Redefining \% on input line 352.
 [10]
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 350--362
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 353--365
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 363--375
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 366--378
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 376--388
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 379--391
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 389--401
+Underfull \hbox (badness 1701) in paragraph at lines 398--399
+[]|\OT1/cmr/m/n/12 El sis-te-ma so-li-ci-tar^^Sa usua-rio y con-tra-se~na pa-ra
+
+ []
+
+
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 392--404
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 402--414
+Underfull \hbox (badness 5359) in paragraph at lines 411--412
+[]|\OT1/cmr/m/n/12 Al sis-te-ma so-lo pue-den in-gre-sar los usua-rios
+ []
+
+
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 405--417
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 415--427
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 418--430
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 428--440
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 431--443
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 440.
-LaTeX Info: Redefining \% on input line 440.
+LaTeX Info: Redefining \. on input line 443.
+LaTeX Info: Redefining \% on input line 443.
 [11]
-<IMAGES//use_cases_diagram.png, id=50, 787.94376pt x 683.55376pt>
-File: IMAGES//use_cases_diagram.png Graphic file (type png)
-<use IMAGES//use_cases_diagram.png>
-Package pdftex.def Info: IMAGES//use_cases_diagram.png  used on input line 444.
+<IMAGES//use_cases_diagram.pdf, id=53, 614.295pt x 794.97pt>
+File: IMAGES//use_cases_diagram.pdf Graphic file (type pdf)
+<use IMAGES//use_cases_diagram.pdf>
+Package pdftex.def Info: IMAGES//use_cases_diagram.pdf  used on input line 447.
 
-(pdftex.def)             Requested size: 390.0pt x 338.32365pt.
+(pdftex.def)             Requested size: 390.0pt x 504.71544pt.
+LaTeX Info: Redefining \. on input line 450.
+LaTeX Info: Redefining \% on input line 450.
+ [12]
+Underfull \hbox (badness 3668) in paragraph at lines 464--465
+[]\OT1/cmr/bx/n/12 P1. \OT1/cmr/m/n/12 El ad-mi-nis-tra-dor se-lec-cio-na la op
+-ci^^Son de
+ []
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 449--490
+
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 452--493
  [] 
  []
 
-LaTeX Info: Redefining \. on input line 490.
-LaTeX Info: Redefining \% on input line 490.
-[12 <./IMAGES//use_cases_diagram.png>]
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 491--532
+LaTeX Info: Redefining \. on input line 493.
+LaTeX Info: Redefining \% on input line 493.
+[13 <./IMAGES//use_cases_diagram.pdf>]
+Underfull \hbox (badness 1057) in paragraph at lines 498--499
+[]|\OT1/cmr/m/n/12 Permite re-por-tar den-tro del sis-te-ma el pa-go de
+ []
+
+
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 494--535
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 532.
-LaTeX Info: Redefining \% on input line 532.
-[13]
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 533--559
- [][] 
- []
-
-LaTeX Info: Redefining \. on input line 559.
-LaTeX Info: Redefining \% on input line 559.
+LaTeX Info: Redefining \. on input line 535.
+LaTeX Info: Redefining \% on input line 535.
 [14]
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 560--599
+Underfull \hbox (badness 3746) in paragraph at lines 540--541
+[]|\OT1/cmr/m/n/12 Permite con-sul-tar la in-for-ma-ci^^Son del co-ti-zan-te
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 544--545
+[]|\OT1/cmr/m/n/12 El co-ti-zan-te de-be ha-ber-se au-ten-ti-ca-do de for-ma
+ []
+
+
+Underfull \hbox (badness 4242) in paragraph at lines 550--552
+[]\OT1/cmr/bx/n/12 P2. \OT1/cmr/m/n/12 El sis-te-ma des-plie-ga una p^^Sagi-na 
+con la
+ []
+
+
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 536--562
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 599.
-LaTeX Info: Redefining \% on input line 599.
+LaTeX Info: Redefining \. on input line 562.
+LaTeX Info: Redefining \% on input line 562.
 [15]
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 600--641
+Underfull \hbox (badness 1178) in paragraph at lines 575--576
+[]\OT1/cmr/bx/n/12 P1. \OT1/cmr/m/n/12 El usua-rio so-li-ci-ta al sis-te-ma en-
+trar en la
+ []
+
+
+Underfull \hbox (badness 3815) in paragraph at lines 588--589
+[]\OT1/cmr/bx/n/12 A1. \OT1/cmr/m/n/12 El nom-bre de usua-rio o con-tra-se~na s
+on
+ []
+
+
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 563--602
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 641.
-LaTeX Info: Redefining \% on input line 641.
+LaTeX Info: Redefining \. on input line 602.
+LaTeX Info: Redefining \% on input line 602.
 [16]
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 642--683
+Underfull \hbox (badness 4792) in paragraph at lines 619--620
+[]\OT1/cmr/bx/n/12 P3. \OT1/cmr/m/n/12 El ad-mi-nis-tra-dor re-gis-tra DNI, Nom
+-bres,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 619--620
+\OT1/cmr/m/n/12 Ape-lli-dos, Fe-cha de Na-ci-mien-to, Ciu-dad de
+ []
+
+
+Underfull \hbox (badness 3128) in paragraph at lines 619--620
+\OT1/cmr/m/n/12 Re-si-den-cia, Tel^^Sefono, e-mail, Di-rec-ci^^Son, G^^Sene-ro,
+
+ []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 619--620
+\OT1/cmr/m/n/12 Es-ta-do Ci-vil, Es-ta-do Ac-tual, Pa-ren-tes-co con el
+ []
+
+
+Underfull \hbox (badness 1320) in paragraph at lines 634--635
+\OT1/cmr/m/n/12 re-gis-tra-do, el sis-te-ma de-be mos-trar un men-sa-je
+ []
+
+
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 603--644
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 683.
-LaTeX Info: Redefining \% on input line 683.
+LaTeX Info: Redefining \. on input line 644.
+LaTeX Info: Redefining \% on input line 644.
 [17]
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 684--724
+Underfull \hbox (badness 4792) in paragraph at lines 661--662
+[]\OT1/cmr/bx/n/12 P3. \OT1/cmr/m/n/12 El ad-mi-nis-tra-dor re-gis-tra DNI, Nom
+-bres,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 661--662
+\OT1/cmr/m/n/12 Ape-lli-dos, Fe-cha de Na-ci-mien-to, Ciu-dad de
+ []
+
+
+Underfull \hbox (badness 3128) in paragraph at lines 661--662
+\OT1/cmr/m/n/12 Re-si-den-cia, Tel^^Sefono, e-mail, Di-rec-ci^^Son, G^^Sene-ro,
+
+ []
+
+
+Underfull \hbox (badness 1394) in paragraph at lines 661--662
+\OT1/cmr/m/n/12 Es-ta-do Ci-vil, Es-ta-do Ac-tual, Fe-cha de Pri-me-ra
+ []
+
+
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 645--686
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 724.
-LaTeX Info: Redefining \% on input line 724.
+LaTeX Info: Redefining \. on input line 686.
+LaTeX Info: Redefining \% on input line 686.
 [18]
-<IMAGES//Entity_relationship_diagram.pdf, id=75, 614.295pt x 794.97pt>
+Underfull \hbox (badness 1838) in paragraph at lines 718--719
+[]\OT1/cmr/m/n/12 4.1. Si el NIT co-rres-pon-de a una em-pre-sa ya
+ []
+
+
+Underfull \hbox (badness 1320) in paragraph at lines 718--719
+\OT1/cmr/m/n/12 re-gis-tra-da, el sis-te-ma de-be mos-trar un men-sa-je
+ []
+
+
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 687--727
+ [][] 
+ []
+
+LaTeX Info: Redefining \. on input line 727.
+LaTeX Info: Redefining \% on input line 727.
+[19]
+<IMAGES//Entity_relationship_diagram.pdf, id=103, 614.295pt x 794.97pt>
 File: IMAGES//Entity_relationship_diagram.pdf Graphic file (type pdf)
 <use IMAGES//Entity_relationship_diagram.pdf>
 Package pdftex.def Info: IMAGES//Entity_relationship_diagram.pdf  used on input
- line 728.
+ line 731.
 (pdftex.def)             Requested size: 390.0pt x 504.71544pt.
-LaTeX Info: Redefining \. on input line 731.
-LaTeX Info: Redefining \% on input line 731.
- [19]
-LaTeX Info: Redefining \. on input line 733.
-LaTeX Info: Redefining \% on input line 733.
- [20 <./IMAGES//Entity_relationship_diagram.pdf>]
-<IMAGES//Mockup.jpg, id=105, 1018.80624pt x 1424.32124pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 735--736
+[]\OT1/cmr/bx/n/12 AFILIADO \OT1/cmr/m/n/12 ($[]$, Ti-po-Di, Ape-lli-dos, Nom-b
+res, Fe-chaN-to,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--754
+\OT1/cmr/bx/n/12 EMPRESA \OT1/cmr/m/n/12 ($[]$, Raz^^SonSo-cial, Ciu-dad, Di-re
+c-ci^^Son, Tel^^Sefono,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--754
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 770--771
+
+ []
+
+LaTeX Info: Redefining \. on input line 776.
+LaTeX Info: Redefining \% on input line 776.
+[20]
+LaTeX Info: Redefining \. on input line 787.
+LaTeX Info: Redefining \% on input line 787.
+ [21 <./IMAGES//Entity_relationship_diagram.pdf>]
+Overfull \vbox (58.3633pt too high) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 787.
+LaTeX Info: Redefining \% on input line 787.
+
+[22]
+<IMAGES//RelationalModel.pdf, id=138, 796.9617pt x 1231.60027pt>
+File: IMAGES//RelationalModel.pdf Graphic file (type pdf)
+<use IMAGES//RelationalModel.pdf>
+Package pdftex.def Info: IMAGES//RelationalModel.pdf  used on input line 790.
+(pdftex.def)             Requested size: 234.00238pt x 361.6088pt.
+
+(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstla
+ng1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+LaTeX Info: Redefining \. on input line 802.
+LaTeX Info: Redefining \% on input line 802.
+ [23 <./IMAGES//RelationalModel.pdf>]
+<IMAGES//Mockup.jpg, id=172, 1018.80624pt x 1424.32124pt>
 File: IMAGES//Mockup.jpg Graphic file (type jpg)
 <use IMAGES//Mockup.jpg>
-Package pdftex.def Info: IMAGES//Mockup.jpg  used on input line 743.
+Package pdftex.def Info: IMAGES//Mockup.jpg  used on input line 810.
 (pdftex.def)             Requested size: 390.0pt x 545.22491pt.
-LaTeX Info: Redefining \. on input line 746.
-LaTeX Info: Redefining \% on input line 746.
- [21]
+LaTeX Info: Redefining \. on input line 813.
+LaTeX Info: Redefining \% on input line 813.
+ [24]
 Overfull \vbox (73.24156pt too high) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 746.
-LaTeX Info: Redefining \% on input line 746.
+LaTeX Info: Redefining \. on input line 813.
+LaTeX Info: Redefining \% on input line 813.
 
-[22 <./IMAGES//Mockup.jpg>] (requirements_specifications.aux
+[25 <./IMAGES//Mockup.jpg>] (requirements_specifications.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 4217 strings out of 478338
- 68303 string characters out of 2832416
- 387597 words of memory out of 3000000
- 22602 multiletter control sequences out of 15000+600000
- 477678 words of font info for 58 fonts, out of 8000000 for 9000
+ 16427 strings out of 478338
+ 319501 string characters out of 2832416
+ 793743 words of memory out of 3000000
+ 34591 multiletter control sequences out of 15000+600000
+ 478015 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,10n,62p,547b,395s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmbx12.pfb><C:/Users/Juan González/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Juan González/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Juan Gonzál
-ez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/U
-sers/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmsl12.pfb><C:/Users/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmti12.pfb>
-Output written on requirements_specifications.pdf (23 pages, 532035 bytes).
+ 83i,10n,89p,547b,1456s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\Juan González\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
+pi600\tcrm1200.pk><C:/Users/Juan González/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Juan González/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Juan González
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Use
+rs/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr17.pfb><C:/Users/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsl12.pfb><C:/Users/Juan González/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Juan González/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on requirements_specifications.pdf (26 pages, 583911 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
+ 215 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
