@@ -3,11 +3,14 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage[none]{hyphenat}
 \usepackage{enumerate}
 \usepackage[spanish]{babel}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{array}
+\usepackage{listings}
+\usepackage{tcolorbox}
 \graphicspath{ {IMAGES/} }
 \pagestyle{headings}
 \author{Juan Sebastian Gonzalez Camacho (1968220), Andrés Felipe Ruíz Buriticá (1968171), Jhoan Sebastian Rojas Holguin (1958337), Carlos Alberto Delgado Galeano (1968127), Jesus Alberto Gil Ayala (1968231)}
@@ -441,7 +444,7 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 \subsection{Diagrama de Casos de Uso}
 \begin{figure}[H]
 \centering
-{\includegraphics[width=1 \textwidth]{use_cases_diagram.png} \par}
+{\includegraphics[width=1 \textwidth]{use_cases_diagram.pdf} \par}
 \caption{Diagrama de Casos de Uso.}
 \end{figure}
 \subsection{Especificación de Casos de Uso}
@@ -728,6 +731,70 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 {\includegraphics[width=1\textwidth]{Entity_relationship_diagram.pdf} \par}
 \caption{Modelo Entidad - Relación.}
 \end{figure}
+\begin{tcolorbox}[title=Modelo Relacional]
+\textbf{AFILIADO} (\underline{Dni}, TipoDi, Apellidos, Nombres, FechaNto, Género, Dirección, CiudadResidencia, Teléfono, EstadoCivil, EMail, EstadoActual, IPS)
+\begin{itemize}
+\item IPS $\rightarrow$ IPS.Nit
+\end{itemize}
+\textbf{COTIZANTE} (\underline{Dni}, TipoCotizante, FechaPrimerAfiliación, Salario, RangoSalarial)
+\begin{itemize}
+\item Dni $\rightarrow$ AFILIADO.Dni
+\end{itemize}
+\textbf{BENEFICIARIO} (\underline{Dni}, Parentesco, Cotizante)
+\begin{itemize}
+\item Dni $\rightarrow$ AFILIADO.Dni
+\item Cotizante $\rightarrow$ COTIZANTE.Dni
+\end{itemize}
+\textbf{CONTRATAR} (\underline{Cotizante}, \underline{Empresa})
+\begin{itemize}
+\item Cotizante $\rightarrow$ COTIZANTE.Dni
+\item Empresa $\rightarrow$ EMPRESA.Nit
+\end{itemize}
+\textbf{EMPRESA} (\underline{Nit}, RazónSocial, Ciudad, Dirección, Teléfono, NombreContacto)\\
+
+\textbf{VINCULACIÓN} (\underline{N°Radicado}, FechaRecibido, Empresa, Cotizante)
+\begin{itemize}
+\item Empresa $\rightarrow$ EMPRESA.Nit
+\item Cotizante $\rightarrow$ COTIZANTE.Dni
+\end{itemize}
+\textbf{RETIRO} (\underline{N°Radicado}, FechaRetiro, Empresa, Cotizante)
+\begin{itemize}
+\item Empresa $\rightarrow$ EMPRESA.Nit
+\item Cotizante $\rightarrow$ COTIZANTE.Dni
+\end{itemize}
+\textbf{PAGO\_APORTES} (\underline{N°Pago}, Fecha, Valor, Empresa, Cotizante)
+\begin{itemize}
+\item Empresa $\rightarrow$ EMPRESA.Nit
+\item Cotizante $\rightarrow$ COTIZANTE.Dni
+\end{itemize}
+\textbf{IPS} (\underline{Nit}, RazónSocial, NivelAtención)\\
+
+\textbf{SERVICIOS} (\underline{IPS}, \underline{Servicio})
+\begin{itemize}
+\item IPS $\rightarrow$ IPS.Nit
+\end{itemize}
+\end{tcolorbox}
+\begin{tcolorbox}
+\textbf{ORDEN\_SERVICIO} (\underline{Código}, Fecha, NombreMédico, Diagnóstico, IPS, Afiliado)
+\begin{itemize}
+\item IPS $\rightarrow$ IPS.Nit
+\item Afiliado $\rightarrow$ AFILIADO.Dni
+\end{itemize}
+\textbf{DESCRIPCIÓN\_SERVICIOS} (\underline{Orden}, \underline{DescripciónServicio})
+\begin{itemize}
+\item Orden $\rightarrow$ ORDEN\_SERVICIO.Código
+\end{itemize}
+\end{tcolorbox}
+\begin{figure}[H]
+\centering
+{\includegraphics[width=0.6\textwidth, angle=-90]{RelationalModel.pdf}\par}
+\caption{Diagrama Modelo Relacional.}
+\end{figure}
+\begin{tcolorbox}[title=Consultas SQL]
+\begin{lstlisting}[language=SQL]
+select * from afilados where estado = `Inactivo';
+\end{lstlisting}
+\end{tcolorbox}
 \subsection{Atributos del Sistema}
 El control de permisos está determinado por un login con usuario y contraseña, dependiendo el rol que cumpla cada usuario así mismo será la interfaz con sus funciones. Este software cuenta con 3 tipos de usuario:
 \begin{itemize}
