@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.10.9)  2 NOV 2022 23:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.10.8)  6 NOV 2022 17:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,12 +6,9 @@ entering extended mode
 (requirements_specifications.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-07-04>
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/base\article.c
-ls
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.cl
-o
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
@@ -26,36 +23,28 @@ File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.
-sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmat
-h.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstex
-t.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen
-.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen139
-))
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy
-.sty
+)) (C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.st
+y
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen140
-)
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn
-.sty
+) (C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count193
@@ -106,8 +95,8 @@ LaTeX Info: Redefining \Relbar on input line 971.
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfo
-nts.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.st
+y
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -115,44 +104,38 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssy
-mb.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/hyphenat\hyphe
-nat.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/hyphenat\hyphenat.st
+y
 Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
 \langwohyphens=\language79
 LaTeX Info: Redefining \_ on input line 43.
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerat
-e.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks23
-)
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.
-sty
+) (C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2022/06/26 3.77 The Babel package
 \babel@savecnt=\count271
 \U@D=\dimen148
 \l@unhyphenated=\language80
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbab
-el.def)
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def
+)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count272
 
 *************************************
 * Local config file bblopts.cfg used
 *
-
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.
-cfg
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\
-spanish.ldf
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanis
+h.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks24
 \es@quotdepth=\count273
@@ -161,43 +144,39 @@ Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
 Package babel Info: Making > an active character on input line 722.
 ))
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale
-/es\babel-spanish.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\ba
+bel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graph
-icx.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.st
+y
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyva
-l.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks25
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graph
-ics.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.st
+y
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
-
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.
-sty
+ (C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\g
-raphics.cfg
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphic
+s.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\p
-dftex.def
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.
+def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen149
 \Gin@req@width=\dimen150
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/float\float.st
-y
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count274
 \float@exts=\toks26
@@ -205,8 +184,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks27
 \@floatcapt=\box54
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.st
-y
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \col@sep=\dimen151
 \ar@mcellbox=\box55
@@ -216,8 +194,8 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \backup@length=\skip53
 \ar@cellbox=\box56
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/listings\listi
-ngs.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.st
+y
 \lst@mode=\count275
 \lst@gtempboxa=\box57
 \lst@token=\toks29
@@ -231,62 +209,61 @@ ngs.sty
 \lst@lineno=\count280
 \lst@maxwidth=\dimen156
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmi
-sc.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count281
 \lst@skipnumbers=\count282
 \lst@framebox=\box58
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/listings\listi
-ngs.cfg
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cf
+g
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcol
-orbox.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.
+sty
 Package: tcolorbox 2022/06/24 version 5.1.1 text color boxes
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer
-\pgf.sty
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\
-pgfrcs.sty
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilitie
-s\pgfutil-common.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.s
+ty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs
+.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfu
+til-common.tex
 \pgfutil@everybye=\toks30
 \pgfutil@tempdima=\dimen157
 \pgfutil@tempdimb=\dimen158
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilitie
-s\pgfutil-common-lists.tex))
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilitie
-s\pgfutil-latex.def
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfu
+til-common-lists.tex))
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfu
+til-latex.def
 \pgfutil@abb=\box59
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilitie
-s\pgfrcs.code.tex
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revi
-sion.tex)
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfr
+cs.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.t
+ex)
 Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
 ))
 Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer
-\pgfcore.sty
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlaye
-r\pgfsys.sty
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemla
-yer\pgfsys.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfco
+re.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfs
+ys.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pg
+fsys.code.tex
 Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilitie
-s\pgfkeys.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfk
+eys.code.tex
 \pgfkeys@pathtoks=\toks31
 \pgfkeys@temptoks=\toks32
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilitie
-s\pgfkeysfiltered.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfk
+eysfiltered.code.tex
 \pgfkeys@tmptoks=\toks33
 ))
 \pgf@x=\dimen159
@@ -310,42 +287,41 @@ s\pgfkeysfiltered.code.tex
 \t@pgf@tokc=\toks36
 \pgf@sys@id@count=\count287
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemla
-yer\pgf.cfg
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pg
+f.cfg
 File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemla
-yer\pgfsys-pdftex.def
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pg
+fsys-pdftex.def
 File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemla
-yer\pgfsys-common-pdf.def
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pg
+fsys-common-pdf.def
 File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 )))
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemla
-yer\pgfsyssoftpath.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pg
+fsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfsyssoftpath@smallbuffer@items=\count288
 \pgfsyssoftpath@bigbuffer@items=\count289
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemla
-yer\pgfsysprotocol.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pg
+fsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.
-sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\c
-olor.cfg
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.c
+fg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex-dev/graphics\m
-athcolor.ltx)
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex-dev/graphics\mathcol
+or.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
 Package xcolor Info: Model `RGB' extended on input line 1369.
@@ -356,18 +332,18 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
-er\pgfcore.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+core.code.tex
 Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
-math.code.tex
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
-mathcalc.code.tex
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
-mathutil.code.tex)
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
-mathparser.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.c
+ode.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathca
+lc.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathut
+il.code.tex)
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathpa
+rser.code.tex
 \pgfmath@dimen=\dimen169
 \pgfmath@count=\count290
 \pgfmath@box=\box60
@@ -375,32 +351,32 @@ mathparser.code.tex
 \pgfmath@stack@operand=\toks38
 \pgfmath@stack@operation=\toks39
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
-mathfunctions.code.tex
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
-mathfunctions.basic.code.tex)
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
-mathfunctions.trigonometric.code.tex)
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
-mathfunctions.random.code.tex)
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
-mathfunctions.comparison.code.tex)
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
-mathfunctions.base.code.tex)
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
-mathfunctions.round.code.tex)
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
-mathfunctions.misc.code.tex)
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
-mathfunctions.integerarithmetics.code.tex)))
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
-mathfloat.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
+nctions.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
+nctions.basic.code.tex)
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
+nctions.trigonometric.code.tex)
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
+nctions.random.code.tex)
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
+nctions.comparison.code.tex)
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
+nctions.base.code.tex)
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
+nctions.round.code.tex)
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
+nctions.misc.code.tex)
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
+nctions.integerarithmetics.code.tex)))
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfl
+oat.code.tex
 \c@pgfmathroundto@lastzeros=\count291
 ))
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgf
-int.code.tex)
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
-er\pgfcorepoints.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.co
+de.tex)
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corepoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@picminx=\dimen170
 \pgf@picmaxx=\dimen171
@@ -417,123 +393,121 @@ File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@zx=\dimen182
 \pgf@zy=\dimen183
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
-er\pgfcorepathconstruct.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@path@lastx=\dimen184
 \pgf@path@lasty=\dimen185
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
-er\pgfcorepathusage.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corepathusage.code.tex
 File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@shorten@end@additional=\dimen186
 \pgf@shorten@start@additional=\dimen187
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
-er\pgfcorescopes.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corescopes.code.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfpic=\box61
 \pgf@hbox=\box62
 \pgf@layerbox@main=\box63
 \pgf@picture@serial@count=\count292
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
-er\pgfcoregraphicstate.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+coregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgflinewidth=\dimen188
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
-er\pgfcoretransformations.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+coretransformations.code.tex
 File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@pt@x=\dimen189
 \pgf@pt@y=\dimen190
 \pgf@pt@temp=\dimen191
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
-er\pgfcorequick.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corequick.code.tex
 File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
-er\pgfcoreobjects.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+coreobjects.code.tex
 File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
-er\pgfcorepathprocessing.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
-er\pgfcorearrows.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corearrows.code.tex
 File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfarrowsep=\dimen192
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
-er\pgfcoreshade.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+coreshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@max=\dimen193
 \pgf@sys@shading@range@num=\count293
 \pgf@shadingcount=\count294
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
-er\pgfcoreimage.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+coreimage.code.tex
 File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
-er\pgfcoreexternal.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+coreexternal.code.tex
 File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfexternal@startupbox=\box64
 ))
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
-er\pgfcorelayers.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corelayers.code.tex
 File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
-er\pgfcoretransparency.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+coretransparency.code.tex
 File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
-er\pgfcorepatterns.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corepatterns.code.tex
 File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclay
-er\pgfcorerdf.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
+corerdf.code.tex
 File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\
-pgfmoduleshapes.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmod
+uleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfnodeparttextbox=\box65
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\
-pgfmoduleplot.code.tex
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmod
+uleplot.code.tex
 File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibil
-ity\pgfcomp-version-0-65.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pg
+fcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@nodesepstart=\dimen194
 \pgf@nodesepend=\dimen195
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibil
-ity\pgfcomp-version-1-18.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pg
+fcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
 ))
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim
-.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks40
 \verbatim@line=\toks41
 \verbatim@in@stream=\read4
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/environ\enviro
-n.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\tri
-mspaces.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspace
+s.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etool
-box.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.st
+y
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count295
 )
@@ -549,8 +523,8 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \tcb@temp=\box72
 \tcb@temp=\box73
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3ba
-ckend-pdftex.def
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-
+pdftex.def
 File: l3backend-pdftex.def 2022-07-01 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count299
 \l__pdf_internal_box=\box74
@@ -577,8 +551,8 @@ LaTeX Font Info:    ... okay on input line 18.
 LaTeX Info: Redefining \. on input line 18.
 LaTeX Info: Redefining \% on input line 18.
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\su
-pp-pdf.mkii
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf
+.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count300
 \scratchdimen=\dimen196
@@ -592,14 +566,14 @@ pp-pdf.mkii
 \makeMPintoPDFobject=\count305
 \everyMPtoPDFconversion=\toks43
 )
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\e
-pstopdf-base.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopd
+f-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epsto
-pdf-sys.cfg
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sy
+s.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@lstlisting=\count306
@@ -610,20 +584,18 @@ Package pdftex.def Info: IMAGES//logo.png  used on input line 21.
 (pdftex.def)             Requested size: 70.19714pt x 100.25476pt.
  [1
 
-{C:/Users/Juan González/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./I
-MAGES//logo.png>] (requirements_specifications.toc
+{C:/Users/PC_WIN10/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./IMAGES/
+/logo.png>] (requirements_specifications.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.
-fd
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.
-fd
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write4
@@ -631,7 +603,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
- [1]
+
+[1]
 Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
@@ -1060,8 +1033,8 @@ File: IMAGES//RelationalModel.pdf Graphic file (type pdf)
 Package pdftex.def Info: IMAGES//RelationalModel.pdf  used on input line 790.
 (pdftex.def)             Requested size: 234.00238pt x 361.6088pt.
 
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstla
-ng1.sty
+(C:\Users\PC_WIN10\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.st
+y
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 LaTeX Info: Redefining \. on input line 802.
@@ -1086,23 +1059,23 @@ LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
  16427 strings out of 478338
- 319501 string characters out of 2832416
+ 317904 string characters out of 2835284
  793743 words of memory out of 3000000
  34591 multiletter control sequences out of 15000+600000
  478015 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,10n,89p,547b,1456s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\Juan González\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
-pi600\tcrm1200.pk><C:/Users/Juan González/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Juan González/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Juan González
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Use
-rs/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmr17.pfb><C:/Users/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmsl12.pfb><C:/Users/Juan González/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Juan González/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on requirements_specifications.pdf (26 pages, 583911 bytes).
+ <C:\Users\PC_WIN10\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
+tcrm1200.pk><C:/Users/PC_WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb><C:/Users/PC_WIN10/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/PC_WIN10/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/PC_WIN10/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/PC_WIN10/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/User
+s/PC_WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb><C:/Users/PC_WIN10/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmti12.pfb>
+Output written on requirements_specifications.pdf (26 pages, 587790 bytes).
 PDF statistics:
  215 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
