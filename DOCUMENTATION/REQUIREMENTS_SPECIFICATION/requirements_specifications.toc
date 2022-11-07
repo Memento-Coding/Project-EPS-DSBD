@@ -19,8 +19,8 @@
 \contentsline {subsection}{\numberline {3.3}Requisitos No Funcionales}{10}{}%
 \contentsline {subsection}{\numberline {3.4}Diagrama de Casos de Uso}{13}{}%
 \contentsline {subsection}{\numberline {3.5}Especificación de Casos de Uso}{14}{}%
-\contentsline {subsection}{\numberline {3.6}Aspectos de Diseño}{21}{}%
-\contentsline {subsection}{\numberline {3.7}Atributos del Sistema}{23}{}%
-\contentsline {subsection}{\numberline {3.8}Otros Requisitos}{25}{}%
-\contentsline {section}{\numberline {4}Apéndices}{25}{}%
-\contentsline {subsection}{\numberline {4.1}Mockups de Interfaz de Usuario}{25}{}%
+\contentsline {subsection}{\numberline {3.6}Aspectos de Diseño}{23}{}%
+\contentsline {subsection}{\numberline {3.7}Atributos del Sistema}{25}{}%
+\contentsline {subsection}{\numberline {3.8}Otros Requisitos}{27}{}%
+\contentsline {section}{\numberline {4}Apéndices}{27}{}%
+\contentsline {subsection}{\numberline {4.1}Mockups de Interfaz de Usuario}{27}{}%
