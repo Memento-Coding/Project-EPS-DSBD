@@ -2,8 +2,8 @@ This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./requirements_specifications.tex
-(requirements_specifications.tex
+**./ds_avance1.tex
+(ds_avance1.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-07-04>
 (C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/base\article.c
@@ -554,11 +554,11 @@ ckend-pdftex.def
 File: l3backend-pdftex.def 2022-07-01 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count299
 \l__pdf_internal_box=\box74
-) (requirements_specifications.aux
+) (ds_avance1.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
-\openout1 = `requirements_specifications.aux'.
+\openout1 = `ds_avance1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
@@ -611,7 +611,7 @@ Package pdftex.def Info: IMAGES//logo.png  used on input line 21.
  [1
 
 {C:/Users/Juan González/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./I
-MAGES//logo.png>] (requirements_specifications.toc
+MAGES//logo.png>] (ds_avance1.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
@@ -627,532 +627,424 @@ fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write4
-\openout4 = `requirements_specifications.toc'.
+\openout4 = `ds_avance1.toc'.
 
 LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
  [1]
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
-
- []
-
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
-[2]
-Overfull \hbox (21.48492pt too wide) in paragraph at lines 61--62
-[]\OT1/cmr/bx/n/12 Software: \OT1/cmr/m/n/12 Con-jun-to de pro-gra-mas y ru-ti-
-nas que per-mi-ten a la compu-tado-ra
- []
-
-
-Overfull \hbox (6.05461pt too wide) in paragraph at lines 62--63
-[]\OT1/cmr/bx/n/12 Front-end: \OT1/cmr/m/n/12 Es la par-te de una apli-ca-ci^^S
-on que in-ter-act^^Sua con los usua-rios,
- []
-
-
-Overfull \hbox (22.43245pt too wide) in paragraph at lines 62--63
-\OT1/cmr/m/n/12 te-cla-do, mo-vi-mien-tos, des-pla-za-mien-tos, efec-tos vi-sua
--les... y otros ele-men-tos
- []
-
-
-Overfull \hbox (3.10132pt too wide) in paragraph at lines 63--64
-\OT1/cmr/m/n/12 pa-san en una web pe-ro que no ve-mos co-mo, por ejem-plo, la c
-o-mu-ni-ca-ci^^Son
- []
-
-<IMAGES//logo_memento.png, id=23, 2007.5pt x 1505.625pt>
-File: IMAGES//logo_memento.png Graphic file (type png)
-<use IMAGES//logo_memento.png>
-Package pdftex.def Info: IMAGES//logo_memento.png  used on input line 79.
-(pdftex.def)             Requested size: 195.0pt x 146.22923pt.
-LaTeX Info: Redefining \. on input line 82.
-LaTeX Info: Redefining \% on input line 82.
-[3]
-Overfull \hbox (16.81802pt too wide) in paragraph at lines 94--95
-[]\OT1/cmr/m/n/12 Gestionar los afi-lia-dos de la EPS, que pue-den ser tra-ba-j
-a-do-res de-pen-dien-tes
- []
-
-LaTeX Info: Redefining \. on input line 95.
-LaTeX Info: Redefining \% on input line 95.
-[4 <./IMAGES//logo_memento.png>]
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 104--116
- [] 
- []
-
-
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 117--129
- [][] 
- []
-
-
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 130--142
- [][] 
- []
-
-LaTeX Info: Redefining \. on input line 147.
-LaTeX Info: Redefining \% on input line 147.
-[5]
 \c@RF=\count307
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 []|\OT1/cmr/m/n/12 El sis-te-ma de-be per-mi-tir ges-tio-nar to-da la
  []
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 168--169
+Underfull \hbox (badness 1688) in paragraph at lines 53--54
 \OT1/cmr/m/n/12 in-for-ma-ci^^Son de los co-ti-zan-tes de la EPS: Ti-po
  []
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 168--169
+Underfull \hbox (badness 1308) in paragraph at lines 53--54
 \OT1/cmr/m/n/12 ape-lli-dos, nom-bres, fe-cha de na-ci-mien-to, g^^Sene-ro,
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 162--180
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 47--65
  [] 
  []
 
-LaTeX Info: Redefining \. on input line 180.
-LaTeX Info: Redefining \% on input line 180.
-[6]
-Underfull \hbox (badness 6284) in paragraph at lines 187--188
+
+Underfull \hbox (badness 6284) in paragraph at lines 72--73
 \OT1/cmr/m/n/12 Ti-po y n^^Sume-ro de do-cu-men-to de iden-ti-dad,
  []
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 187--188
+Underfull \hbox (badness 1308) in paragraph at lines 72--73
 \OT1/cmr/m/n/12 ape-lli-dos, nom-bres, fe-cha de na-ci-mien-to, g^^Sene-ro,
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 181--199
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 66--84
  [][] 
  []
 
-
-Underfull \hbox (badness 1436) in paragraph at lines 206--207
+LaTeX Info: Redefining \. on input line 84.
+LaTeX Info: Redefining \% on input line 84.
+[2]
+Underfull \hbox (badness 1436) in paragraph at lines 91--92
 \OT1/cmr/m/n/12 de las em-pre-sas que con-tra-tan a los co-ti-zan-tes
  []
 
 
-Underfull \hbox (badness 1708) in paragraph at lines 206--207
+Underfull \hbox (badness 1708) in paragraph at lines 91--92
 \OT1/cmr/m/n/12 tra-ba-ja-do-res in-de-pen-dien-tes se de-be re-gis-trar el
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 200--218
- [][] 
- []
-
-LaTeX Info: Redefining \. on input line 218.
-LaTeX Info: Redefining \% on input line 218.
-[7]
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 219--237
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 85--103
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 238--254
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 104--122
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 254.
-LaTeX Info: Redefining \% on input line 254.
-[8]
-Underfull \hbox (badness 1755) in paragraph at lines 261--262
+LaTeX Info: Redefining \. on input line 122.
+LaTeX Info: Redefining \% on input line 122.
+[3]
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 123--139
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 146--147
 []|\OT1/cmr/m/n/12 El sis-te-ma de-be per-mi-tir ge-ne-rar los si-guien-tes
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 255--273
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 140--158
+ [][] 
+ []
+
+LaTeX Info: Redefining \. on input line 158.
+LaTeX Info: Redefining \% on input line 158.
+[4]
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 159--171
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 274--286
- [][] 
- []
-
-
-Underfull \hbox (badness 7851) in paragraph at lines 293--294
+Underfull \hbox (badness 7851) in paragraph at lines 178--179
 []|\OT1/cmr/m/n/12 El sis-te-ma de-be per-mi-tir al ban-co re-por-tar
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 287--299
- [][] 
- []
-
-LaTeX Info: Redefining \. on input line 299.
-LaTeX Info: Redefining \% on input line 299.
-[9]
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 300--312
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 172--184
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 313--325
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 185--197
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 326--338
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 198--210
+ [][] 
+ []
+
+LaTeX Info: Redefining \. on input line 210.
+LaTeX Info: Redefining \% on input line 210.
+[5]
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 211--223
  [][] 
  []
 
 \c@RNF=\count308
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 342--354
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 227--239
  [] 
  []
 
-LaTeX Info: Redefining \. on input line 354.
-LaTeX Info: Redefining \% on input line 354.
-[10]
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 355--367
+
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 240--252
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 368--380
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 253--265
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 381--393
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 266--278
  [][] 
  []
 
-
-Underfull \hbox (badness 1701) in paragraph at lines 400--401
+LaTeX Info: Redefining \. on input line 278.
+LaTeX Info: Redefining \% on input line 278.
+[6]
+Underfull \hbox (badness 1701) in paragraph at lines 285--286
 []|\OT1/cmr/m/n/12 El sis-te-ma so-li-ci-tar^^Sa usua-rio y con-tra-se~na pa-ra
 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 394--406
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 279--291
  [][] 
  []
 
 
-Underfull \hbox (badness 5359) in paragraph at lines 413--414
+Underfull \hbox (badness 5359) in paragraph at lines 298--299
 []|\OT1/cmr/m/n/12 Al sis-te-ma so-lo pue-den in-gre-sar los usua-rios
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 407--419
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 292--304
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 420--432
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 305--317
  [][] 
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 433--445
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 318--330
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 445.
-LaTeX Info: Redefining \% on input line 445.
-[11]
-<IMAGES//use_cases_diagram.pdf, id=53, 614.295pt x 794.97pt>
+<IMAGES//use_cases_diagram.pdf, id=36, 614.295pt x 794.97pt>
 File: IMAGES//use_cases_diagram.pdf Graphic file (type pdf)
 <use IMAGES//use_cases_diagram.pdf>
-Package pdftex.def Info: IMAGES//use_cases_diagram.pdf  used on input line 449.
+Package pdftex.def Info: IMAGES//use_cases_diagram.pdf  used on input line 334.
 
 (pdftex.def)             Requested size: 390.0pt x 504.71544pt.
-LaTeX Info: Redefining \. on input line 452.
-LaTeX Info: Redefining \% on input line 452.
- [12]
+LaTeX Info: Redefining \. on input line 337.
+LaTeX Info: Redefining \% on input line 337.
+[7]
 \c@CU=\count309
 
-Underfull \hbox (badness 4792) in paragraph at lines 471--472
+Underfull \hbox (badness 4792) in paragraph at lines 356--357
 []\OT1/cmr/bx/n/12 P3. \OT1/cmr/m/n/12 El ad-mi-nis-tra-dor re-gis-tra DNI, Nom
 -bres,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 471--472
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
 \OT1/cmr/m/n/12 Ape-lli-dos, Fe-cha de Na-ci-mien-to, Ciu-dad de
  []
 
 
-Underfull \hbox (badness 3128) in paragraph at lines 471--472
+Underfull \hbox (badness 3128) in paragraph at lines 356--357
 \OT1/cmr/m/n/12 Re-si-den-cia, Tel^^Sefono, e-mail, Di-rec-ci^^Son, G^^Sene-ro,
 
  []
 
 
-Underfull \hbox (badness 1394) in paragraph at lines 471--472
+Underfull \hbox (badness 1394) in paragraph at lines 356--357
 \OT1/cmr/m/n/12 Es-ta-do Ci-vil, Es-ta-do Ac-tual, Fe-cha de Pri-me-ra
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 455--498
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 340--383
  [] 
  []
 
-LaTeX Info: Redefining \. on input line 498.
-LaTeX Info: Redefining \% on input line 498.
-[13 <./IMAGES//use_cases_diagram.pdf>]
-Underfull \hbox (badness 3668) in paragraph at lines 511--512
+LaTeX Info: Redefining \. on input line 383.
+LaTeX Info: Redefining \% on input line 383.
+[8 <./IMAGES//use_cases_diagram.pdf>]
+Underfull \hbox (badness 3668) in paragraph at lines 396--397
 []\OT1/cmr/bx/n/12 P1. \OT1/cmr/m/n/12 El ad-mi-nis-tra-dor se-lec-cio-na la op
 -ci^^Son de
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 499--540
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 384--425
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 540.
-LaTeX Info: Redefining \% on input line 540.
-[14]
-Underfull \hbox (badness 3668) in paragraph at lines 553--554
+LaTeX Info: Redefining \. on input line 425.
+LaTeX Info: Redefining \% on input line 425.
+[9]
+Underfull \hbox (badness 3668) in paragraph at lines 438--439
 []\OT1/cmr/bx/n/12 P1. \OT1/cmr/m/n/12 El ad-mi-nis-tra-dor se-lec-cio-na la op
 -ci^^Son de
  []
 
 
-Underfull \hbox (badness 2119) in paragraph at lines 572--573
+Underfull \hbox (badness 2119) in paragraph at lines 457--458
 []\OT1/cmr/m/n/12 5.1. Si el c^^Sodi-go co-rres-pon-de a una or-den ya
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 572--573
+Underfull \hbox (badness 1320) in paragraph at lines 457--458
 \OT1/cmr/m/n/12 re-gis-tra-da, el sis-te-ma de-be mos-trar un men-sa-je
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 541--582
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 426--467
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 582.
-LaTeX Info: Redefining \% on input line 582.
-[15]
-Underfull \hbox (badness 1838) in paragraph at lines 614--615
+LaTeX Info: Redefining \. on input line 467.
+LaTeX Info: Redefining \% on input line 467.
+[10]
+Underfull \hbox (badness 1838) in paragraph at lines 499--500
 []\OT1/cmr/m/n/12 5.1. Si el NIT co-rres-pon-de a una em-pre-sa ya
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 614--615
+Underfull \hbox (badness 1320) in paragraph at lines 499--500
 \OT1/cmr/m/n/12 re-gis-tra-da, el sis-te-ma de-be mos-trar un men-sa-je
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 583--624
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 468--509
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 624.
-LaTeX Info: Redefining \% on input line 624.
-[16]
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 625--664
+LaTeX Info: Redefining \. on input line 509.
+LaTeX Info: Redefining \% on input line 509.
+[11]
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 510--549
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 664.
-LaTeX Info: Redefining \% on input line 664.
-[17]
-Underfull \hbox (badness 3746) in paragraph at lines 669--670
+LaTeX Info: Redefining \. on input line 549.
+LaTeX Info: Redefining \% on input line 549.
+[12]
+Underfull \hbox (badness 3746) in paragraph at lines 554--555
 []|\OT1/cmr/m/n/12 Permite con-sul-tar la in-for-ma-ci^^Son del co-ti-zan-te
  []
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 673--674
+Underfull \hbox (badness 1033) in paragraph at lines 558--559
 []|\OT1/cmr/m/n/12 El co-ti-zan-te de-be ha-ber-se au-ten-ti-ca-do de for-ma
  []
 
 
-Underfull \hbox (badness 4242) in paragraph at lines 679--681
+Underfull \hbox (badness 4242) in paragraph at lines 564--566
 []\OT1/cmr/bx/n/12 P2. \OT1/cmr/m/n/12 El sis-te-ma des-plie-ga una p^^Sagi-na 
 con la
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 665--691
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 550--576
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 691.
-LaTeX Info: Redefining \% on input line 691.
-[18]
-Underfull \hbox (badness 1057) in paragraph at lines 696--697
+LaTeX Info: Redefining \. on input line 576.
+LaTeX Info: Redefining \% on input line 576.
+[13]
+Underfull \hbox (badness 1057) in paragraph at lines 581--582
 []|\OT1/cmr/m/n/12 Permite re-por-tar den-tro del sis-te-ma el pa-go de
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 692--741
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 577--626
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 741.
-LaTeX Info: Redefining \% on input line 741.
-[19]
-Underfull \hbox (badness 1137) in paragraph at lines 754--755
+LaTeX Info: Redefining \. on input line 626.
+LaTeX Info: Redefining \% on input line 626.
+[14]
+Underfull \hbox (badness 1137) in paragraph at lines 639--640
 []\OT1/cmr/bx/n/12 P1. \OT1/cmr/m/n/12 El ban-co se-lec-cio-na la op-ci^^Son de
  Re-por-tar
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 742--777
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 627--662
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 777.
-LaTeX Info: Redefining \% on input line 777.
-[20]
-Underfull \hbox (badness 1178) in paragraph at lines 790--791
+LaTeX Info: Redefining \. on input line 662.
+LaTeX Info: Redefining \% on input line 662.
+[15]
+Underfull \hbox (badness 1178) in paragraph at lines 675--676
 []\OT1/cmr/bx/n/12 P1. \OT1/cmr/m/n/12 El usua-rio so-li-ci-ta al sis-te-ma en-
 trar en la
  []
 
 
-Underfull \hbox (badness 3815) in paragraph at lines 803--804
+Underfull \hbox (badness 3815) in paragraph at lines 688--689
 []\OT1/cmr/bx/n/12 A1. \OT1/cmr/m/n/12 El nom-bre de usua-rio o con-tra-se~na s
 on
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 778--817
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 663--702
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 817.
-LaTeX Info: Redefining \% on input line 817.
-[21]
-Underfull \hbox (badness 4792) in paragraph at lines 834--835
+LaTeX Info: Redefining \. on input line 702.
+LaTeX Info: Redefining \% on input line 702.
+[16]
+Underfull \hbox (badness 4792) in paragraph at lines 719--720
 []\OT1/cmr/bx/n/12 P3. \OT1/cmr/m/n/12 El ad-mi-nis-tra-dor re-gis-tra DNI, Nom
 -bres,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 834--835
+Underfull \hbox (badness 10000) in paragraph at lines 719--720
 \OT1/cmr/m/n/12 Ape-lli-dos, Fe-cha de Na-ci-mien-to, Ciu-dad de
  []
 
 
-Underfull \hbox (badness 3128) in paragraph at lines 834--835
+Underfull \hbox (badness 3128) in paragraph at lines 719--720
 \OT1/cmr/m/n/12 Re-si-den-cia, Tel^^Sefono, e-mail, Di-rec-ci^^Son, G^^Sene-ro,
 
  []
 
 
-Underfull \hbox (badness 1565) in paragraph at lines 834--835
+Underfull \hbox (badness 1565) in paragraph at lines 719--720
 \OT1/cmr/m/n/12 Es-ta-do Ci-vil, Es-ta-do Ac-tual, Pa-ren-tes-co con el
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 849--850
+Underfull \hbox (badness 1320) in paragraph at lines 734--735
 \OT1/cmr/m/n/12 re-gis-tra-do, el sis-te-ma de-be mos-trar un men-sa-je
  []
 
 
-Overfull \hbox (61.9913pt too wide) in paragraph at lines 818--859
+Overfull \hbox (61.9913pt too wide) in paragraph at lines 703--744
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 859.
-LaTeX Info: Redefining \% on input line 859.
-[22]
-<IMAGES//Entity_relationship_diagram.pdf, id=112, 614.295pt x 794.97pt>
+LaTeX Info: Redefining \. on input line 744.
+LaTeX Info: Redefining \% on input line 744.
+[17]
+<IMAGES//Entity_relationship_diagram.pdf, id=94, 614.295pt x 794.97pt>
 File: IMAGES//Entity_relationship_diagram.pdf Graphic file (type pdf)
 <use IMAGES//Entity_relationship_diagram.pdf>
 Package pdftex.def Info: IMAGES//Entity_relationship_diagram.pdf  used on input
- line 863.
+ line 751.
 (pdftex.def)             Requested size: 390.0pt x 504.71544pt.
+LaTeX Info: Redefining \. on input line 754.
+LaTeX Info: Redefining \% on input line 754.
+ [18]
+Overfull \vbox (25.9321pt too high) has occurred while \output is active []
 
-Underfull \hbox (badness 10000) in paragraph at lines 867--868
-[]\OT1/cmr/bx/n/12 AFILIADO \OT1/cmr/m/n/12 ($[]$, Ti-po-Di, Ape-lli-dos, Nom-b
-res, Fe-chaN-to,
- []
+LaTeX Info: Redefining \. on input line 754.
+LaTeX Info: Redefining \% on input line 754.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 885--886
-\OT1/cmr/bx/n/12 EMPRESA \OT1/cmr/m/n/12 ($[]$, Raz^^SonSo-cial, Ciu-dad, Di-re
-c-ci^^Son, Tel^^Sefono,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 885--886
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 902--903
-
- []
-
-LaTeX Info: Redefining \. on input line 908.
-LaTeX Info: Redefining \% on input line 908.
-[23]
-LaTeX Info: Redefining \. on input line 919.
-LaTeX Info: Redefining \% on input line 919.
- [24 <./IMAGES//Entity_relationship_diagram.pdf>]
-Overfull \vbox (58.3633pt too high) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 919.
-LaTeX Info: Redefining \% on input line 919.
-
-[25]
-<IMAGES//RelationalModel.pdf, id=148, 796.9617pt x 1231.60027pt>
-File: IMAGES//RelationalModel.pdf Graphic file (type pdf)
-<use IMAGES//RelationalModel.pdf>
-Package pdftex.def Info: IMAGES//RelationalModel.pdf  used on input line 922.
-(pdftex.def)             Requested size: 234.00238pt x 361.6088pt.
-
-(C:\Users\Juan González\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstla
-ng1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-LaTeX Info: Redefining \. on input line 934.
-LaTeX Info: Redefining \% on input line 934.
- [26 <./IMAGES//RelationalModel.pdf>]
-<IMAGES//Mockup.jpg, id=182, 1018.80624pt x 1424.32124pt>
+[19 <./IMAGES//Entity_relationship_diagram.pdf>]
+<IMAGES//Mockup.jpg, id=125, 1018.80624pt x 1424.32124pt>
 File: IMAGES//Mockup.jpg Graphic file (type jpg)
 <use IMAGES//Mockup.jpg>
-Package pdftex.def Info: IMAGES//Mockup.jpg  used on input line 942.
+Package pdftex.def Info: IMAGES//Mockup.jpg  used on input line 757.
 (pdftex.def)             Requested size: 390.0pt x 545.22491pt.
-LaTeX Info: Redefining \. on input line 945.
-LaTeX Info: Redefining \% on input line 945.
- [27]
-Overfull \vbox (73.24156pt too high) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 945.
-LaTeX Info: Redefining \% on input line 945.
+Overfull \vbox (13.60822pt too high) has occurred while \output is active []
 
-[28 <./IMAGES//Mockup.jpg>] (requirements_specifications.aux
+LaTeX Info: Redefining \. on input line 760.
+LaTeX Info: Redefining \% on input line 760.
+
+[20 <./IMAGES//Mockup.jpg>] (ds_avance1.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 16439 strings out of 478338
- 319559 string characters out of 2832416
- 793771 words of memory out of 3000000
- 34603 multiletter control sequences out of 15000+600000
- 478015 words of font info for 59 fonts, out of 8000000 for 9000
+ 15863 strings out of 478338
+ 312617 string characters out of 2832416
+ 604696 words of memory out of 3000000
+ 34034 multiletter control sequences out of 15000+600000
+ 477678 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,10n,89p,547b,1456s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\Juan González\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
-pi600\tcrm1200.pk><C:/Users/Juan González/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Juan González/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Juan González
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Use
-rs/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmr17.pfb><C:/Users/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmsl12.pfb><C:/Users/Juan González/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Juan González/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on requirements_specifications.pdf (29 pages, 596310 bytes).
+ 83i,10n,89p,525b,396s stack positions out of 10000i,1000n,20000p,200000b,80000s
+<C:/Users/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmbx12.pfb><C:/Users/Juan González/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Juan González/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Juan Gonzál
+ez/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/U
+sers/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmsl12.pfb><C:/Users/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmti12.pfb>
+Output written on ds_avance1.pdf (21 pages, 460355 bytes).
 PDF statistics:
- 224 PDF objects out of 1000 (max. 8388607)
+ 155 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
