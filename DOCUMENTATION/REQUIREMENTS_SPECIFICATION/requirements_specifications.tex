@@ -448,16 +448,61 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 \caption{Diagrama de Casos de Uso.}
 \end{figure}
 \subsection{Especificación de Casos de Uso}
+\newcounter{CU}
 \begin{center}
 \begin{tabular}{|m{5.5cm}| m{9.5cm}|}
 \hline 
-\multicolumn{2}{|c|}{\textbf{CU-01 GestionarIPS}} \\ 
+\multicolumn{2}{|c|}{\textbf{CU-\stepcounter{CU}\arabic{CU} GestionarAfiliado}} \\ 
 \hline 
-\textbf{Descripción} & Permite registrar una IPS dentro del sistema. \\ 
+\textbf{Descripción} & Permite registrar la información de los afiliados. \\ 
 \hline 
 \textbf{Actores} & Es iniciado por Administrador. \\ 
 \hline 
-\textbf{Pre-condición} & El administrador debe haberse autenticado de forma exitosa en el sistema de acuerdo a su perfil. \\ 
+\textbf{Pre-condición} & El administrador debe estar dentro del sistema. \\ 
+\hline 
+\textbf{Flujo de Eventos} & Flujo Principal (P):
+
+\textbf{P1.} El administrador debe seleccionar la opción Gestionar afiliado en el sistema.
+
+\textbf{P2.} El sistema despliega un formulario para registrar los datos de los afiliados.
+
+\textbf{P3.} El administrador registra DNI, Nombres, Apellidos, Fecha de Nacimiento, Ciudad de Residencia, Teléfono, e-mail, Dirección, Género, Estado Civil, Estado Actual, Fecha de Primera Afiliación, Salario, Rango Salarial.
+
+\textbf{P4.} Si el afiliado tiene beneficiarios se inicia el \emph{CU GestionarBeneficiario} para su respectivo registro.
+
+\textbf{P5.} El administrador da clic en el botón Guardar para enviar el formulario.
+
+\textbf{P6.} El sistema valida los datos (A1).
+
+\textbf{P7.} El sistema muestra el mensaje de confirmación.
+\\
+\hline 
+\textbf{Flujo Alterno} &  Flujo Alterno (A):
+
+\textbf{A1.} El afiliado ya se encontraba registrado.
+
+	En P6:
+	
+	6.1. Si el DNI corresponde a un afiliado ya registrado, el sistema debe mostrar un mensaje indicando esto.
+	
+	6.2. Si es error de digitación, retorna a P2 para ingresar nuevamente los datos en el formulario. \\ 
+\hline 
+\textbf{Post-condición}  & El afiliado queda registrado en el sistema. \\ 
+\hline 
+\textbf{Requisitos No Funcionales} & Ninguno \\ 
+\hline 
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}| m{9.5cm}|}
+\hline 
+\multicolumn{2}{|c|}{\textbf{CU-\stepcounter{CU}\arabic{CU} GestionarContratosIPS}} \\ 
+\hline 
+\textbf{Descripción} & Permite registrar una IPS dentro del sistema. \\ 
+\hline 
+\textbf{Actores} & Es iniciado por Administrador.\\ 
+\hline 
+\textbf{Pre-condición} & El administrador ¿debe estar dentro del sistema.\\ 
 \hline 
 \textbf{Flujo de Eventos} & Flujo Principal (P):
 
@@ -493,7 +538,158 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 
 \begin{tabular}{|m{5.5cm}| m{9.5cm}|}
 \hline 
-\multicolumn{2}{|c|}{\textbf{CU-02 ReportarPagoAportes}} \\ 
+\multicolumn{2}{|c|}{\textbf{CU-\stepcounter{CU}\arabic{CU} GestionarOrdenDeServicio}} \\ 
+\hline 
+\textbf{Descripción} & Permite registrar las ordenes de servicio que llevan los afiliados, expedidas por las IPS. \\ 
+\hline 
+\textbf{Actores} & Es iniciado por Administrador.\\ 
+\hline 
+\textbf{Pre-condición} & El administrador ¿debe estar dentro del sistema.\\ 
+\hline 
+\textbf{Flujo de Eventos} & Flujo Principal (P):
+
+\textbf{P1.} El administrador selecciona la opción de Registrar nueva Orden de Servicio.
+
+\textbf{P2.} El sistema despliega un formulario para registrar la orden de servicio.
+
+\textbf{P3.} El administrador ingresa el Código, fecha de la orden, nombre del médico que formula, diagnóstico, descripción de los servicios formulados.
+
+\textbf{P4.} El administrador da clic en el botón Guardar para enviar el formulario.
+
+\textbf{P5.} El sistema valida los datos (A1).
+
+\textbf{P6.} El sistema muestra el mensaje de confirmación.
+\\
+\hline 
+\textbf{Flujo Alterno} &  Flujo Alterno (A):
+
+\textbf{A1.} La orden de servicio ya está registrada.
+
+	En P5:
+	
+	5.1. Si el código corresponde a una orden ya registrada, el sistema debe mostrar un mensaje indicando esto.
+	
+	5.2. Si es error de digitación, retorna a P2 para ingresar nuevamente los dato sen el formulario. \\ 
+\hline 
+\textbf{Post-condición}  & Registro exitoso de la orden de servicio dentro del sistema. \\ 
+\hline 
+\textbf{Requisitos No Funcionales} & Ninguno \\ 
+\hline 
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}| m{9.5cm}|}
+\hline 
+\multicolumn{2}{|c|}{\textbf{CU-\stepcounter{CU}\arabic{CU} GestionarEmpresa}} \\ 
+\hline 
+\textbf{Descripción} & Permite registrar la información de las empresas a las que pertenecen los afiliados. \\ 
+\hline 
+\textbf{Actores} & Es iniciado por Administrador. \\ 
+\hline 
+\textbf{Pre-condición} & El administrador debe haberse autenticado de forma exitosa en el sistema de acuerdo a su perfil. \\ 
+\hline 
+\textbf{Flujo de Eventos} & Flujo Principal (P):
+
+\textbf{P1.} El administrador debe seleccionar la opción Gestionar empresa en el sistema.
+
+\textbf{P2.} El sistema despliega un formulario para registrar los datos de las empresas.
+
+\textbf{P3.} El administrador registra NIT, Ciudad, Teléfono, Razón social, Nombre del contacto.
+
+\textbf{P4.} El administrador da clic en el botón Guardar para enviar el formulario.
+
+\textbf{P5.} El sistema valida los datos (A1).
+
+\textbf{P6.} El sistema muestra el mensaje de confirmación.
+\\
+\hline 
+\textbf{Flujo Alterno} &  Flujo Alterno (A):
+
+\textbf{A1.} La empresa ya se encontraba registrada.
+
+	En P5:
+	
+	5.1. Si el NIT corresponde a una empresa ya registrada, el sistema debe mostrar un mensaje indicando esto.
+	
+	5.2. Si es error de digitación, retorna a P2 para ingresar nuevamente los datos en el formulario. \\ 
+\hline 
+\textbf{Post-condición}  & La empresa queda registrada en el sistema. \\ 
+\hline 
+\textbf{Requisitos No Funcionales} & Ninguno \\ 
+\hline 
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}| m{9.5cm}|}
+\hline 
+\multicolumn{2}{|c|}{\textbf{CU-\stepcounter{CU}\arabic{CU} GenerarReportes}} \\ 
+\hline 
+\textbf{Descripción} & Permite generar reportes. \\ 
+\hline 
+\textbf{Actores} & Es iniciado por Administrador. \\ 
+\hline 
+\textbf{Pre-condición} & El administrador debe estar dentro del sistema. \\ 
+\hline 
+\textbf{Flujo de Eventos} & Flujo Principal (P):
+
+\textbf{P1.} El administrador selecciona la opción de generar reportes.
+
+\textbf{P2.} El sistema despliega los tipos de reporte que se pueden realizar.
+
+\textbf{P3.} El administrador selecciona el tipo de reporte que desea (A1).
+
+\textbf{P4.} El sistema muestra un mensaje de confirmación.
+\\
+\hline 
+\textbf{Flujo Alterno} &  Flujo Alterno (A):
+
+\textbf{A1.}Selección del tipo de reporte.
+
+	En P3:
+	
+	3.1. Si el tipo de reporte es Afiliados por Estado, se ejecutará el caso de uso \emph{AfiliadosPorEstado}.
+	
+	3.2. Si el tipo de reporte es Órdenes por Paciente, se ejecutará el caso de uso \emph{ÓrdenesPorPaciente}.
+	
+	3.3. Si el tipo de reporte es Afiliados por Empresa, se ejecutará el caso de uso \emph{AfiliadosPorEmpresa}.\\ 
+\hline 
+\textbf{Post-condición}  & Generación de cualquier tipo de reporte. \\ 
+\hline 
+\textbf{Requisitos No Funcionales} & Ninguno \\ 
+\hline 
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}| m{9.5cm}|}
+\hline 
+\multicolumn{2}{|c|}{\textbf{CU-\stepcounter{CU}\arabic{CU} ConsultarAfiliación}} \\ 
+\hline 
+\textbf{Descripción} & Permite consultar la información del cotizante actualmente autenticado. \\ 
+\hline 
+\textbf{Actores} & Es iniciado por Cotizante. \\ 
+\hline 
+\textbf{Pre-condición} & El cotizante debe haberse autenticado de forma exitosa en el sistema de acuerdo a su usuario y contraseña en el caso de uso \emph{IniciarSesión}. \\ 
+\hline 
+\textbf{Flujo de Eventos} & Flujo Principal (P):
+
+\textbf{P1.} El cotizante selecciona la opción de Consultar Información.
+
+\textbf{P2.} El sistema despliega una página con la información del cotizante y sus beneficiarios (si los tiene).
+\\
+\hline 
+\textbf{Flujo Alterno} &  Flujo Alterno (A):
+\\ 
+\hline 
+\textbf{Post-condición}  & El cotizante consulta su propia información que está guardada en el sistema. \\ 
+\hline 
+\textbf{Requisitos No Funcionales} & Ninguno \\ 
+\hline 
+\end{tabular}
+\vspace{5mm}
+
+\begin{tabular}{|m{5.5cm}| m{9.5cm}|}
+\hline 
+\multicolumn{2}{|c|}{\textbf{CU-\stepcounter{CU}\arabic{CU} ReportarPagoAportes}} \\ 
 \hline 
 \textbf{Descripción} & Permite reportar dentro del sistema el pago de aportes que hace cada cotizante. \\ 
 \hline 
@@ -505,20 +701,28 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 
 \textbf{P1.} El banco selecciona la opción de Reporte pago de aportes.
 
-\textbf{P2.} El sistema despliega un formulario para hacer el reporte del pago.
+\textbf{P2.} El sistema despliega los tipos de reporte que se pueden hacer.
 
-\textbf{P3.} El banco ingresa la fecha de pago, el valor pagado, la información del cotizante y la información de la empresa que hace el pago (si el cotizante es dependiente).
+\textbf{P3.} El banco selecciona el tipo de reporte que desea realizar. (A1)
 
 \textbf{P4.} El banco da clic en el botón Guardar para enviar el formulario.
 
-\textbf{P5.} El sistema valida los datos (A1).
+\textbf{P5.} El sistema valida los datos (A2).
 
 \textbf{P6.} El sistema muestra un mensaje de confirmación.
 \\
 \hline 
 \textbf{Flujo Alterno} &  Flujo Alterno (A):
 
-\textbf{A1.} El pago de aportes ya se ha realizado.
+\textbf{A1.} Seleccionar el tipo de reporte a realizar.
+
+	En P3:
+	
+	3.1. Si el tipo de reporte es individual, se ejecutará el caso de uso \emph{ReporteIndividual}.
+	
+	3.2. Si el tipo de reporte es en bloque, se ejecutará el caso de uso \emph{ReporteBloque}.
+	
+\textbf{A2.} El pago de aportes ya se ha realizado.
 
 	En P5:
 	
@@ -527,33 +731,6 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 	5.2. Si es error de digitación, retorna a P2 para ingresar nuevamente los dato sen el formulario. \\ 
 \hline 
 \textbf{Post-condición}  & Reporte de pago de aportes realizados durante el mes. \\ 
-\hline 
-\textbf{Requisitos No Funcionales} & Ninguno \\ 
-\hline 
-\end{tabular}
-\vspace{5mm}
-
-\begin{tabular}{|m{5.5cm}| m{9.5cm}|}
-\hline 
-\multicolumn{2}{|c|}{\textbf{CU-03 ConsultarInformacionPropia}} \\ 
-\hline 
-\textbf{Descripción} & Permite consultar la información del cotizante actualmente autenticado. \\ 
-\hline 
-\textbf{Actores} & Es iniciado por Cotizante. \\ 
-\hline 
-\textbf{Pre-condición} & El cotizante debe haberse autenticado de forma exitosa en el sistema de acuerdo a su perfil. \\ 
-\hline 
-\textbf{Flujo de Eventos} & Flujo Principal (P):
-
-\textbf{P1.} El cotizante selecciona la opción de Ver Perfil.
-
-\textbf{P2.} El sistema despliega una página con la información del cotizante y sus beneficiarios (si los tiene).
-\\
-\hline 
-\textbf{Flujo Alterno} &  Flujo Alterno (A):
-\\ 
-\hline 
-\textbf{Post-condición}  & El cotizante consulta su propia información que está guardada en el sistema. \\ 
 \hline 
 \textbf{Requisitos No Funcionales} & Ninguno \\ 
 \hline 
@@ -641,89 +818,6 @@ La aplicación web \emph{Borvo-Medicinae Operam} es un software integrado que ma
 \hline 
 \end{tabular}
 \vspace{5mm}
-
-\begin{tabular}{|m{5.5cm}| m{9.5cm}|}
-\hline 
-\multicolumn{2}{|c|}{\textbf{CU-06 GestionarAfiliado}} \\ 
-\hline 
-\textbf{Descripción} & Permite registrar la información de las personas que los afiliados. \\ 
-\hline 
-\textbf{Actores} & Es iniciado por Administrador. \\ 
-\hline 
-\textbf{Pre-condición} & El administrador debe haberse autenticado de forma exitosa en el sistema de acuerdo a su perfil. \\ 
-\hline 
-\textbf{Flujo de Eventos} & Flujo Principal (P):
-
-\textbf{P1.} El administrador debe seleccionar la opción Gestionar afiliado en el sistema.
-
-\textbf{P2.} El sistema despliega un formulario para registrar los datos de los afiliados.
-
-\textbf{P3.} El administrador registra DNI, Nombres, Apellidos, Fecha de Nacimiento, Ciudad de Residencia, Teléfono, e-mail, Dirección, Género, Estado Civil, Estado Actual, Fecha de Primera Afiliación, Salario, Rango Salarial.
-
-\textbf{P4.} El administrador da clic en el botón Guardar para enviar el formulario.
-
-\textbf{P5.} El sistema valida los datos (A1).
-
-\textbf{P6.} El sistema muestra el mensaje de confirmación.
-\\
-\hline 
-\textbf{Flujo Alterno} &  Flujo Alterno (A):
-
-\textbf{A1.} El afiliado ya se encontraba registrado.
-
-	En P4:
-	
-	4.1. Si el DNI corresponde a un afiliado ya registrado, el sistema debe mostrar un mensaje indicando esto.
-	
-	4.2. Si es error de digitación, retorna a P2 para ingresar nuevamente los datos en el formulario. \\ 
-\hline 
-\textbf{Post-condición}  & El afiliado queda registrado en el sistema. \\ 
-\hline 
-\textbf{Requisitos No Funcionales} & Ninguno \\ 
-\hline 
-\end{tabular}
-\vspace{5mm}
-
-\begin{tabular}{|m{5.5cm}| m{9.5cm}|}
-\hline 
-\multicolumn{2}{|c|}{\textbf{CU-07 GestionarEmpresa}} \\ 
-\hline 
-\textbf{Descripción} & Permite registrar la información de las empresas a las que pertenecen los afiliados. \\ 
-\hline 
-\textbf{Actores} & Es iniciado por Administrador. \\ 
-\hline 
-\textbf{Pre-condición} & El administrador debe haberse autenticado de forma exitosa en el sistema de acuerdo a su perfil. \\ 
-\hline 
-\textbf{Flujo de Eventos} & Flujo Principal (P):
-
-\textbf{P1.} El administrador debe seleccionar la opción Gestionar empresa en el sistema.
-
-\textbf{P2.} El sistema despliega un formulario para registrar los datos de las empresas.
-
-\textbf{P3.} El administrador registra NIT, Ciudad, Teléfono, Razón social, Nombre del contacto.
-
-\textbf{P4.} El administrador da clic en el botón Guardar para enviar el formulario.
-
-\textbf{P5.} El sistema valida los datos (A1).
-
-\textbf{P6.} El sistema muestra el mensaje de confirmación.
-\\
-\hline 
-\textbf{Flujo Alterno} &  Flujo Alterno (A):
-
-\textbf{A1.} La empresa ya se encontraba registrada.
-
-	En P4:
-	
-	4.1. Si el NIT corresponde a una empresa ya registrada, el sistema debe mostrar un mensaje indicando esto.
-	
-	4.2. Si es error de digitación, retorna a P2 para ingresar nuevamente los datos en el formulario. \\ 
-\hline 
-\textbf{Post-condición}  & La empresa queda registrada en el sistema. \\ 
-\hline 
-\textbf{Requisitos No Funcionales} & Ninguno \\ 
-\hline 
-\end{tabular}
 \end{center}
 \subsection{Aspectos de Diseño}
 \begin{figure}[H]
