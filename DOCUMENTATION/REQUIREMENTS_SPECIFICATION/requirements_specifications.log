@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.10.9)  7 NOV 2022 18:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.7) (preloaded format=pdflatex 2022.10.9)  7 NOV 2022 21:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1112,31 +1112,43 @@ Package pdftex.def Info: IMAGES//RelationalModel.pdf  used on input line 922.
 ng1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-LaTeX Info: Redefining \. on input line 934.
-LaTeX Info: Redefining \% on input line 934.
- [26 <./IMAGES//RelationalModel.pdf>]
-<IMAGES//Mockup.jpg, id=182, 1018.80624pt x 1424.32124pt>
+
+pdfTeX warning: pdflatex (file ./IMAGES//Class_Diagram.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.5> allowed
+<IMAGES//Class_Diagram.pdf, id=149, 614.295pt x 795.93356pt>
+File: IMAGES//Class_Diagram.pdf Graphic file (type pdf)
+<use IMAGES//Class_Diagram.pdf>
+Package pdftex.def Info: IMAGES//Class_Diagram.pdf  used on input line 932.
+(pdftex.def)             Requested size: 390.0pt x 505.3272pt.
+LaTeX Info: Redefining \. on input line 935.
+LaTeX Info: Redefining \% on input line 935.
+[26 <./IMAGES//RelationalModel.pdf>]
+LaTeX Info: Redefining \. on input line 937.
+LaTeX Info: Redefining \% on input line 937.
+ [27 <./IMAGES//Class_Diagram.pdf>]
+<IMAGES//Mockup.jpg, id=210, 1018.80624pt x 1424.32124pt>
 File: IMAGES//Mockup.jpg Graphic file (type jpg)
 <use IMAGES//Mockup.jpg>
-Package pdftex.def Info: IMAGES//Mockup.jpg  used on input line 942.
+Package pdftex.def Info: IMAGES//Mockup.jpg  used on input line 947.
 (pdftex.def)             Requested size: 390.0pt x 545.22491pt.
-LaTeX Info: Redefining \. on input line 945.
-LaTeX Info: Redefining \% on input line 945.
- [27]
+LaTeX Info: Redefining \. on input line 950.
+LaTeX Info: Redefining \% on input line 950.
+
+[28]
 Overfull \vbox (73.24156pt too high) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 945.
-LaTeX Info: Redefining \% on input line 945.
+LaTeX Info: Redefining \. on input line 950.
+LaTeX Info: Redefining \% on input line 950.
 
-[28 <./IMAGES//Mockup.jpg>] (requirements_specifications.aux
+[29 <./IMAGES//Mockup.jpg>] (requirements_specifications.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 16439 strings out of 478338
- 319559 string characters out of 2832416
+ 16448 strings out of 478338
+ 319827 string characters out of 2832416
  793771 words of memory out of 3000000
- 34603 multiletter control sequences out of 15000+600000
+ 34611 multiletter control sequences out of 15000+600000
  478015 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,10n,89p,547b,1456s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1150,9 +1162,9 @@ cmr17.pfb><C:/Users/Juan González/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmsl12.pfb><C:/Users/Juan González/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Juan González/AppData/
 Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on requirements_specifications.pdf (29 pages, 596310 bytes).
+Output written on requirements_specifications.pdf (30 pages, 654602 bytes).
 PDF statistics:
- 224 PDF objects out of 1000 (max. 8388607)
+ 252 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

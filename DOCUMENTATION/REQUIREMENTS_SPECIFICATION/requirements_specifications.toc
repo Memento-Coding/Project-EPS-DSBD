@@ -20,7 +20,7 @@
 \contentsline {subsection}{\numberline {3.4}Diagrama de Casos de Uso}{13}{}%
 \contentsline {subsection}{\numberline {3.5}Especificación de Casos de Uso}{14}{}%
 \contentsline {subsection}{\numberline {3.6}Aspectos de Diseño}{24}{}%
-\contentsline {subsection}{\numberline {3.7}Atributos del Sistema}{26}{}%
-\contentsline {subsection}{\numberline {3.8}Otros Requisitos}{28}{}%
-\contentsline {section}{\numberline {4}Apéndices}{28}{}%
-\contentsline {subsection}{\numberline {4.1}Mockups de Interfaz de Usuario}{28}{}%
+\contentsline {subsection}{\numberline {3.7}Atributos del Sistema}{28}{}%
+\contentsline {subsection}{\numberline {3.8}Otros Requisitos}{29}{}%
+\contentsline {section}{\numberline {4}Apéndices}{29}{}%
+\contentsline {subsection}{\numberline {4.1}Mockups de Interfaz de Usuario}{29}{}%
