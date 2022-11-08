@@ -6,5 +6,5 @@
 \contentsline {subsection}{\numberline {1.4}Especificación de Casos de Uso}{9}{}%
 \contentsline {section}{\numberline {2}Aspectos de Diseño}{19}{}%
 \contentsline {subsection}{\numberline {2.1}Diagrama de Clases}{19}{}%
-\contentsline {subsection}{\numberline {2.2}Modelo Entidad Relación}{19}{}%
-\contentsline {subsection}{\numberline {2.3}Mockups de Interfaz de Usuario}{20}{}%
+\contentsline {subsection}{\numberline {2.2}Modelo Entidad Relación}{20}{}%
+\contentsline {subsection}{\numberline {2.3}Mockups de Interfaz de Usuario}{21}{}%
