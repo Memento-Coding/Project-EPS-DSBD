@@ -165,6 +165,7 @@ class Orden(models.Model):
     fecha = models.DateField()
     medico = models.CharField(max_length=50)
     ips = models.ForeignKey(Ips, models.DO_NOTHING, db_column='ips', blank=True, null=True)
+    afiliado = models.ForeignKey(Afiliado, models.DO_NOTHING, db_column='afiliado', blank=True, null=True)
     diagnostico = models.CharField(max_length=200)
 
     def __str__(self):
@@ -201,6 +202,19 @@ class PagoAportes(models.Model):
         db_table = 'pago_aportes'
 
 
+class Retiro(models.Model):
+    fecha = models.DateField()
+    empresa = models.ForeignKey('Empresa', models.DO_NOTHING, db_column='empresa', blank=True, null=True)
+    cotizante = models.ForeignKey(Cotizante, models.DO_NOTHING, db_column='cotizante')
+
+    def __str__(self):
+        return f'Retiro [{self.empresa} - {self.cotizante}]'
+
+    class Meta:
+        managed = False
+        db_table = 'retiro'
+
+
 class Servicio(models.Model):
     nombre = models.CharField(unique=True, max_length=25)
     descripcion = models.CharField(max_length=100, blank=True, null=True)
@@ -211,3 +225,17 @@ class Servicio(models.Model):
     class Meta:
         managed = False
         db_table = 'servicio'
+
+
+class Vinculacion(models.Model):
+    fecha = models.DateField()
+    empresa = models.ForeignKey('Empresa', models.DO_NOTHING, db_column='empresa', blank=True, null=True)
+    cotizante = models.ForeignKey(Cotizante, models.DO_NOTHING, db_column='cotizante')
+
+    def __str__(self):
+        return f'Vinculación [{self.empresa} - {self.cotizante}]'
+
+    class Meta:
+        managed = False
+        db_table = 'vinculacion'
+        verbose_name_plural = 'vinculaciones'

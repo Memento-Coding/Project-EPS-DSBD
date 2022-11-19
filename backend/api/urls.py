@@ -4,7 +4,8 @@ from rest_framework import routers
 from .views import (
     AfiliadoViewSet, BeneficiarioViewSet, ContratoViewSet, CotizanteViewSet,
     EmpresaViewSet, IpsViewSet, IpsServicioViewSet, OrdenViewSet,
-    OrdenServicioViewSet, PagoAportesViewSet, ServicioViewSet
+    OrdenServicioViewSet, PagoAportesViewSet, RetiroViewSet, ServicioViewSet,
+    VinculacionViewSet
 )
 
 
@@ -30,7 +31,9 @@ router.register('ips-servicios', IpsServicioViewSet, basename='ips-servicios')
 router.register('ordenes', OrdenViewSet, basename='ordenes')
 router.register('ordenes-servicios', OrdenServicioViewSet, basename='ordenes-servicios')
 router.register('pagos-aportes', PagoAportesViewSet, basename='pagos-aportes')
+router.register('retiros', RetiroViewSet, basename='retiros')
 router.register('servicios', ServicioViewSet, basename='servicios')
+router.register('vinculaciones', VinculacionViewSet, basename='vinculaciones')
 
 
 urlpatterns = [

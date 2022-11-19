@@ -69,10 +69,10 @@ class IpsServicioAdmin(admin.ModelAdmin):
 @admin.register(models.Orden)
 class OrdenAdmin(admin.ModelAdmin):
     list_display = [field.name for field in models.Orden._meta.fields]
-    search_fields = ('medico', 'ips')
-    search_help_text = 'Search by doctor or IPS'
+    search_fields = ('medico', 'ips', 'afiliado')
+    search_help_text = 'Search by doctor, IPS or affiliate'
     empty_value_display = '-'
-    ordering = ('ips', 'medico')
+    ordering = ('ips', 'medico', 'afiliado')
     list_per_page = 25
 
 
@@ -91,6 +91,16 @@ class PagoAportesAdmin(admin.ModelAdmin):
     list_per_page = 25
 
 
+@admin.register(models.Retiro)
+class RetiroAdmin(admin.ModelAdmin):
+    list_display = [field.name for field in models.Retiro._meta.fields]
+    search_fields = ('empresa', 'cotizante')
+    search_help_text = 'Search by company or contributor name'
+    empty_value_display = '-'
+    ordering = ('empresa', 'cotizante')
+    list_per_page = 25
+
+
 @admin.register(models.Servicio)
 class ServicioAdmin(admin.ModelAdmin):
     list_display = [field.name for field in models.Servicio._meta.fields]
@@ -98,4 +108,14 @@ class ServicioAdmin(admin.ModelAdmin):
     search_help_text = 'Search by service name'
     empty_value_display = '-'
     ordering = ('nombre',)
+    list_per_page = 25
+
+
+@admin.register(models.Vinculacion)
+class VinculacionAdmin(admin.ModelAdmin):
+    list_display = [field.name for field in models.Vinculacion._meta.fields]
+    search_fields = ('empresa', 'cotizante')
+    search_help_text = 'Search by company or contributor name'
+    empty_value_display = '-'
+    ordering = ('empresa', 'cotizante')
     list_per_page = 25
