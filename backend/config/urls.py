@@ -18,6 +18,7 @@ from django.urls import include, path
 from django.views.generic import RedirectView
 
 from rest_framework import permissions
+from rest_framework.authtoken.views import obtain_auth_token
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 
@@ -39,6 +40,7 @@ urlpatterns = [
     path('', RedirectView.as_view(url='api/v1')),
     path('admin/', admin.site.urls),
     path('api-auth', include('rest_framework.urls')),   # add login
+    path('api-token-auth/', obtain_auth_token, name='api_token_auth'),
     path('api/v1/', include('api.urls')),
     path('api/v1/dj-rest-auth/', include('dj_rest_auth.urls')),
     path('api/v1/dj-rest-auth/registration/',
