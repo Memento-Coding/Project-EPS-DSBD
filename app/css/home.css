@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100%;
+    background: #e3f2fd;
+}
+
+.logo {
+    display: flex;
+    width: 100%;
+    background: #fff;
+    padding: 100px 0px;
+    justify-content: center;
+}
+
+
+.logo img{
+    height: auto;
+    width: 430px;  
+}
+
+.title h2 {
+    color: #000;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card {
+    height: auto;
+    width: 335px;
+    padding: 20px 35px;
+    background: #fff;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 0px 10px #00000050;
+}
+
+
+.card i {
+    font-size: 60px;
+    display: block;
+    text-align: center;
+    margin: 0px 0px;
+    color: #4070f4;
+}
+
+.card h5 {
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: rgb(75, 75, 75);
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .button {
+    background-color: #4070f4;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.card .button:hover {
+    background-color: transparent;
+    border: 2px solid #4070f4;
+    color: #000;
+    cursor: pointer;
+}
