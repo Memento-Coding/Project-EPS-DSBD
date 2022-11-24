@@ -1,0 +1,32 @@
+{% extends "api/base.html" %}
+
+{% block title %}Reporte afiliados inactivos{% endblock %}
+
+{% block content %}
+    <h1>Afiliados inactivos</h1>
+
+    <table class="data-table">
+        <tr class="data-tr">
+            <th class="data-th">DNI</th>
+            <th class="data-th">Nombre</th>
+            <th class="data-th">Apellido</th>
+            <th class="data-th">Fecha de nacimiento</th>
+            <th class="data-th">Teléfono</th>
+            <th class="data-th">IPS</th>
+        </tr>
+        {% for afiliado in afiliados %}
+            <tr class="data-tr">
+                <td class="data-td">{{ afiliado.dni }}</td>
+                <td class="data-td">{{ afiliado.nombre }}</td>
+                <td class="data-td">{{ afiliado.apellido }}</td>
+                <td class="data-td">{{ afiliado.fecha_nacimiento }}</td>
+                <td class="data-td">{{ afiliado.telefono }}</td>
+                <td class="data-td">{{ afiliado.ips.razon_social }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <div id="footer">
+        <strong>Borvo Medicinae Operam</strong> - Reporte de afiliados inactivos.
+    </div>
+{% endblock %}

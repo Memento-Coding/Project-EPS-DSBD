@@ -22,6 +22,8 @@ from rest_framework.authtoken.views import obtain_auth_token
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 
+from api import views
+
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -47,4 +49,12 @@ urlpatterns = [
          include('dj_rest_auth.registration.urls')
     ),
     path('api/v1/docs/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+
+    # ------------------------------- REPORTES --------------------------------
+    path('api/v1/pdf/afiliados-activos/', views.ReporteAfiliadoActivos.as_view(), name="pdf-afiliados-activos" ),
+    path('api/v1/pdf/afiliados-activos/ips/<int:pk>/', views.ReporteAfiliadoActivosIPS.as_view(), name="pdf-afiliados-activos-ips" ),
+    path('api/v1/pdf/pago-aportes/<int:afiliado_pk>/<str:fecha_inicio>/<str:fecha_fin>/', views.ReportePagoAportes.as_view(), name="pdf-pago-aportes" ),
+    path('api/v1/pdf/afiliados-inactivos/', views.ReporteAfiliadoInactivos.as_view(), name="pdf-afiliados-inactivos" ),
+    path('api/v1/pdf/citas/<int:ips_pk>/<str:fecha_inicio>/<str:fecha_fin>/', views.ReporteCitasIPS.as_view(), name="pdf-citas" ),
+    path('api/v1/pdf/independientes/', views.ReporteAfiliadoIndependiente.as_view(), name="pdf-afiliados-independientes" ),
 ]

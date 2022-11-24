@@ -1,0 +1,90 @@
+{% load static %}
+
+<!doctype html>
+<html lang="es">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Borvo MO | {% block title %}{% endblock %}</title>
+    <style>
+        @page {
+            size: "A4";
+            margin: 2.0cm 2.0cm 2.0cm 2.0cm;
+            @frame footer {
+                -pdf-frame-content: footer;
+                bottom: 1cm;
+                margin-left: 2cm;
+                margin-right: 2cm;
+                height: 1cm;
+             }
+        }
+        body {
+            background: #fff;
+            color: #2d2d2d;
+            font-size: 12px;
+            font-family: sans-serif;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust: none;
+        }
+        h1 {
+            color: rgb(55, 129, 232);
+            line-height: 0;
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            font-size: 20px;
+        }
+        #header-col-1 {
+            width: 50%;
+        }
+        #header-col-2 {
+            width: 15%;
+            vertical-align: center;
+        }
+        #report-label {
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .data-table {
+            margin-top: 50px;
+            margin-bottom: 25px;
+            border-collapse: collapse;
+        }
+        .data-th {
+            background-color: #f9f9f9;
+        }
+        .data-th, .data-td {
+            text-align: center;
+            border-top: 0.1px solid #2d2d2d;
+            padding: 2px;
+        }
+        .text-left {
+            text-align: left !important;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <table aria-describedby="cabecera del documento">
+            <tr>
+                <td id="header-col-1">
+                    <img src="{{ server }}../../static/api/Logo.jpg" alt="logo">
+                </td>
+                <td></td>
+                <td id="header-col-2">
+                    <p>
+                        <span id="report-label">Reporte AA001</span> <br>
+                        Version 1.0 <br><br>
+                        {{ fecha | date:"N d, Y" }}
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+        {% block content %}
+        {% endblock %}
+
+    </main>
+</body>
+</html>

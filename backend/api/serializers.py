@@ -21,10 +21,10 @@ class ServicioSerializer(serializers.ModelSerializer):
 
 class IpsServicioSerializer(serializers.ModelSerializer):
     ips = serializers.HyperlinkedRelatedField(
-        view_name='ips-detail', many=False, read_only=True
+        view_name='ips-detail', many=False, queryset=Ips.objects.all()
     )
     servicio = serializers.HyperlinkedRelatedField(
-        view_name='servicios-detail', many=False, read_only=True
+        view_name='servicios-detail', many=False, queryset=Servicio.objects.all()
     )
     class Meta:
         model = IpsServicio
@@ -33,7 +33,7 @@ class IpsServicioSerializer(serializers.ModelSerializer):
 
 class AfiliadoSerializer(serializers.ModelSerializer):
     ips = serializers.HyperlinkedRelatedField(
-        view_name='ips-detail', many=False, read_only=True
+        view_name='ips-detail', many=False, queryset=Ips.objects.all()
     )
     class Meta:
         model = Afiliado
@@ -42,7 +42,7 @@ class AfiliadoSerializer(serializers.ModelSerializer):
 
 class CotizanteSerializer(serializers.ModelSerializer):
     dni = serializers.HyperlinkedRelatedField(
-        view_name='afiliados-detail', many=False, read_only=True
+        view_name='afiliados-detail', many=False, queryset=Afiliado.objects.all()
     )
     class Meta:
         model = Cotizante
@@ -51,10 +51,10 @@ class CotizanteSerializer(serializers.ModelSerializer):
 
 class BeneficiarioSerializer(serializers.ModelSerializer):
     dni = serializers.HyperlinkedRelatedField(
-        view_name='afiliados-detail', many=False, read_only=True
+        view_name='afiliados-detail', many=False, queryset=Afiliado.objects.all()
     )
     cotizante = serializers.HyperlinkedRelatedField(
-        view_name='cotizantes-detail', many=False, read_only=True
+        view_name='cotizantes-detail', many=False, queryset=Cotizante.objects.all()
     )
     class Meta:
         model = Beneficiario
@@ -63,10 +63,10 @@ class BeneficiarioSerializer(serializers.ModelSerializer):
 
 class OrdenSerializer(serializers.ModelSerializer):
     ips = serializers.HyperlinkedRelatedField(
-        view_name='ips-detail', many=False, read_only=True
+        view_name='ips-detail', many=False, queryset=Ips.objects.all()
     )
     afiliado = serializers.HyperlinkedRelatedField(
-        view_name='afiliados-detail', many=False, read_only=True
+        view_name='afiliados-detail', many=False, queryset=Afiliado.objects.all()
     )
     class Meta:
         model = Orden
@@ -75,10 +75,10 @@ class OrdenSerializer(serializers.ModelSerializer):
 
 class OrdenServicioSerializer(serializers.ModelSerializer):
     orden = serializers.HyperlinkedRelatedField(
-        view_name='ordenes-detail', many=False, read_only=True
+        view_name='ordenes-detail', many=False, queryset=Orden.objects.all()
     )
     servicio = serializers.HyperlinkedRelatedField(
-        view_name='servicios-detail', many=False, read_only=True
+        view_name='servicios-detail', many=False, queryset=Servicio.objects.all()
     )
     class Meta:
         model = OrdenServicio
@@ -92,10 +92,10 @@ class EmpresaSerializer(serializers.ModelSerializer):
 
 class ContratoSerializer(serializers.ModelSerializer):
     cotizante = serializers.HyperlinkedRelatedField(
-        view_name='cotizantes-detail', many=False, read_only=True
+        view_name='cotizantes-detail', many=False, queryset=Cotizante.objects.all()
     )
     empresa = serializers.HyperlinkedRelatedField(
-        view_name='empresas-detail', many=False, read_only=True
+        view_name='empresas-detail', many=False, queryset=Empresa.objects.all()
     )
     class Meta:
         model = Contrato
@@ -104,10 +104,10 @@ class ContratoSerializer(serializers.ModelSerializer):
 
 class PagoAportesSerializer(serializers.ModelSerializer):
     cotizante = serializers.HyperlinkedRelatedField(
-        view_name='cotizantes-detail', many=False, read_only=True
+        view_name='cotizantes-detail', many=False, queryset=Cotizante.objects.all()
     )
     empresa = serializers.HyperlinkedRelatedField(
-        view_name='empresas-detail', many=False, read_only=True
+        view_name='empresas-detail', many=False, queryset=Empresa.objects.all()
     )
     class Meta:
         model = PagoAportes
@@ -116,10 +116,10 @@ class PagoAportesSerializer(serializers.ModelSerializer):
 
 class RetiroSerializer(serializers.ModelSerializer):
     cotizante = serializers.HyperlinkedRelatedField(
-        view_name='cotizantes-detail', many=False, read_only=True
+        view_name='cotizantes-detail', many=False, queryset=Cotizante.objects.all()
     )
     empresa = serializers.HyperlinkedRelatedField(
-        view_name='empresas-detail', many=False, read_only=True
+        view_name='empresas-detail', many=False, queryset=Empresa.objects.all()
     )
     class Meta:
         model = Retiro
@@ -128,10 +128,10 @@ class RetiroSerializer(serializers.ModelSerializer):
 
 class VinculacionSerializer(serializers.ModelSerializer):
     cotizante = serializers.HyperlinkedRelatedField(
-        view_name='cotizantes-detail', many=False, read_only=True
+        view_name='cotizantes-detail', many=False, queryset=Cotizante.objects.all()
     )
     empresa = serializers.HyperlinkedRelatedField(
-        view_name='empresas-detail', many=False, read_only=True
+        view_name='empresas-detail', many=False, queryset=Empresa.objects.all()
     )
     class Meta:
         model = Vinculacion

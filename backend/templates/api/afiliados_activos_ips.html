@@ -1,0 +1,32 @@
+{% extends "api/base.html" %}
+
+{% block title %}Reporte afiliados activos{% endblock %}
+
+{% block content %}
+    <h1>Afiliados activos de la IPS {{ ips.razon_social }}</h1>
+
+    <table class="data-table">
+        <tr class="data-tr">
+            <th class="data-th">DNI</th>
+            <th class="data-th">Nombre</th>
+            <th class="data-th">Apellido</th>
+            <th class="data-th">Fecha de nacimiento</th>
+            <th class="data-th">Teléfono</th>
+            <th class="data-th">E-mail</th>
+        </tr>
+        {% for afiliado in afiliados %}
+            <tr class="data-tr">
+                <td class="data-td">{{ afiliado.dni }}</td>
+                <td class="data-td">{{ afiliado.nombre }}</td>
+                <td class="data-td">{{ afiliado.apellido }}</td>
+                <td class="data-td">{{ afiliado.fecha_nacimiento }}</td>
+                <td class="data-td">{{ afiliado.telefono }}</td>
+                <td class="data-td">{{ afiliado.email }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <div id="footer">
+        <strong>Borvo Medicinae Operam</strong> - Reporte de afiliados activos de una IPS determinada.
+    </div>
+{% endblock %}
