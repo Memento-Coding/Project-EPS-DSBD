@@ -52,8 +52,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -63,12 +63,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['http://127.0.0.1:5500/', 'http://localhost:5500/', 'https://front-borvo.vercel.app/', 'http://front-borvo.vercel.app/', '*']
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOW_ORIGINS = ['http://127.0.0.1:5500/', 'http://localhost:5500/', '*']
+CORS_ALLOW_ORIGINS = ['http://127.0.0.1:5500/', 'http://localhost:5500/', 'https://front-borvo.vercel.app/', 'http://front-borvo.vercel.app/', '*']
 
-CSRF_TRUSTED_ORIGINS = ['http://*', 'https://*', 'https://api-borvo.fly.dev']
+CSRF_TRUSTED_ORIGINS = ['http://*', 'https://*', 'https://api-borvo.fly.dev', 'http://127.0.0.1:5500/', 'http://localhost:5500/', 'https://front-borvo.vercel.app/', 'http://front-borvo.vercel.app/']
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
