@@ -42,6 +42,7 @@ class Afiliado(models.Model):
     email = models.CharField(unique=True, max_length=50)
     estado_actual = models.CharField(max_length=8, choices=ESTADOS_ACTUALES)
     ips = models.ForeignKey('Ips', models.DO_NOTHING, db_column='ips')
+    username = models.CharField(max_length=25)
 
     def __str__(self):
         return f'{self.nombre} {self.apellido}'
