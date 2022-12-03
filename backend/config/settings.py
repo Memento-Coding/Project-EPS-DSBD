@@ -68,7 +68,7 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_ORIGINS = ['http://127.0.0.1:5500/', 'http://localhost:5500/', 'https://front-borvo.vercel.app/', 'http://front-borvo.vercel.app/', '*']
 
-CSRF_TRUSTED_ORIGINS = ['http://*', 'https://*', 'https://api-borvo.fly.dev', 'http://127.0.0.1:5500/', 'http://localhost:5500/', 'https://front-borvo.vercel.app/', 'http://front-borvo.vercel.app/']
+CSRF_TRUSTED_ORIGINS = ['http://*', 'https://*', 'http://api-borvo.fly.dev',  'https://api-borvo.fly.dev', 'http://127.0.0.1:5500/', 'http://localhost:5500/', 'https://front-borvo.vercel.app/', 'http://front-borvo.vercel.app/']
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
