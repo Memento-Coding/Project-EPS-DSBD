@@ -25,7 +25,7 @@ from .serializers import (
 class AfiliadoViewSet(viewsets.ModelViewSet):
     queryset = Afiliado.objects.all().order_by('pk')
     serializer_class = AfiliadoSerializer
-    filterset_fields = ['genero', 'estado_civil', 'estado_actual']
+    filterset_fields = ['genero', 'estado_civil', 'estado_actual', 'username']
     permission_classes = (permissions.IsAuthenticated, )
 
     # def get_permissions(self):
@@ -51,6 +51,7 @@ class BeneficiarioViewSet(viewsets.ModelViewSet):
     queryset = Beneficiario.objects.all().order_by('pk')
     serializer_class = BeneficiarioSerializer
     permission_classes = (permissions.IsAuthenticated, )
+    filterset_fields = ['dni']
 
     # def get_permissions(self):
     #    self.permission_classes = (permissions.IsAdmin, )
@@ -63,13 +64,13 @@ class ContratoViewSet(viewsets.ModelViewSet):
     queryset = Contrato.objects.all().order_by('pk')
     serializer_class = ContratoSerializer
     permission_classes = (permissions.IsAuthenticated, )
-    filterset_fields = ['estado']
+    filterset_fields = ['estado', 'cotizante__dni', 'empresa']
 
 
 class CotizanteViewSet(viewsets.ModelViewSet):
     queryset = Cotizante.objects.all().order_by('pk')
     serializer_class = CotizanteSerializer
-    filterset_fields = ['tipo_cotizante', 'rango_salarial']
+    filterset_fields = ['tipo_cotizante', 'rango_salarial', 'dni']
     permission_classes = (permissions.IsAuthenticated, )
 
     # def get_permissions(self):
@@ -151,30 +152,35 @@ class IpsServicioViewSet(viewsets.ModelViewSet):
     queryset = IpsServicio.objects.all().order_by('pk')
     serializer_class = IpsServicioSerializer
     permission_classes = (permissions.IsAuthenticated, )
+    filterset_fields = ['ips', 'servicio']
 
 
 class OrdenViewSet(viewsets.ModelViewSet):
     queryset = Orden.objects.all().order_by('pk')
     serializer_class = OrdenSerializer
     permission_classes = (permissions.IsAuthenticated, )
+    filterset_fields = ['ips', 'afiliado']
 
 
 class OrdenServicioViewSet(viewsets.ModelViewSet):
     queryset = OrdenServicio.objects.all().order_by('pk')
     serializer_class = OrdenServicioSerializer
     permission_classes = (permissions.IsAuthenticated, )
+    filterset_fields = ['orden', 'servicio']
 
 
 class PagoAportesViewSet(viewsets.ModelViewSet):
     queryset = PagoAportes.objects.all().order_by('pk')
     serializer_class = PagoAportesSerializer
     permission_classes = (permissions.IsAuthenticated, )
+    filterset_fields = ['cotizante__dni', 'empresa']
 
 
 class RetiroViewSet(viewsets.ModelViewSet):
     queryset = Retiro.objects.all().order_by('pk')
     serializer_class = RetiroSerializer
     permission_classes = (permissions.IsAuthenticated, )
+    filterset_fields = ['cotizante__dni', 'empresa']
 
 
 class ServicioViewSet(viewsets.ModelViewSet):
@@ -187,6 +193,7 @@ class VinculacionViewSet(viewsets.ModelViewSet):
     queryset = Vinculacion.objects.all().order_by('pk')
     serializer_class = VinculacionSerializer
     permission_classes = (permissions.IsAuthenticated, )
+    filterset_fields = ['cotizante__dni', 'empresa']
 
 
 # ---------------------------------- REPORTES ---------------------------------

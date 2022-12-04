@@ -175,6 +175,7 @@ class Orden(models.Model):
     class Meta:
         managed = False
         db_table = 'orden'
+        verbose_name_plural = 'ordenes'
 
 
 class OrdenServicio(models.Model):
