@@ -1,0 +1,110 @@
+<tr>
+                                <td>Cédula</td>
+                                <td>123456</td>
+                                <td>Carlos Alberto</td>
+                                <td>Delgado Galeano</td>
+                                <td>
+                                    <span class="badge rounded-pill text-bg-success">Activo</span>
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                                        <button type="button" class="btn btn-primary d-flex justify-align-center">
+                                            <i class='bx bx-show' style="font-size: 1.5rem; color:white"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-warning d-flex justify-align-center">
+                                            <i class='bx bx-edit' style="font-size: 1.5rem; color:white"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-danger d-flex justify-align-center">
+                                            <i class='bx bx-trash' style="font-size: 1.5rem; color:white"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Pasaporte</td>
+                                <td>98763298</td>
+                                <td>Jesus Alberto</td>
+                                <td>Gil Ayala</td>
+                                <td>
+                                    <span class="badge rounded-pill text-bg-danger">Inactivo</span>
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                                        <button type="button" class="btn btn-primary d-flex justify-align-center">
+                                            <i class='bx bx-show' style="font-size: 1.5rem; color:white"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-warning d-flex justify-align-center">
+                                            <i class='bx bx-edit' style="font-size: 1.5rem; color:white"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-danger d-flex justify-align-center">
+                                            <i class='bx bx-trash' style="font-size: 1.5rem; color:white"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Cédula</td>
+                                <td>8765432</td>
+                                <td>Jhoan Sebastian</td>
+                                <td>Rojas Holguin</td>
+                                <td>
+                                    <span class="badge rounded-pill text-bg-success">Activo</span>
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                                        <button type="button" class="btn btn-primary d-flex justify-align-center">
+                                            <i class='bx bx-show' style="font-size: 1.5rem; color:white"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-warning d-flex justify-align-center">
+                                            <i class='bx bx-edit' style="font-size: 1.5rem; color:white"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-danger d-flex justify-align-center">
+                                            <i class='bx bx-trash' style="font-size: 1.5rem; color:white"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Cédula</td>
+                                <td>1005968946</td>
+                                <td>Juan Sebastian</td>
+                                <td>Gonzalez Camacho</td>
+                                <td>
+                                    <span class="badge rounded-pill text-bg-warning">Retirado </span>
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                                        <button type="button" class="btn btn-primary d-flex justify-align-center">
+                                            <i class='bx bx-show' style="font-size: 1.5rem; color:white"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-warning d-flex justify-align-center">
+                                            <i class='bx bx-edit' style="font-size: 1.5rem; color:white"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-danger d-flex justify-align-center">
+                                            <i class='bx bx-trash' style="font-size: 1.5rem; color:white"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Código</td>
+                                <td>1968171</td>
+                                <td>Andrés Felipe</td>
+                                <td>Ruíz Buriticá</td>
+                                <td>
+                                    <span class="badge rounded-pill text-bg-success">Activo</span>
+                                </td>
+                                <td>
+                                    <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                                        <button type="button" class="btn btn-primary d-flex justify-align-center">
+                                            <i class='bx bx-show' style="font-size: 1.5rem; color:white"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-warning d-flex justify-align-center">
+                                            <i class='bx bx-edit' style="font-size: 1.5rem; color:white"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-danger d-flex justify-align-center">
+                                            <i class='bx bx-trash' style="font-size: 1.5rem; color:white"></i>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
