@@ -1,0 +1,28 @@
+{% extends "api/base.html" %}
+{% load humanize %}
+
+{% block title %}Reporte pago de aportes{% endblock %}
+
+{% block content %}
+    <h1>Pago de aportes de {{ cotizante.dni.nombre }} {{ cotizante.dni.apellido }} ({{ cotizante.dni.dni }}) </h1>
+
+    <table class="data-table">
+        <tr class="data-tr">
+            <th class="data-th"># Radicado</th>
+            <th class="data-th">Empresa</th>
+            <th class="data-th">Fecha</th>
+            <th class="data-th">Valor</th>
+        </tr>
+        {% for pago_aporte in pago_aportes %}
+            <tr class="data-tr">
+                <td class="data-td">0000{{ pago_aporte.id }}</td>
+                <td class="data-td">{{ pago_aporte.empresa.razon_social }}</td>
+                <td class="data-td">{{ pago_aporte.fecha }}</td>
+                <td class="data-td">${{ pago_aporte.valor | intcomma}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <div id="footer">
+        <strong>Borvo Medicinae Operam</strong> - Reporte de pago de aportes entre {{ fecha_inicio }} y {{ fecha_fin }}.
+{% endblock %}
