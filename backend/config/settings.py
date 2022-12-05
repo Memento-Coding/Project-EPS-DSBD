@@ -68,6 +68,8 @@ MIDDLEWARE = [
 
 CORS_ALLOW_ORIGINS = ["http://127.0.0.1:5500/"]
 
+CORS_ALLOW_WHITELIST = ["http://127.0.0.1:5500/"]
+
 CSRF_TRUSTED_ORIGINS = ['http://*', 'https://*', 'https://api-borvo.fly.dev']
 
 REST_FRAMEWORK = {
