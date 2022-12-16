@@ -70,6 +70,7 @@ CORS_ALLOW_ORIGINS = ['http://127.0.0.1:5500/', 'http://localhost:5500/', 'https
 
 CSRF_TRUSTED_ORIGINS = ['http://*', 'https://*', 'http://api-borvo.fly.dev',  'https://api-borvo.fly.dev', 'http://127.0.0.1:5500/', 'http://localhost:5500/', 'https://front-borvo.vercel.app/', 'http://front-borvo.vercel.app/']
 
+
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
