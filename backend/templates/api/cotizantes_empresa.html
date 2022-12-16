@@ -1,0 +1,37 @@
+{% extends "api/base.html" %}
+{% load humanize %}
+
+{% block title %}Reporte cotizantes por empresa{% endblock %}
+
+{% block content %}
+    <h1>Cotizantes de la empresa {{ empresa.razon_social }} ({{ empresa.nit_rut }})</h1>
+
+    <table class="data-table">
+        <tr class="data-tr">
+            <th class="data-th">#</th>
+            <th class="data-th">DNI</th>
+            <th class="data-th">Empleado</th>
+            <th class="data-th">Fecha</th>
+            <th class="data-th">Salario base</th>
+            <th class="data-th">Estado</th>
+        </tr>
+        {% for contrato in contratos %}
+            <tr class="data-tr">
+                <td class="data-td">{{ contrato.id }}</td>
+                <td class="data-td">{{ contrato.cotizante.dni.dni }}</td>
+                <td class="data-td">{{ contrato.cotizante.dni.nombre }} {{ contrato.cotizante.dni.apellido }}</td>
+                <td class="data-td">{{ contrato.fecha_recibido }}</td>
+                <td class="data-td">${{ contrato.salario_base | intcomma }}</td>
+                {% if contrato.estado == 'inactivo' %}
+                <td class="data-td" style="color:rgb(187, 51, 27);">{{ contrato.estado }}</td>
+                {% else %}
+                    <td class="data-td">{{ contrato.estado }}</td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+    </table>
+
+    <div id="footer">
+        <strong>Borvo Medicinae Operam</strong> - Reporte de empleados por empresa.
+    </div>
+{% endblock %}
