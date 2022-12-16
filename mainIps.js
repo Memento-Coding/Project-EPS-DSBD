@@ -212,7 +212,7 @@ const editarServicio = function (tbody, table) {
                 nombre: formData.get('nombre'),
                 descripcion: formData.get('descripcion'),                
             };
-            up(data, 'https://api-borvo.fly.dev/api/v1/servicios/'+ nit +'/').then(response => {
+            up(data, 'https://api-borvo.fly.dev/api/v1/servicios/'+ id +'/').then(response => {
                 if (response) {
                     table.ajax.reload(null, false);
                     cerrarModal(modalEditServicio);
@@ -239,7 +239,7 @@ const eliminarServicio = function (tbody, table) {
         })
             .then((willDelete) => {
                 if (willDelete) {
-                    del('https://api-borvo.fly.dev/api/v1/servicios/' + nit + '/').then(response => {
+                    del('https://api-borvo.fly.dev/api/v1/servicios/' + id + '/').then(response => {
                         if (response) {
                             table.ajax.reload(null, false);
                         }
