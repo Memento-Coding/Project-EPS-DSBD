@@ -286,3 +286,33 @@ class ReporteAfiliadoIndependiente(View):
         }
         pdf = render_to_pdf('api/afiliados_independientes.html', data)
         return HttpResponse(pdf, content_type='application/pdf')
+
+
+class ReporteOrdenesAfiliado(View):
+    def get(self, request, *args, **kwargs):
+        afiliado_pk = kwargs['afiliado_pk']
+        afiliado = Afiliado.objects.get(pk=afiliado_pk)
+        queryset = Orden.objects.filter(afiliado=afiliado_pk)
+        data = {
+            'fecha': datetime.date.today(),
+            'afiliado': afiliado,
+            'ordenes': queryset,
+            'server': request.get_host(),
+        }
+        pdf = render_to_pdf('api/ordenes_afiliado.html', data)
+        return HttpResponse(pdf, content_type='application/pdf')
+
+
+class ReporteCotizantesEmpresa(View):
+    def get(self, request, *args, **kwargs):
+        empresa_pk = kwargs['empresa_pk']
+        empresa = Empresa.objects.get(pk=empresa_pk)
+        queryset = Contrato.objects.filter(empresa=empresa_pk)
+        data = {
+            'fecha': datetime.date.today(),
+            'empresa': empresa,
+            'contratos': queryset,
+            'server': request.get_host(),
+        }
+        pdf = render_to_pdf('api/cotizantes_empresa.html', data)
+        return HttpResponse(pdf, content_type='application/pdf')
