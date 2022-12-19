@@ -1,0 +1,9 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Artefactos Ágiles}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Roles Equipo Scrum}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Sprint 0}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Backlog}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Historias de Usuario}{4}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Seguimiento de Jira}{36}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Ceremonias Ágiles}{37}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Plan de Pruebas}{37}{subsection.1.7}%

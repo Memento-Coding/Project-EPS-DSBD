@@ -1,0 +1,30 @@
+{% extends "api/base.html" %}
+
+{% block title %}Reporte órdenes por paciente{% endblock %}
+
+{% block content %}
+    <h1>Órdenes del Paciente {{ afiliado.nombre }} {{ afiliado.apellido }} ({{ afiliado.dni }})</h1>
+
+    <table class="data-table">
+        <tr class="data-tr">
+            <th class="data-th">ID</th>
+            <th class="data-th">IPS</th>
+            <th class="data-th">Fecha</th>
+            <th class="data-th">Médico</th>
+            <th class="data-th">Diagnóstico</th>
+        </tr>
+        {% for orden in ordenes %}
+            <tr class="data-tr">
+                <td class="data-td">{{ orden.id }}</td>
+                <td class="data-td">{{ orden.ips }}</td>
+                <td class="data-td">{{ orden.fecha }}</td>
+                <td class="data-td">{{ orden.medico }}</td>
+                <td class="data-td">{{ orden.diagnostico }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <div id="footer">
+        <strong>Borvo Medicinae Operam</strong> - Reporte de citas médicas por paciente.
+    </div>
+{% endblock %}
