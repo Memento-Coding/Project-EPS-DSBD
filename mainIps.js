@@ -60,6 +60,7 @@ const consultar = function (tbody, table) {
 
 
         const form = document.getElementById('formViewIPS');
+        form['servicios'].value = '';
 
         get('https://api-borvo.fly.dev/api/v1/ips/' + nit + '/servicios/')
             .then(response => response.json())
@@ -323,12 +324,9 @@ btnVincular.addEventListener('click', () => {
         servicio: 'http://api-borvo.fly.dev/api/v1/servicios/' + idServicio + '/'
     }
 
-        create(data, 'https://api-borvo.fly.dev/api/v1/ips-servicios/').then(response => {
-            console.log(response);
-        }).catch(err => console.log(err));
+        create(data, 'https://api-borvo.fly.dev/api/v1/ips-servicios/').then(response => response).catch(err => console.log(err));
     
 });
-
 
 
 updateSelectIPS();

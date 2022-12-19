@@ -41,7 +41,7 @@ class Afiliado(models.Model):
     estado_civil = models.CharField(max_length=12, choices=ESTADOS_CIVILES)
     email = models.CharField(unique=True, max_length=50)
     estado_actual = models.CharField(max_length=8, choices=ESTADOS_ACTUALES)
-    ips = models.ForeignKey('Ips', models.DO_NOTHING, db_column='ips')
+    ips = models.ForeignKey('Ips', models.CASCADE, db_column='ips')
     username = models.CharField(max_length=25)
 
     def __str__(self):
@@ -59,9 +59,9 @@ class Beneficiario(models.Model):
         ('madre', 'madre'),
         ('hijo/a', 'hijo/a'),
     ]
-    dni = models.ForeignKey(Afiliado, models.DO_NOTHING, db_column='dni', blank=True, null=True)
+    dni = models.ForeignKey(Afiliado, models.CASCADE, db_column='dni', blank=True, null=True)
     parentesco = models.CharField(max_length=7, choices=PARENTESCOS)
-    cotizante = models.ForeignKey('Cotizante', models.DO_NOTHING, db_column='cotizante')
+    cotizante = models.ForeignKey('Cotizante', models.CASCADE, db_column='cotizante')
 
     def __str__(self):
         return f'{self.dni.nombre} {self.dni.apellido}'
@@ -76,8 +76,8 @@ class Contrato(models.Model):
         ('activo', 'activo'),
         ('inactivo', 'inactivo'),
     ]
-    cotizante = models.ForeignKey('Cotizante', models.DO_NOTHING, db_column='cotizante')
-    empresa = models.ForeignKey('Empresa', models.DO_NOTHING, db_column='empresa', blank=True, null=True)
+    cotizante = models.ForeignKey('Cotizante', models.CASCADE, db_column='cotizante')
+    empresa = models.ForeignKey('Empresa', models.CASCADE, db_column='empresa', blank=True, null=True)
     fecha_recibido = models.DateField()
     salario_base = models.IntegerField()
     estado = models.CharField(max_length=9, choices=ESTADOS)
@@ -100,7 +100,7 @@ class Cotizante(models.Model):
         ('dependiente', 'dependiente'),
         ('independiente', 'independiente'),
     ]
-    dni = models.ForeignKey(Afiliado, models.DO_NOTHING, db_column='dni', blank=True, null=True)
+    dni = models.ForeignKey(Afiliado, models.CASCADE, db_column='dni', blank=True, null=True)
     tipo_cotizante = models.CharField(max_length=15, choices=TIPOS)
     fecha_primera_afiliacion = models.DateField(auto_now_add=True)
     salario = models.IntegerField()
@@ -151,8 +151,8 @@ class Ips(models.Model):
 
 
 class IpsServicio(models.Model):
-    ips = models.ForeignKey(Ips, models.DO_NOTHING, db_column='ips', blank=True, null=True)
-    servicio = models.ForeignKey('Servicio', models.DO_NOTHING, db_column='servicio')
+    ips = models.ForeignKey(Ips, models.CASCADE, db_column='ips', blank=True, null=True)
+    servicio = models.ForeignKey('Servicio', models.CASCADE, db_column='servicio')
 
     def __str__(self):
         return f'{self.ips} - {self.servicio}'
@@ -165,8 +165,8 @@ class IpsServicio(models.Model):
 class Orden(models.Model):
     fecha = models.DateField()
     medico = models.CharField(max_length=50)
-    ips = models.ForeignKey(Ips, models.DO_NOTHING, db_column='ips', blank=True, null=True)
-    afiliado = models.ForeignKey(Afiliado, models.DO_NOTHING, db_column='afiliado', blank=True, null=True)
+    ips = models.ForeignKey(Ips, models.CASCADE, db_column='ips', blank=True, null=True)
+    afiliado = models.ForeignKey(Afiliado, models.CASCADE, db_column='afiliado', blank=True, null=True)
     diagnostico = models.CharField(max_length=200)
 
     def __str__(self):
@@ -179,8 +179,8 @@ class Orden(models.Model):
 
 
 class OrdenServicio(models.Model):
-    orden = models.ForeignKey(Orden, models.DO_NOTHING, db_column='orden')
-    servicio = models.ForeignKey('Servicio', models.DO_NOTHING, db_column='servicio')
+    orden = models.ForeignKey(Orden, models.CASCADE, db_column='orden')
+    servicio = models.ForeignKey('Servicio', models.CASCADE, db_column='servicio')
 
     def __str__(self):
         return f'{self.orden} - {self.servicio}'
@@ -191,8 +191,8 @@ class OrdenServicio(models.Model):
 
 
 class PagoAportes(models.Model):
-    cotizante = models.ForeignKey(Cotizante, models.DO_NOTHING, db_column='cotizante')
-    empresa = models.ForeignKey(Empresa, models.DO_NOTHING, db_column='empresa', blank=True, null=True)
+    cotizante = models.ForeignKey(Cotizante, models.CASCADE, db_column='cotizante')
+    empresa = models.ForeignKey(Empresa, models.CASCADE, db_column='empresa', blank=True, null=True)
     fecha = models.DateField()
     valor = models.IntegerField()
 
@@ -206,8 +206,8 @@ class PagoAportes(models.Model):
 
 class Retiro(models.Model):
     fecha = models.DateField()
-    empresa = models.ForeignKey('Empresa', models.DO_NOTHING, db_column='empresa', blank=True, null=True)
-    cotizante = models.ForeignKey(Cotizante, models.DO_NOTHING, db_column='cotizante')
+    empresa = models.ForeignKey('Empresa', models.CASCADE, db_column='empresa', blank=True, null=True)
+    cotizante = models.ForeignKey(Cotizante, models.CASCADE, db_column='cotizante')
 
     def __str__(self):
         return f'Retiro [{self.empresa} - {self.cotizante}]'
@@ -231,8 +231,8 @@ class Servicio(models.Model):
 
 class Vinculacion(models.Model):
     fecha = models.DateField()
-    empresa = models.ForeignKey('Empresa', models.DO_NOTHING, db_column='empresa', blank=True, null=True)
-    cotizante = models.ForeignKey(Cotizante, models.DO_NOTHING, db_column='cotizante')
+    empresa = models.ForeignKey('Empresa', models.CASCADE, db_column='empresa', blank=True, null=True)
+    cotizante = models.ForeignKey(Cotizante, models.CASCADE, db_column='cotizante')
 
     def __str__(self):
         return f'Vinculación [{self.empresa} - {self.cotizante}]'
