@@ -19,13 +19,14 @@ $(document).ready(function () {
             { data: 'nit' },
             { data: 'razon_social' },
             { data: 'nivel_atencion' },
-            { defaultContent: '<div class="btn-group btn-group-sm" role="group" aria-label="Small button group"><button type="button" class="editar btn btn-warning d-flex justify-align-center"><i class="bx bx-edit" style="font-size: 1.5rem; color:white"></i></button><button type="button" class="eliminar btn btn-danger d-flex justify-align-center"><i class="bx bx-trash" style="font-size: 1.5rem; color:white"></i></button></div>' }
+            { defaultContent: '<div class="btn-group btn-group-sm" role="group" aria-label="Small button group"><button type="button" class= "consultar btn btn-primary d-flex justify-align-center"><i class="bx bx-show" style="font-size: 1.5rem; color:white"></i></button><button type="button" class="editar btn btn-warning d-flex justify-align-center"><i class="bx bx-edit" style="font-size: 1.5rem; color:white"></i></button><button type="button" class="eliminar btn btn-danger d-flex justify-align-center"><i class="bx bx-trash" style="font-size: 1.5rem; color:white"></i></button></div>' }
         ],
         responsive: true,
         processing: true,
     });
     eliminar('#tablaIPS tbody', tableIPS);
     editar('#tablaIPS  tbody', tableIPS);
+    consultar('#tablaIPS  tbody', tableIPS);
     añadir(tableIPS);
 });
 
@@ -37,12 +38,40 @@ const modalEditIPS = new bootstrap.Modal(document.getElementById('modalEditIPS')
     keyboard: false
 });
 
+const modalViewIPS = new bootstrap.Modal(document.getElementById('modalViewIPS'), {
+    keyboard: false
+});
+
 abrirModal = (modal) => {
     modal.show();
 }
 
 cerrarModal = (modal) => {
     modal.hide();
+}
+
+const consultar = function (tbody, table) {
+    $(tbody).on('click', 'button.consultar', function () {
+        const data = !$(this).parents('tr').hasClass('child') ?
+            table.row($(this).parents('tr')).data() : table.row($(this).parents('tr').prev()).data();
+        const nit = data.nit;
+        const razon_social = data.razon_social;
+        const nivel_atencion = data.nivel_atencion;
+        const servicios = "";
+
+        get('https://api-borvo.fly.dev/api/v1/ips/' + nit + '/servicios/')
+            .then(response => response.json())
+            .then(data => data.forEach(function (element) {
+                //servicios += element.nombre + ": " + element.descripcion;
+            }));
+
+        abrirModal(modalViewIPS);
+        const form = document.getElementById('formViewIPS');
+        form['nit'].value = nit;
+        form['razon_social'].value = razon_social;
+        form['nivel_atencion'].value = nivel_atencion;
+        form['servicios'].value = servicios;
+    });
 }
 
 const añadir = function (table) {
@@ -260,22 +289,22 @@ const eliminarServicio = function (tbody, table) {
 const IPS_Select = document.getElementById('IPS-Select'),
     Servicios_Select = document.getElementById('Servicios-Select');
 
-function updateSelectIPS(){
+function updateSelectIPS() {
     IPS_Select.innerHTML = '';
     get('https://api-borvo.fly.dev/api/v1/ips/?limit=1000')
-    .then(response => response.json())
-    .then(data => data.results.forEach(function (element) {
-        IPS_Select.innerHTML += `<option value="${element.nit}">${element.razon_social}</option>`;
-    }));
+        .then(response => response.json())
+        .then(data => data.results.forEach(function (element) {
+            IPS_Select.innerHTML += `<option value="${element.nit}">${element.razon_social}</option>`;
+        }));
 }
 
-function updateSelectServicios(){
+function updateSelectServicios() {
     Servicios_Select.innerHTML = '';
     get('https://api-borvo.fly.dev/api/v1/servicios/?limit=1000')
-    .then(response => response.json())
-    .then(data => data.results.forEach(function (element) {
-        Servicios_Select.innerHTML += `<option value="${element.id}">${element.nombre}</option>`;
-    }));
+        .then(response => response.json())
+        .then(data => data.results.forEach(function (element) {
+            Servicios_Select.innerHTML += `<option value="${element.id}">${element.nombre}</option>`;
+        }));
 }
 
 updateSelectIPS();

@@ -414,6 +414,47 @@
                   </div>
               </div>
           </div>
+
+          <div class="modal" tabindex="-1" id="modalViewIPS">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold">IPS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <form class="" id="formViewIPS">
+                                <label for="nit" class="form-label fw-bold">
+                                    Nit:
+                                </label>
+                                <input type="number" class="form-control mb-3" id="nit" name="nit"
+                                     readonly>
+                                <label for="razon_social" class="form-label fw-bold">
+                                    Razón Social:
+                                </label>
+                                <input type="text" class="form-control mb-3" id="razon_social" name="razon_social"
+                                     readonly>
+                                <label for="nivel_atencion" class="form-label fw-bold">
+                                    Nivel de Atención:
+                                </label>
+                                <input type="number" class="form-control mb-3" id="nivel_atencion" name="nivel_atencion"
+                                    readonly>
+                                <label for="servicios" class="form-label fw-bold">
+                                    Servicios:
+                                </label>
+                                <input type="text" class="form-control mb-3" id="servicios" name="servicios"
+                                    readonly>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="" form="formAddEmpresa" class="btn btn-secondary"
+                            onclick="cerrarModal(modalViewIPS)">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
       </div>
     </div>
