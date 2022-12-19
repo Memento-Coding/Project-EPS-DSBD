@@ -18,7 +18,5 @@ function select() {
 buttoms.forEach((item) => 
     item.addEventListener("click", select));
 
-display.addEventListener("click", () => {
-    sidebar.classList.add("close");
-});
+
 

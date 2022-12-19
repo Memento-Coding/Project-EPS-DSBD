@@ -17,6 +17,19 @@ function getToken(username, password) {
 getToken(username, password);
 const token = 'Token '.concat(window.localStorage.getItem('Token')).replace(/['"]+/g, '');
 
+async function get(url) {
+    const response = await fetch(url, {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'Authorization': token,
+        },
+
+    })
+    return response;
+}
+
 
 async function create(data, url) {
     const response = await fetch(url, {
@@ -60,7 +73,7 @@ async function del(url) {
     return false;
 }
 
-async function up(data,url) {
+async function up(data, url) {
     const response = await fetch(url, {
         method: 'PUT',
         headers: {

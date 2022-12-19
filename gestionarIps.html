@@ -60,7 +60,7 @@
               class="table table-striped align-middle caption-top shadow display nowrap"
             >
               <caption>
-                Lista de Empresas
+                Lista de IPS
               </caption>
               <thead>
                 <tr>
@@ -222,9 +222,9 @@
                   Cancelar
                 </button>
                 <button
-                  id="btnEditEmpresa"
+                  id="btnEditIPS"
                   type="submit"
-                  form="formEditEmpresa"
+                  form="formEditIPS"
                   class="btn btn-primary"
                 >
                   Guardar
@@ -243,7 +243,7 @@
               class="table table-striped align-middle caption-top shadow display nowrap"
             >
               <caption>
-                Lista de Empresas
+                Lista de Servicios
               </caption>
               <thead>
                 <tr>
@@ -399,6 +399,63 @@
             </div>
           </div>
         </div>
+
+        <div class="col-sm-12 p-3">
+          <div class="card shadow" style="min-height: 22rem;">
+              <div class="card-body d-flex flex-column justify-content-around">
+                  <h5 class="card-title h3 fw-bold">Vincular Servicio</h5>
+                  <p class="card-text">Vincular un servicio a una IPS.</p>
+                  <label for="">IPS:</label>
+                  <select name="" class="form-control" id="IPS-Select"></select>
+                  <label for="">Servicio:</label>
+                  <select name="" class="form-control" id="Servicios-Select"></select>
+                  <div class="d-grid gap-2 col-4 mx-auto">
+                      <button class="btn btn-primary my-4" type="button" id="btnVincular">Vincular</button>
+                  </div>
+              </div>
+          </div>
+
+          <div class="modal" tabindex="-1" id="modalViewIPS">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold">IPS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <form class="" id="formViewIPS">
+                                <label for="nit" class="form-label fw-bold">
+                                    Nit:
+                                </label>
+                                <input type="number" class="form-control mb-3" id="nit" name="nit"
+                                     readonly>
+                                <label for="razon_social" class="form-label fw-bold">
+                                    Razón Social:
+                                </label>
+                                <input type="text" class="form-control mb-3" id="razon_social" name="razon_social"
+                                     readonly>
+                                <label for="nivel_atencion" class="form-label fw-bold">
+                                    Nivel de Atención:
+                                </label>
+                                <input type="number" class="form-control mb-3" id="nivel_atencion" name="nivel_atencion"
+                                    readonly>
+                                <label for="servicios" class="form-label fw-bold">
+                                    Servicios:
+                                </label>
+                                <textarea name="servicios" id="servicios" class="form-control" rows="10" readonly></textarea>
+                                
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="" form="formAddEmpresa" class="btn btn-secondary"
+                            onclick="cerrarModal(modalViewIPS)">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
       </div>
     </div>
 
@@ -442,13 +499,13 @@
               </a>
             </li>
             <li class="nav-link">
-              <a data-target="#ordenes">
+              <a href="">
                 <i class="bx bxs-notepad icon"></i>
                 <span class="text nav-text">Gestionar Órdenes</span>
               </a>
             </li>
             <li class="nav-link">
-              <a data-target="#reportes">
+              <a href="generarReporte.html">
                 <i class="bx bxs-report icon"></i>
                 <span class="text nav-text">Generar Reportes</span>
               </a>
