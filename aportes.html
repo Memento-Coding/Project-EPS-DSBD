@@ -37,20 +37,22 @@
     <!--CONTENIDO-->
     <div class="container display-css">
         <div class="container d-flex flex-column align-items-center">
-            <h1 class="display-1 fw-bold text-center mb-5">Reportar Novedades</h1>
+            <h1 class="display-1 fw-bold text-center mb-5">Reportar Pago de Aportes</h1>
             <div class="container text-center">
                 <div class="row align-items-start justify-content-center">
                     <div class="col-sm-12 p-3">
                         <div class="card shadow" style="min-height: 22rem;">
                             <div class="card-body d-flex flex-column justify-content-around">
-                                <h5 class="card-title h3 fw-bold">Reportar Vinculación</h5>
-                                <p class="card-text">Reportar la vinculación de un empleado para activar la cuenta del cotizante.</p>
-                                <label for="">Empresa</label>
+                                <h5 class="card-title h3 fw-bold">Reportar pagos individuales de aportes</h5>
+                                <p class="card-text">Reportar pago de aportes de manera individual</p>
+                                <label for="">Empresa:</label>
                                 <select name="" class="form-control" id=""></select>
-                                <label for="">Cotizante</label>
+                                <label for="">Cotizante:</label>
                                 <select name="" class="form-control" id=""></select>
-                                <label for="">Fecha Vinculación</label>
-                                <input type="date" name="" class="form-control" id="">
+                                <label for="">Fecha Pago:</label>
+                                <input type="date" class="form-control">
+                                <label for="">Valor de pago:</label>
+                                <input type="number" class="form-control" placeholder="Ingrese valor">
                                 <div class="d-grid gap-2 col-4 mx-auto">
                                     <button class="btn btn-primary my-4" type="button">
                                         Reportar
@@ -59,26 +61,20 @@
                             </div>
                         </div>
                     </div>
-        
                     <div class="col-sm-12 p-3">
                         <div class="card shadow" style="min-height: 22rem;">
                             <div class="card-body d-flex flex-column justify-content-around">
-                                <h5 class="card-title h3 fw-bold">Reportar Retiro</h5>
-                                <p class="card-text">Reportar el retiro del empleado para desactivar la cuenta del cotizante.</p>
-                                <label for="">Empresa</label>
-                                <select name="" class="form-control" id=""></select>
-                                <label for="">Cotizante</label>
-                                <select name="" class="form-control" id=""></select>
-                                <label for="">Fecha de vinculacion</label>
-                                <input type="date" class="form-control">
+                                <h5 class="card-title h3 fw-bold">Reportar pago de aportes en bloque</h5>
+                                <p class="card-text">Reportar pago de aportes de los cotizantes en bloque.</p>
+                                <input type="file" class="form-control">
                                 <div class="d-grid gap-2 col-4 mx-auto">
-                                    <button class="btn btn-primary my-4" type="button">Reportar</button>
+                                    <button class="btn btn-primary my-4" type="button">
+                                        Generar
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    
                 </div>
             </div>
         </div>
@@ -106,13 +102,13 @@
         <div class="menu-bar">
             <div class="menu">
                 <ul class="menu-links">
-                    <li class="nav-link selected">
+                    <li class="nav-link">
                         <a href="banco.html">
                             <i class='bx bxs-user icon'></i>
                             <span class="text nav-text">Reportar Novedades</span>
                         </a>
                     </li>
-                    <li class="nav-link">
+                    <li class="nav-link selected">
                         <a href="aportes.html">
                             <i class='bx bxs-business icon'></i>
                             <span class="text nav-text">Reportar Pago de Aportes</span>
