@@ -57,20 +57,23 @@ const consultar = function (tbody, table) {
         const nit = data.nit;
         const razon_social = data.razon_social;
         const nivel_atencion = data.nivel_atencion;
-        const servicios = "";
+
+
+        const form = document.getElementById('formViewIPS');
 
         get('https://api-borvo.fly.dev/api/v1/ips/' + nit + '/servicios/')
             .then(response => response.json())
             .then(data => data.forEach(function (element) {
-                //servicios += element.nombre + ": " + element.descripcion;
+                form['servicios'].value += element.nombre + ": " + element.descripcion + '\n';
             }));
 
+
         abrirModal(modalViewIPS);
-        const form = document.getElementById('formViewIPS');
+
         form['nit'].value = nit;
         form['razon_social'].value = razon_social;
         form['nivel_atencion'].value = nivel_atencion;
-        form['servicios'].value = servicios;
+
     });
 }
 
@@ -306,6 +309,27 @@ function updateSelectServicios() {
             Servicios_Select.innerHTML += `<option value="${element.id}">${element.nombre}</option>`;
         }));
 }
+
+//Vincular Servicio a IPS//
+
+const btnVincular = document.getElementById('btnVincular');
+
+btnVincular.addEventListener('click', () => {
+    const nitIPS = IPS_Select.value,
+        idServicio = Servicios_Select.value;
+
+    data = {
+        ips: 'http://api-borvo.fly.dev/api/v1/ips/' + nitIPS + '/',
+        servicio: 'http://api-borvo.fly.dev/api/v1/servicios/' + idServicio + '/'
+    }
+
+        create(data, 'https://api-borvo.fly.dev/api/v1/ips-servicios/').then(response => {
+            console.log(response);
+        }).catch(err => console.log(err));
+    
+});
+
+
 
 updateSelectIPS();
 updateSelectServicios();
