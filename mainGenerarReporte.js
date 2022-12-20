@@ -1,75 +1,75 @@
 $(document).ready(async function () {
-const IPS_Select = document.getElementById('IPS-Select'),
-    Paciente_Select = document.getElementById('Paciente-Select'),
-    Empresa_Select = document.getElementById('Empresa-Select'),
-    formReporteAportes = document.getElementById('formReporteAportes'),
-    formReporteCitasIPS = document.getElementById('formReporteCitasIPS');
+    const IPS_Select = document.getElementById('IPS-Select'),
+        Paciente_Select = document.getElementById('Paciente-Select'),
+        Empresa_Select = document.getElementById('Empresa-Select'),
+        formReporteAportes = document.getElementById('formReporteAportes'),
+        formReporteCitasIPS = document.getElementById('formReporteCitasIPS');
 
-await get('https://api-borvo.fly.dev/api/v1/ips/?limit=1000')
-    .then(response => response.json())
-    .then(data => data.results.forEach(function (element) {
-        IPS_Select.innerHTML += `<option value="${element.nit}">${element.razon_social}</option>`;
-        formReporteCitasIPS['ips'].innerHTML += `<option value="${element.nit}">${element.razon_social}</option>`;
-    }));
-
-await get('https://api-borvo.fly.dev/api/v1/afiliados/?limit=1000')
-    .then(response => response.json())
-    .then(data => data.results.forEach(function (element) {
-        Paciente_Select.innerHTML += `<option value="${element.dni}">${element.nombre + " " + element.apellido}</option>`;
-    }));
-
-await get('https://api-borvo.fly.dev/api/v1/cotizantes/?limit=1000')
-    .then(response => response.json())
-    .then(data => data.results.forEach(async function (element) {
-        await get('https://api-borvo.fly.dev/api/v1/afiliados/' + element.dni.substr(42, element.dni.length))
+    await get('https://api-borvo.fly.dev/api/v1/ips/?limit=1000')
         .then(response => response.json())
-        .then(data => {
-            formReporteAportes['Afiliado-Select'].innerHTML += `<option value="${data.dni}">${data.nombre + " " + data.apellido}</option>`;
-        })
-        
-    }));
+        .then(data => data.results.forEach(function (element) {
+            IPS_Select.innerHTML += `<option value="${element.nit}">${element.razon_social}</option>`;
+            formReporteCitasIPS['ips'].innerHTML += `<option value="${element.nit}">${element.razon_social}</option>`;
+        }));
 
-await get('https://api-borvo.fly.dev/api/v1/empresas/?limit=1000')
-    .then(response => response.json())
-    .then(data => data.results.forEach(function (element) {
-        Empresa_Select.innerHTML += `<option value="${element.nit_rut}">${element.razon_social}</option>`;
-    }));
+    await get('https://api-borvo.fly.dev/api/v1/afiliados/?limit=1000')
+        .then(response => response.json())
+        .then(data => data.results.forEach(function (element) {
+            Paciente_Select.innerHTML += `<option value="${element.dni}">${element.nombre + " " + element.apellido}</option>`;
+        }));
+
+    await get('https://api-borvo.fly.dev/api/v1/cotizantes/?limit=1000')
+        .then(response => response.json())
+        .then(data => data.results.forEach(async function (element) {
+            await get('https://api-borvo.fly.dev/api/v1/afiliados/' + element.dni.substr(42, element.dni.length))
+                .then(response => response.json())
+                .then(data => {
+                    formReporteAportes['Afiliado-Select'].innerHTML += `<option value="${data.dni}">${data.nombre + " " + data.apellido}</option>`;
+                })
+
+        }));
+
+    await get('https://api-borvo.fly.dev/api/v1/empresas/?limit=1000')
+        .then(response => response.json())
+        .then(data => data.results.forEach(function (element) {
+            Empresa_Select.innerHTML += `<option value="${element.nit_rut}">${element.razon_social}</option>`;
+        }));
 
 
 
 
-const reporteIPSActivos = document.getElementById('reporteIPSActivos'),
-    reporteOrdenesPaciente = document.getElementById('reporteOrdenesPaciente'),
-    reporteAfiliadosEmpresa = document.getElementById('reporteAfiliadosEmpresa');
+    const reporteIPSActivos = document.getElementById('reporteIPSActivos'),
+        reporteOrdenesPaciente = document.getElementById('reporteOrdenesPaciente'),
+        reporteAfiliadosEmpresa = document.getElementById('reporteAfiliadosEmpresa');
 
-reporteIPSActivos.addEventListener('click', () => {
-    window.open("https://api-borvo.fly.dev/api/v1/pdf/afiliados-activos/ips/" + IPS_Select.value);
-});
+    reporteIPSActivos.addEventListener('click', () => {
+        window.open("https://api-borvo.fly.dev/api/v1/pdf/afiliados-activos/ips/" + IPS_Select.value);
+    });
 
-reporteOrdenesPaciente.addEventListener('click', () => {
-    window.open("https://api-borvo.fly.dev/api/v1/pdf/ordenes/" + Paciente_Select.value);
-});
+    reporteOrdenesPaciente.addEventListener('click', () => {
+        window.open("https://api-borvo.fly.dev/api/v1/pdf/ordenes/" + Paciente_Select.value);
+    });
 
-reporteAfiliadosEmpresa.addEventListener('click', () => {
-    window.open("https://api-borvo.fly.dev/api/v1/pdf/cotizantes/" + Empresa_Select.value);
-});
+    reporteAfiliadosEmpresa.addEventListener('click', () => {
+        window.open("https://api-borvo.fly.dev/api/v1/pdf/cotizantes/" + Empresa_Select.value);
+    });
 
-formReporteAportes.onsubmit = function (e) {
-    e.preventDefault();
-    const fechaInicio = formReporteAportes['fechaInicio'].value,
-        fechaFin = formReporteAportes['fechaFin'].value,
-        dni = formReporteAportes['Afiliado-Select'].value;
+    formReporteAportes.onsubmit = function (e) {
+        e.preventDefault();
+        const fechaInicio = formReporteAportes['fechaInicio'].value,
+            fechaFin = formReporteAportes['fechaFin'].value,
+            dni = formReporteAportes['Afiliado-Select'].value;
 
-    if (fechaInicio > fechaFin) {
-        swal("Error", 'La fecha de inicio debe ser anterior a la fecha de fin!', "warning");
-    } else {
-        window.open("https://api-borvo.fly.dev/api/v1/pdf/pago-aportes/" + dni + "/" + fechaInicio + "/" + fechaFin + "/");
+        if (fechaInicio > fechaFin) {
+            swal("Error", 'La fecha de inicio debe ser anterior a la fecha de fin!', "warning");
+        } else {
+            window.open("https://api-borvo.fly.dev/api/v1/pdf/pago-aportes/" + dni + "/" + fechaInicio + "/" + fechaFin + "/");
+        }
     }
-}
 
-formReporteCitasIPS.onsubmit = function (e) {
-    e.preventDefault();
-    window.open('https://api-borvo.fly.dev/api/v1/pdf/citas/'+ formReporteCitasIPS['ips'].value +'/'+ formReporteCitasIPS['fecha'].value +'/');
-}
+    formReporteCitasIPS.onsubmit = function (e) {
+        e.preventDefault();
+        window.open('https://api-borvo.fly.dev/api/v1/pdf/citas/' + formReporteCitasIPS['ips'].value + '/' + formReporteCitasIPS['fecha'].value + '/');
+    }
 
 });
