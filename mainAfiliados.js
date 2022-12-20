@@ -57,6 +57,7 @@ $(document).ready(function () {
     });
     verAfiliado('#tablaAfiliados tbody', tableAfiliados);
     añadirAfiliado(tableAfiliados);
+    añadirAfiliadoBeneficiario(tableAfiliados);
     selectIPS();
     
 });
@@ -95,7 +96,47 @@ function añadirAfiliado(table) {
         const formData = new FormData(this);
         const data = {
             dni: formData.get('dni'),
-            ips: 'https://api-borvo.fly.dev/api/v1/ips/' + formData.get('IPS') + '/',
+            ips: 'https://api-borvo.fly.dev/api/v1/ips/' + formData.get('IPSCotizante') + '/',
+            tipo_dni: formData.get('tipo_dni'),
+            nombre: formData.get('nombre'),
+            apellido: formData.get('apellido'),
+            fecha_nacimiento: formData.get('fecha_nacimiento'),
+            genero: formData.get('genero'),
+            direccion: formData.get('direccion'),
+            ciudad: formData.get('ciudad'),
+            telefono: formData.get('telefono'),
+            estado_civil: formData.get('estado_civil'),
+            email: formData.get('email'),
+            estado_actual: formData.get('estado_actual'),
+            username: formData.get('username'),
+        };
+        const data2 = {
+            dni: 'https://api-borvo.fly.dev/api/v1/beneficiarios/' + formData.get('dni') + '/',
+            cotizante: 'https://api-borvo.fly.dev/api/v1/cotizantes/' + formData.get('cotizante') + '/',
+            parentesco: formData.get('parentesco'),
+        }
+        create(data, 'https://api-borvo.fly.dev/api/v1/afiliados/').then(response => {
+            if(response){
+                create(data2, 'https://api-borvo.fly.dev/api/v1/beneficiarios/').then(response => {
+                    if(response){
+                        cerrarModal(modalAddAfiliado);
+                        miForm.reset();
+                        table.ajax.reload(null, false);
+                    }
+                }).catch(err => console.log(err));
+            }
+        }).catch(err => console.log(err));
+    }
+}
+
+function añadirAfiliadoBeneficiario(table) {
+    const miForm = document.getElementById('formAddAfiliadoBeneficiario');
+    miForm.onsubmit = function (e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+        const data = {
+            dni: formData.get('dni'),
+            ips: 'https://api-borvo.fly.dev/api/v1/ips/' + formData.get('IPSBeneficiario') + '/',
             tipo_dni: formData.get('tipo_dni'),
             nombre: formData.get('nombre'),
             apellido: formData.get('apellido'),
@@ -111,13 +152,12 @@ function añadirAfiliado(table) {
         };
         const data2 = {
             dni: 'https://api-borvo.fly.dev/api/v1/afiliados/' + formData.get('dni') + '/',
-            tipo_cotizante: formData.get('tipo_cotizante'),
-            salario: formData.get('salario'),
-            rango_salarial: formData.get('rango_salarial')
+            cotizante: 'https://api-borvo.fly.dev/api/v1/cotizantes/' + formData.get('cotizante') + '/',
+            parentesco: formData.get('parentesco'),
         }
         create(data, 'https://api-borvo.fly.dev/api/v1/afiliados/').then(response => {
             if(response){
-                create(data2, 'https://api-borvo.fly.dev/api/v1/cotizantes/').then(response => {
+                create(data2, 'https://api-borvo.fly.dev/api/v1/beneficiarios/').then(response => {
                     if(response){
                         cerrarModal(modalAddAfiliado);
                         miForm.reset();
@@ -144,12 +184,19 @@ function selectIPS(){
         },
         success: function (data) {
             const listaIPS = data.results;
-            const selectIPS = document.getElementById('IPS');
+            const selectIPS = document.getElementById('IPSCotizante');
+            const selectIPSBeneficiario = document.getElementById('IPSBeneficiario');
             listaIPS.forEach(ips => {
                 const option = document.createElement('option');
                 option.value = ips.nit;
                 option.text = ips.razon_social;
                 selectIPS.add(option);
+            });
+            listaIPS.forEach(ips => {
+                const option = document.createElement('option');
+                option.value = ips.nit;
+                option.text = ips.razon_social;                
+                selectIPSBeneficiario.add(option);
             });
             
         }

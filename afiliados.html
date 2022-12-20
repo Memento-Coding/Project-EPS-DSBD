@@ -158,10 +158,10 @@
                                         </label>
                                         <input type="email" class="form-control mb-3" id="email" name="email"
                                             placeholder="Email" required>
-                                        <label for="IPS" class="form-label fw-bold">
+                                        <label for="IPSCotizante" class="form-label fw-bold">
                                             IPS:
                                         </label>
-                                        <select id="IPS" class="form-select mb-3" name="IPS"
+                                        <select id="IPSCotizante" class="form-select mb-3" name="IPSCotizante"
                                             aria-label="Default select example">
                                         </select required>
                                         <input type="hidden" id="estado_actual" name="estado_actual" value="inactivo">
@@ -210,7 +210,7 @@
                         </div>
                         <div class="modal-body">
                             <div class="container">
-                                <form class="row needs-validation" id="formAddAfiliado" method="POST">
+                                <form class="row needs-validation" id="formAddAfiliadoBeneficiario" method="POST">
                                     <div class="col-md-6">
                                         <label for="tipo_dni" class="form-label fw-bold">
                                             Tipo de Documento:
@@ -255,7 +255,6 @@
                                             <option value="femenino">Femenino</option>
                                             <option value="Otro">Otro</option>
                                         </select>
-
                                         <label for="direccion" class="form-label fw-bold">
                                             Dirección:
                                         </label>
@@ -288,23 +287,28 @@
                                         </label>
                                         <input type="email" class="form-control mb-3" id="email" name="email"
                                             placeholder="Email" required>
-                                        <label for="IPS" class="form-label fw-bold">
+                                        <label for="IPSBeneficiario" class="form-label fw-bold">
                                             IPS:
                                         </label>
-                                        <select id="IPS" class="form-select mb-3" name="IPS"
+                                        <select id="IPSBeneficiario" class="form-select mb-3" name="IPSBeneficiario"
                                             aria-label="Default select example">
                                         </select required>
-                                        <label for="tipoDeAfiliado" class="form-label fw-bold">
-                                            Tipo de Afiliado:
+                                        <label for="cotizante" class="form-label fw-bold">
+                                            Dni cotizante:
                                         </label>
-                                        <select id="tipoDeAfiliado" class="form-select mb-3" name="tipoDeAfiliado"
+                                        <input type="cotizante" class="form-control mb-3" id="cotizante" name="cotizante"
+                                            placeholder="Dni cotizante" required>
+                                        <label for="parentesco" class="form-label fw-bold">
+                                            Parentesco:
+                                        </label>
+                                        <select id="parentesco" class="form-select mb-3" name="parentesco"
                                             aria-label="Default select example">
-                                            <option>Cotizante</option>
-                                            <option>Beneficiario</option>
+                                            <option selected value="conyuge">Conyuge</option>
+                                            <option value='padre'>Padre</option>
+                                            <option value='madre'>Madre</option>
+                                            <option value='hijo/a'>Hijo/a</option>
                                         </select>
                                         <input type="hidden" id="estado_actual" name="estado_actual" value="inactivo">
-                                        <input type="hidden" id="ips" name="ips"
-                                            value="https://api-borvo.fly.dev/api/v1/ips/1287673633/">
                                     </div>
                                 </form>
                             </div>
