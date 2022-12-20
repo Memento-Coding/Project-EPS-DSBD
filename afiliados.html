@@ -63,13 +63,14 @@
             <button type="button" id="#btnAddAfiliado" class="btn btn-primary d-flex justify-align-center"
                 onclick="abrirModal(modalAddAfiliado)" style="margin: 20px">
                 <i class='bx bxs-user-plus' style="font-size: 1.5rem; margin-right: 5px"></i>
-                Añadir Afiliado
+                Añadir Afiliado - Cotizante
             </button>
             <button type="button" id="#btnAddAfiliadoBeneficiario" class="btn btn-primary d-flex justify-align-center"
                 onclick="abrirModal(modalAddAfiliadoBeneficiario)" style="margin: 20px">
                 <i class='bx bxs-user-plus' style="font-size: 1.5rem; margin-right: 5px"></i>
                 Añadir Afiliado - Beneficiario
             </button>
+            <!--Modal añadir afiliado cotizante-->
             <div class="modal" tabindex="-1" id="modalAddAfiliado">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
@@ -163,17 +164,29 @@
                                         <select id="IPS" class="form-select mb-3" name="IPS"
                                             aria-label="Default select example">
                                         </select required>
-                                        <label for="tipoDeAfiliado" class="form-label fw-bold">
-                                            Tipo de Afiliado:
-                                        </label>
-                                        <select id="tipoDeAfiliado" class="form-select mb-3" name="tipoDeAfiliado"
-                                            aria-label="Default select example">
-                                            <option value="Cotizante">Cotizante</option>
-                                            <option value="Beneficiario">Beneficiario</option>
-                                        </select>
                                         <input type="hidden" id="estado_actual" name="estado_actual" value="inactivo">
-                                        <input type="hidden" id="ips" name="ips"
-                                            value="https://api-borvo.fly.dev/api/v1/ips/1287673633/">
+                                        <label for="tipo_cotizante" class="form-label fw-bold">
+                                            Tipo de cotizante:
+                                        </label>
+                                        <select id="tipo_cotizante" class="form-select mb-3" name="tipo_cotizante"
+                                            aria-label="Default select example">
+                                            <option selected value="dependiente">Dependiente</option>
+                                            <option  value="independiente">Independiente</option>
+                                        </select required>
+                                        <label for="salario" class="form-label fw-bold">
+                                            Salario:
+                                        </label>
+                                        <input type="number" class="form-control mb-3" id="salario" name="salario"
+                                            placeholder="Salario" required>
+                                        <label for="rango_salarial" class="form-label fw-bold">
+                                            Rango salarial:
+                                        </label>
+                                        <select id="rango_salarial" class="form-select mb-3" name="rango_salarial"
+                                            aria-label="Default select example">
+                                            <option selected value="A">A</option>
+                                            <option value="B">B</option>
+                                            <option value="C">C</option>
+                                        </select required>
                                     </div>
                                 </form>
                             </div>

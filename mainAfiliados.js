@@ -65,13 +65,15 @@ const modalAddAfiliado = new bootstrap.Modal(document.getElementById('modalAddAf
     keyboard: false
 });
 
+const modalAddAfiliadoBeneficiario = new bootstrap.Modal(document.getElementById('modalAddAfiliadoBeneficiario'), {
+    keyboard: false
+});
+
 const modalVerAfiliado = new bootstrap.Modal(document.getElementById('modalVerAfiliado'), {
     keyboard: false
 });
 
-const modalAddAfiliadoBeneficiario = new bootstrap.Modal(document.getElementById('modalAddAfiliadoBeneficiario'), {
-    keyboard: false
-});
+
 
 const modalEditAfiliado = new bootstrap.Modal(document.getElementById('formEditAfiliado'), {
     keyboard: false
@@ -93,7 +95,7 @@ function añadirAfiliado(table) {
         const formData = new FormData(this);
         const data = {
             dni: formData.get('dni'),
-            ips: formData.get('ips'),
+            ips: 'https://api-borvo.fly.dev/api/v1/ips/' + formData.get('IPS') + '/',
             tipo_dni: formData.get('tipo_dni'),
             nombre: formData.get('nombre'),
             apellido: formData.get('apellido'),
@@ -107,11 +109,21 @@ function añadirAfiliado(table) {
             estado_actual: formData.get('estado_actual'),
             username: formData.get('username'),
         };
+        const data2 = {
+            dni: 'https://api-borvo.fly.dev/api/v1/afiliados/' + formData.get('dni') + '/',
+            tipo_cotizante: formData.get('tipo_cotizante'),
+            salario: formData.get('salario'),
+            rango_salarial: formData.get('rango_salarial')
+        }
         create(data, 'https://api-borvo.fly.dev/api/v1/afiliados/').then(response => {
             if(response){
-                cerrarModal(modalAddAfiliado);
-                miForm.reset();
-                table.ajax.reload(null, false);
+                create(data2, 'https://api-borvo.fly.dev/api/v1/cotizantes/').then(response => {
+                    if(response){
+                        cerrarModal(modalAddAfiliado);
+                        miForm.reset();
+                        table.ajax.reload(null, false);
+                    }
+                }).catch(err => console.log(err));
             }
         }).catch(err => console.log(err));
     }
