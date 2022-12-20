@@ -276,6 +276,23 @@ class ReporteCitasIPS(View):
         return HttpResponse(pdf, content_type='application/pdf')
 
 
+class ReporteCitasDiaIPS(View):
+    def get(self, request, *args, **kwargs):
+        ips_pk = kwargs['ips_pk']
+        fecha = kwargs['fecha']
+        ips = Ips.objects.get(pk=ips_pk)
+        queryset = Orden.objects.filter(ips=ips_pk, fecha=fecha)
+        data = {
+            'fecha': datetime.date.today(),
+            'fecha_dia': fecha,
+            'ips': ips,
+            'ordenes': queryset,
+            'server': request.get_host(),
+        }
+        pdf = render_to_pdf('api/citas_dia.html', data)
+        return HttpResponse(pdf, content_type='application/pdf')
+
+
 class ReporteAfiliadoIndependiente(View):
     def get(self, request, *args, **kwargs):
         queryset = Afiliado.objects.filter(cotizante__tipo_cotizante='independiente').order_by('estado_actual', 'nombre', 'apellido').values()

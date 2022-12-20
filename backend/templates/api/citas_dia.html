@@ -1,0 +1,27 @@
+{% extends "api/base.html" %}
+
+{% block title %}Reporte citas{% endblock %}
+
+{% block content %}
+    <h1>Citas en {{ ips.razon_social }} el día {{ fecha_dia }}</h1>
+
+    <table class="data-table">
+        <tr class="data-tr">
+            <th class="data-th">DNI</th>
+            <th class="data-th">Afiliado</th>
+            <th class="data-th">Médico</th>
+            <th class="data-th">Diagnóstico</th>
+        </tr>
+        {% for orden in ordenes %}
+            <tr class="data-tr">
+                <td class="data-td">{{ orden.afiliado.dni }}</td>
+                <td class="data-td">{{ orden.afiliado }}</td>
+                <td class="data-td">{{ orden.medico }}</td>
+                <td class="data-td text-left">{{ orden.diagnostico }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <div id="footer">
+        <strong>Borvo Medicinae Operam</strong> - Reporte de citas médicas del día {{ fecha_dia }}.
+{% endblock %}

@@ -56,6 +56,7 @@ urlpatterns = [
     path('api/v1/pdf/pago-aportes/<int:afiliado_pk>/<str:fecha_inicio>/<str:fecha_fin>/', views.ReportePagoAportes.as_view(), name="pdf-pago-aportes" ),
     path('api/v1/pdf/afiliados-inactivos/', views.ReporteAfiliadoInactivos.as_view(), name="pdf-afiliados-inactivos" ),
     path('api/v1/pdf/citas/<int:ips_pk>/<str:fecha_inicio>/<str:fecha_fin>/', views.ReporteCitasIPS.as_view(), name="pdf-citas" ),
+    path('api/v1/pdf/citas/<int:ips_pk>/<str:fecha>/', views.ReporteCitasDiaIPS.as_view(), name="pdf-citas-dia" ),
     path('api/v1/pdf/independientes/', views.ReporteAfiliadoIndependiente.as_view(), name="pdf-afiliados-independientes" ),
     path('api/v1/pdf/ordenes/<int:afiliado_pk>', views.ReporteOrdenesAfiliado.as_view(), name="pdf-ordenes-afiliado" ),
     path('api/v1/pdf/cotizantes/<int:empresa_pk>', views.ReporteCotizantesEmpresa.as_view(), name="pdf-cotizantes-empresa" ),
