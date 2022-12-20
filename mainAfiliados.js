@@ -64,6 +64,10 @@ const modalAddAfiliado = new bootstrap.Modal(document.getElementById('modalAddAf
     keyboard: false
 });
 
+const modalAddAfiliadoBeneficiario = new bootstrap.Modal(document.getElementById('modalAddAfiliadoBeneficiario'), {
+    keyboard: false
+});
+
 const modalEditAfiliado = new bootstrap.Modal(document.getElementById('formEditAfiliado'), {
     keyboard: false
 });

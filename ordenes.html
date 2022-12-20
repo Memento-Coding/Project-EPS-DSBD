@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borvo | Administrador</title>
+
+    <link rel="stylesheet" href="administrator.css">
+
+    <!--BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+
+    <!--DATATABLE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.4.0/css/responsive.dataTables.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.0/js/dataTables.responsive.min.js"></script>
+
+    <!--ALERTAS-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+    <!--CONTENIDO-->
+    <div class="container display-css">
+        <!--AFILIADOS-->
+        <div class="container d-flex flex-column align-items-center">
+            <h1 class="display-1 fw-bold text-center mb-5">Gestionar Ordenes</h1>
+            <div class="container">
+                <div class="table-responsive-lg">
+                    <table id="tablaOrdenes"
+                        class="table table-striped align-middle caption-top shadow display nowrap" style="width: 100%;">
+                        <caption>Lista de Ordenes</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Ips</th>
+                                <th scope="col" data-priority="1">Afiliado</th>
+                                <th scope="col" data-priority="2">Fecha</th>
+                                <th scope="col">Medico</th>
+                                <th scope="col">Diagnostico</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SIDEBAR-->
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="src/logo_sin_texto.png" alt="">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">Borvo</span>
+                    <span class="profession">Medicinae Operam</span>
+                </div>
+            </div>
+            <div class="toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link selected">
+                        <a href="afiliados.html">
+                            <i class='bx bxs-user icon'></i>
+                            <span class="text nav-text">Gestionar Afiliados</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="empresas.html">
+                            <i class='bx bxs-business icon'></i>
+                            <span class="text nav-text">Gestionar Empresas</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="gestionarIps.html">
+                            <i class='bx bx-plus-medical icon'></i>
+                            <span class="text nav-text">Gestionar IPS</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="ordenes.html">
+                            <i class='bx bxs-notepad icon'></i>
+                            <span class="text nav-text">Gestionar Órdenes</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="generarReporte.html">
+                            <i class='bx bxs-report icon'></i>
+                            <span class="text nav-text">Generar Reportes</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="nav-link">
+                    <a href="index.html">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Salir</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <script src="administrador.js"></script>
+    <script src="database.js"></script>
+    <script src="mainOrdenes.js"></script>
+</body>
+
+</html>

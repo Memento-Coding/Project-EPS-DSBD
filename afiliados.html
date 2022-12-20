@@ -61,9 +61,14 @@
                 </div>
             </div>
             <button type="button" id="#btnAddAfiliado" class="btn btn-primary d-flex justify-align-center"
-                 onclick="abrirModal(modalAddAfiliado)" style="margin: 20px">
+                onclick="abrirModal(modalAddAfiliado)" style="margin: 20px">
                 <i class='bx bxs-user-plus' style="font-size: 1.5rem; margin-right: 5px"></i>
                 Añadir Afiliado
+            </button>
+            <button type="button" id="#btnAddAfiliadoBeneficiario" class="btn btn-primary d-flex justify-align-center"
+                onclick="abrirModal(modalAddAfiliadoBeneficiario)" style="margin: 20px">
+                <i class='bx bxs-user-plus' style="font-size: 1.5rem; margin-right: 5px"></i>
+                Añadir Afiliado - Beneficiario
             </button>
             <div class="modal" tabindex="-1" id="modalAddAfiliado">
                 <div class="modal-dialog modal-lg">
@@ -177,6 +182,124 @@
                             <button type="reset" form="formAddAfiliado" class="btn btn-secondary"
                                 onclick="cerrarModal(modalAddAfiliado)">Cancelar</button>
                             <button id="btnCreateAfiliado" type="submit" form="formAddAfiliado"
+                                class="btn btn-primary">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Modal añadir afiliado beneficiario-->
+            <div class="modal" tabindex="-1" id="modalAddAfiliadoBeneficiario">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title fw-bold">Nuevo Afiliado</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <form class="row needs-validation" id="formAddAfiliado" method="POST">
+                                    <div class="col-md-6">
+                                        <label for="tipo_dni" class="form-label fw-bold">
+                                            Tipo de Documento:
+                                        </label>
+                                        <select id="tipo_dni" name="tipo_dni" class="form-select mb-3"
+                                            aria-label="Default select example">
+                                            <option selected value="cedula">Cédula</option>
+                                            <option value="pasaporte">Pasaporte</option>
+                                            <option value="tarjeta de identidad">Tarjeta de identidad</option>
+                                        </select>
+                                        <label for="dni" class="form-label fw-bold">
+                                            Número de Documento:
+                                        </label>
+                                        <input type="number" class="form-control mb-3" id="dni" name="dni"
+                                            placeholder="Número de Documento" required>
+                                        <label for="nombre" class="form-label fw-bold">
+                                            Nombre:
+                                        </label>
+                                        <input type="text" class="form-control mb-3" id="nombre" name="nombre"
+                                            placeholder="Nombre" required>
+                                        <label for="apellido" class="form-label fw-bold">
+                                            Apellido:
+                                        </label>
+                                        <input type="text" class="form-control mb-3" id="apellido" name="apellido"
+                                            placeholder="Apellido" required>
+                                        <label for="username" class="form-label fw-bold">
+                                            Nombre de usuario:
+                                        </label>
+                                        <input type="text" class="form-control mb-3" id="username" name="username"
+                                            placeholder="Nombre de usuario" required>
+                                        <label for="fecha_nacimiento" class="form-label fw-bold">
+                                            Fecha de Nacimiento:
+                                        </label>
+                                        <input type="date" class="form-control mb-3" id="fecha_nacimiento"
+                                            name="fecha_nacimiento" required>
+                                        <label for="genero" class="form-label fw-bold">
+                                            Género:
+                                        </label>
+                                        <select id="genero" name="genero" class="form-select mb-3"
+                                            aria-label="Default select example">
+                                            <option selected value="masculino">Masculino</option>
+                                            <option value="femenino">Femenino</option>
+                                            <option value="Otro">Otro</option>
+                                        </select>
+
+                                        <label for="direccion" class="form-label fw-bold">
+                                            Dirección:
+                                        </label>
+                                        <input type="text" class="form-control mb-3" id="direccion" name="direccion"
+                                            placeholder="Dirección" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="ciudad" class="form-label fw-bold">
+                                            Ciudad de Residencia:
+                                        </label>
+                                        <input type="text" class="form-control mb-3" id="ciudad" name="ciudad"
+                                            placeholder="Ciudad" required>
+                                        <label for="telefono" class="form-label fw-bold">
+                                            Teléfono:
+                                        </label>
+                                        <input type="tel" class="form-control mb-3" id="telefono" name="telefono"
+                                            placeholder="Teléfono" maxlength="10" required>
+                                        <label for="estado_civil" class="form-label fw-bold">
+                                            Estado Civil:
+                                        </label>
+                                        <select id="estado_civil" class="form-select mb-3" name="estado_civil"
+                                            aria-label="Default select example">
+                                            <option selected value="soltero/a">Soltero/a</option>
+                                            <option value="casado/a">Casado/a</option>
+                                            <option value="divorciado/a">Divorciado/a</option>
+                                            <option value="viudo/a">Viudo/a</option>
+                                        </select>
+                                        <label for="email" class="form-label fw-bold">
+                                            Correo Electrónico:
+                                        </label>
+                                        <input type="email" class="form-control mb-3" id="email" name="email"
+                                            placeholder="Email" required>
+                                        <label for="IPS" class="form-label fw-bold">
+                                            IPS:
+                                        </label>
+                                        <select id="IPS" class="form-select mb-3" name="IPS"
+                                            aria-label="Default select example">
+                                        </select required>
+                                        <label for="tipoDeAfiliado" class="form-label fw-bold">
+                                            Tipo de Afiliado:
+                                        </label>
+                                        <select id="tipoDeAfiliado" class="form-select mb-3" name="tipoDeAfiliado"
+                                            aria-label="Default select example">
+                                            <option>Cotizante</option>
+                                            <option>Beneficiario</option>
+                                        </select>
+                                        <input type="hidden" id="estado_actual" name="estado_actual" value="inactivo">
+                                        <input type="hidden" id="ips" name="ips"
+                                            value="https://api-borvo.fly.dev/api/v1/ips/1287673633/">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="reset" form="formAddAfiliado" class="btn btn-secondary"
+                                onclick="cerrarModal(modalAddAfiliadoBeneficiario)">Cancelar</button>
+                            <button id="btnCreateAfiliado" type="submit" form="formAddAfiliadoBeneficiario"
                                 class="btn btn-primary">Guardar</button>
                         </div>
                     </div>
