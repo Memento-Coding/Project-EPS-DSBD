@@ -57,6 +57,7 @@ $(document).ready(function () {
     });
     verAfiliado('#tablaAfiliados tbody', tableAfiliados);
     añadirAfiliado(tableAfiliados);
+    añadirAfiliadoBeneficiario(tableAfiliados);
     selectIPS();
     
 });
@@ -65,13 +66,15 @@ const modalAddAfiliado = new bootstrap.Modal(document.getElementById('modalAddAf
     keyboard: false
 });
 
+const modalAddAfiliadoBeneficiario = new bootstrap.Modal(document.getElementById('modalAddAfiliadoBeneficiario'), {
+    keyboard: false
+});
+
 const modalVerAfiliado = new bootstrap.Modal(document.getElementById('modalVerAfiliado'), {
     keyboard: false
 });
 
-const modalAddAfiliadoBeneficiario = new bootstrap.Modal(document.getElementById('modalAddAfiliadoBeneficiario'), {
-    keyboard: false
-});
+
 
 const modalEditAfiliado = new bootstrap.Modal(document.getElementById('formEditAfiliado'), {
     keyboard: false
@@ -93,7 +96,7 @@ function añadirAfiliado(table) {
         const formData = new FormData(this);
         const data = {
             dni: formData.get('dni'),
-            ips: formData.get('ips'),
+            ips: 'https://api-borvo.fly.dev/api/v1/ips/' + formData.get('IPSCotizante') + '/',
             tipo_dni: formData.get('tipo_dni'),
             nombre: formData.get('nombre'),
             apellido: formData.get('apellido'),
@@ -107,11 +110,60 @@ function añadirAfiliado(table) {
             estado_actual: formData.get('estado_actual'),
             username: formData.get('username'),
         };
+        const data2 = {
+            dni: 'https://api-borvo.fly.dev/api/v1/beneficiarios/' + formData.get('dni') + '/',
+            cotizante: 'https://api-borvo.fly.dev/api/v1/cotizantes/' + formData.get('cotizante') + '/',
+            parentesco: formData.get('parentesco'),
+        }
         create(data, 'https://api-borvo.fly.dev/api/v1/afiliados/').then(response => {
             if(response){
-                cerrarModal(modalAddAfiliado);
-                miForm.reset();
-                table.ajax.reload(null, false);
+                create(data2, 'https://api-borvo.fly.dev/api/v1/beneficiarios/').then(response => {
+                    if(response){
+                        cerrarModal(modalAddAfiliado);
+                        miForm.reset();
+                        table.ajax.reload(null, false);
+                    }
+                }).catch(err => console.log(err));
+            }
+        }).catch(err => console.log(err));
+    }
+}
+
+function añadirAfiliadoBeneficiario(table) {
+    const miForm = document.getElementById('formAddAfiliadoBeneficiario');
+    miForm.onsubmit = function (e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+        const data = {
+            dni: formData.get('dni'),
+            ips: 'https://api-borvo.fly.dev/api/v1/ips/' + formData.get('IPSBeneficiario') + '/',
+            tipo_dni: formData.get('tipo_dni'),
+            nombre: formData.get('nombre'),
+            apellido: formData.get('apellido'),
+            fecha_nacimiento: formData.get('fecha_nacimiento'),
+            genero: formData.get('genero'),
+            direccion: formData.get('direccion'),
+            ciudad: formData.get('ciudad'),
+            telefono: formData.get('telefono'),
+            estado_civil: formData.get('estado_civil'),
+            email: formData.get('email'),
+            estado_actual: formData.get('estado_actual'),
+            username: formData.get('username'),
+        };
+        const data2 = {
+            dni: 'https://api-borvo.fly.dev/api/v1/afiliados/' + formData.get('dni') + '/',
+            cotizante: 'https://api-borvo.fly.dev/api/v1/cotizantes/' + formData.get('cotizante') + '/',
+            parentesco: formData.get('parentesco'),
+        }
+        create(data, 'https://api-borvo.fly.dev/api/v1/afiliados/').then(response => {
+            if(response){
+                create(data2, 'https://api-borvo.fly.dev/api/v1/beneficiarios/').then(response => {
+                    if(response){
+                        cerrarModal(modalAddAfiliado);
+                        miForm.reset();
+                        table.ajax.reload(null, false);
+                    }
+                }).catch(err => console.log(err));
             }
         }).catch(err => console.log(err));
     }
@@ -132,12 +184,19 @@ function selectIPS(){
         },
         success: function (data) {
             const listaIPS = data.results;
-            const selectIPS = document.getElementById('IPS');
+            const selectIPS = document.getElementById('IPSCotizante');
+            const selectIPSBeneficiario = document.getElementById('IPSBeneficiario');
             listaIPS.forEach(ips => {
                 const option = document.createElement('option');
                 option.value = ips.nit;
                 option.text = ips.razon_social;
                 selectIPS.add(option);
+            });
+            listaIPS.forEach(ips => {
+                const option = document.createElement('option');
+                option.value = ips.nit;
+                option.text = ips.razon_social;                
+                selectIPSBeneficiario.add(option);
             });
             
         }
@@ -162,11 +221,14 @@ function verAfiliado(tbody, table){
             email = data.email,
             estado_actual = data.estado_actual,
             username = data.username,
-            ips = data.ips
+            ips = data.ips.substring(37);
+            ipsFinal = ips.substring(0, ips.length - 1);
+            console.log(data)
         
             const miForm = document.getElementById('formVerAfiliado');
             miForm['tipo_dni'].value = tipo_dni;
             miForm['dni'].value = dni;
+            miForm['username'].value = username;
             miForm['nombre'].value = nombre;
             miForm['apellido'].value = apellido;
             miForm['fecha_nacimiento'].value = fecha_nacimiento;
@@ -176,9 +238,9 @@ function verAfiliado(tbody, table){
             miForm['telefono'].value = telefono;
             miForm['estado_civil'].value = estado_civil;
             miForm['email'].value = email;
+            miForm['IPS'].value = ipsFinal;
             miForm['estado_actual'].value = estado_actual;
-            miForm['username'].value = username;
-            miForm['ips'].value = ips;
+            
             
             
 })}
