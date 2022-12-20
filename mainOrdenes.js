@@ -37,7 +37,7 @@ $(document).ready(function () {
       { data: "diagnostico"},
       {
         defaultContent:
-          '<div class="btn-group btn-group-sm" role="group" aria-label="Small button group"><button type="button" class= "btn btn-primary d-flex justify-align-center"><i class="bx bx-show" style="font-size: 1.5rem; color:white"></i></button><button type="button" class="btn btn-warning d-flex justify-align-center"><i class="bx bx-edit" style="font-size: 1.5rem; color:white"></i></button><button type="button" class="btn btn-danger d-flex justify-align-center"><i class="bx bx-trash" style="font-size: 1.5rem; color:white"></i></button></div>',
+          '<div class="btn-group btn-group-sm" role="group" aria-label="Small button group"><button type="button" class="btn btn-warning d-flex justify-align-center"><i class="bx bx-edit" style="font-size: 1.5rem; color:white"></i></button><button type="button" class="btn btn-danger d-flex justify-align-center"><i class="bx bx-trash" style="font-size: 1.5rem; color:white"></i></button></div>',
       },
     ],
     responsive: true,

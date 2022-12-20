@@ -50,17 +50,22 @@ $(document).ready(function () {
                 }
             }
         },
-        { defaultContent: '<div class="btn-group btn-group-sm" role="group" aria-label="Small button group"><button type="button" class= "btn btn-primary d-flex justify-align-center"><i class="bx bx-show" style="font-size: 1.5rem; color:white"></i></button><button type="button" class="btn btn-warning d-flex justify-align-center"><i class="bx bx-edit" style="font-size: 1.5rem; color:white"></i></button><button type="button" class="btn btn-danger d-flex justify-align-center"><i class="bx bx-trash" style="font-size: 1.5rem; color:white"></i></button></div>' }
+        { defaultContent: '<div class="btn-group btn-group-sm" role="group" aria-label="Small button group"><button type="button" class= "ver btn btn-primary d-flex justify-align-center"><i class="bx bx-show" style="font-size: 1.5rem; color:white"></i></button><button type="button" class="btn btn-warning d-flex justify-align-center"><i class="bx bx-edit" style="font-size: 1.5rem; color:white"></i></button><button type="button" class="btn btn-danger d-flex justify-align-center"><i class="bx bx-trash" style="font-size: 1.5rem; color:white"></i></button></div>' }
     ],
     responsive: true,
     processing: true,
     });
+    verAfiliado('#tablaAfiliados tbody', tableAfiliados);
     añadirAfiliado(tableAfiliados);
     selectIPS();
     
 });
 
 const modalAddAfiliado = new bootstrap.Modal(document.getElementById('modalAddAfiliado'), {
+    keyboard: false
+});
+
+const modalVerAfiliado = new bootstrap.Modal(document.getElementById('modalVerAfiliado'), {
     keyboard: false
 });
 
@@ -138,3 +143,42 @@ function selectIPS(){
         }
     })
 }
+
+
+function verAfiliado(tbody, table){
+      $(tbody).on('click', 'button.ver', function(){
+        abrirModal(modalVerAfiliado);
+        const data = !$(this).parents('tr').hasClass('child') ? table.row($(this).parents('tr')).data() : table.row($(this).parents('tr').prev('tr')).data();
+        const tipo_dni = data.tipo_dni,
+            dni = data.dni,
+            nombre = data.nombre,
+            apellido = data.apellido,
+            fecha_nacimiento = data.fecha_nacimiento,
+            genero = data.genero,
+            direccion = data.direccion,
+            ciudad = data.ciudad,
+            telefono = data.telefono,
+            estado_civil = data.estado_civil,
+            email = data.email,
+            estado_actual = data.estado_actual,
+            username = data.username,
+            ips = data.ips
+        
+            const miForm = document.getElementById('formVerAfiliado');
+            miForm['tipo_dni'].value = tipo_dni;
+            miForm['dni'].value = dni;
+            miForm['nombre'].value = nombre;
+            miForm['apellido'].value = apellido;
+            miForm['fecha_nacimiento'].value = fecha_nacimiento;
+            miForm['genero'].value = genero;
+            miForm['direccion'].value = direccion;
+            miForm['ciudad'].value = ciudad;
+            miForm['telefono'].value = telefono;
+            miForm['estado_civil'].value = estado_civil;
+            miForm['email'].value = email;
+            miForm['estado_actual'].value = estado_actual;
+            miForm['username'].value = username;
+            miForm['ips'].value = ips;
+            
+            
+})}

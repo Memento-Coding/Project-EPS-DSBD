@@ -168,8 +168,8 @@
                                         </label>
                                         <select id="tipoDeAfiliado" class="form-select mb-3" name="tipoDeAfiliado"
                                             aria-label="Default select example">
-                                            <option>Cotizante</option>
-                                            <option>Beneficiario</option>
+                                            <option value="Cotizante">Cotizante</option>
+                                            <option value="Beneficiario">Beneficiario</option>
                                         </select>
                                         <input type="hidden" id="estado_actual" name="estado_actual" value="inactivo">
                                         <input type="hidden" id="ips" name="ips"
@@ -300,6 +300,89 @@
                             <button type="reset" form="formAddAfiliado" class="btn btn-secondary"
                                 onclick="cerrarModal(modalAddAfiliadoBeneficiario)">Cancelar</button>
                             <button id="btnCreateAfiliado" type="submit" form="formAddAfiliadoBeneficiario"
+                                class="btn btn-primary">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal ver Afiliado -->
+            <div class="modal" tabindex="-1" id="modalVerAfiliado">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title fw-bold">Nuevo Afiliado</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <form class="row needs-validation" id="formVerAfiliado" method="GET">
+                                    <div class="col-md-6">
+                                        <label for="tipo_dni" class="form-label fw-bold">
+                                            Tipo de Documento:
+                                        </label>
+                                        <input id="tipo_dni"  class="form-control mb-3" disabled=""></input>
+                                        <label for="dni" class="form-label fw-bold">
+                                            Número de Documento:
+                                        </label>
+                                        <input id="dni"  class="form-control mb-3" disabled=""></input>
+                                        <label for="nombre" class="form-label fw-bold">
+                                            Nombre:
+                                        </label>
+                                        <input id="nombre"  class="form-control mb-3" disabled=""></input>
+                                        <label for="apellido" class="form-label fw-bold">
+                                            Apellido:
+                                        </label>
+                                        <input id="apellido"  class="form-control mb-3" disabled=""></input>
+                                        <label for="username" class="form-label fw-bold">
+                                            Nombre de usuario:
+                                        </label>
+                                        <input id="username"  class="form-control mb-3" disabled=""></input>
+                                        <label for="fecha_nacimiento" class="form-label fw-bold">
+                                            Fecha de Nacimiento:
+                                        </label>
+                                        <input id="fecha_nacimiento"  class="form-control mb-3" disabled=""></input>
+                                        <label for="genero" class="form-label fw-bold">
+                                            Género:
+                                        </label>
+                                        <input id="genero"  class="form-control mb-3" disabled=""></input>
+                                        <label for="direccion" class="form-label fw-bold">
+                                            Dirección:
+                                        </label>
+                                        <input id="direccion"  class="form-control mb-3" disabled=""></input>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="ciudad" class="form-label fw-bold">
+                                            Ciudad de Residencia:
+                                        </label>
+                                        <input id="ciudad"  class="form-control mb-3" disabled=""></input>
+                                        <label for="telefono" class="form-label fw-bold">
+                                            Teléfono:
+                                        </label>
+                                        <input id="telefono"  class="form-control mb-3" disabled=""></input>
+                                        <label for="estado_civil" class="form-label fw-bold">
+                                            Estado Civil:
+                                        </label>
+                                        <input id="estado_civil"  class="form-control mb-3" disabled=""></input>
+                                        <label for="email" class="form-label fw-bold">
+                                            Correo Electrónico:
+                                        </label>
+                                        <input id="email"  class="form-control mb-3" disabled=""></input>
+                                        <label for="IPS" class="form-label fw-bold">
+                                            IPS:
+                                        </label>
+                                        <input id="IPS"  class="form-control mb-3" disabled=""></input>
+                                        <label for="tipoDeAfiliado" class="form-label fw-bold">
+                                            Tipo de Afiliado:
+                                        </label>
+                                        <input id="tipoDeAfiliado"  class="form-control mb-3" disabled=""></input>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="reset" form="formAddAfiliado" class="btn btn-secondary"
+                                onclick="cerrarModal(modalAddAfiliado)">Cancelar</button>
+                            <button id="btnCreateAfiliado" type="submit" form="formAddAfiliado"
                                 class="btn btn-primary">Guardar</button>
                         </div>
                     </div>
