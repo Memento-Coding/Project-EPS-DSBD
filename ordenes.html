@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Borvo | Banco</title>
+    <title>Borvo | Administrador</title>
 
     <link rel="stylesheet" href="administrator.css">
 
@@ -31,56 +31,38 @@
     <!--ALERTAS-->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-
-    <!--READ EXCEL-->
-    <script src="https://unpkg.com/read-excel-file@5.x/bundle/read-excel-file.min.js"></script>
-
 </head>
 
 <body>
     <!--CONTENIDO-->
     <div class="container display-css">
+        <!--AFILIADOS-->
         <div class="container d-flex flex-column align-items-center">
-            <h1 class="display-1 fw-bold text-center mb-5">Reportar Pago de Aportes</h1>
-            <div class="container text-center">
-                <div class="row align-items-start justify-content-center">
-                    <div class="col-sm-12 p-3">
-                        <div class="card shadow" style="min-height: 22rem;">
-                            <div class="card-body d-flex flex-column justify-content-around">
-                                <h5 class="card-title h3 fw-bold">Reportar pagos individuales de aportes</h5>
-                                <p class="card-text">Reportar pago de aportes de manera individual</p>
-                                <form id="formPagoAportes">
-                                    <label for="cotizante">Cotizante:</label>
-                                    <select name="cotizante" class="form-control"></select>
-                                    <label for="empresa">Empresa:</label>
-                                    <select name="empresa" class="form-control"></select>
-                                    <label for="fecha">Fecha Pago:</label>
-                                    <input type="date" class="form-control" name="fecha" required>
-                                    <label for="valor">Valor de pago:</label>
-                                    <input name='valor' type="number" class="form-control" placeholder="Ingrese valor" required>
-                                </form>
-                                <div class="d-grid gap-2 col-4 mx-auto">
-                                    <button class="btn btn-primary my-4" type="submit" form="formPagoAportes">
-                                        Reportar
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 p-3">
-                        <div class="card shadow" style="min-height: 22rem;">
-                            <div class="card-body d-flex flex-column justify-content-around">
-                                <h5 class="card-title h3 fw-bold">Reportar pago de aportes en bloque</h5>
-                                <p class="card-text">Reportar pago de aportes de los cotizantes en bloque.<br/> (ID, NIT, FECHA, VALOR)</p>
-                                <input type="file" class="form-control" id="excel-input">
-                            </div>
-                        </div>
-                    </div>
+            <h1 class="display-1 fw-bold text-center mb-5">Gestionar Ordenes</h1>
+            <div class="container">
+                <div class="table-responsive-lg">
+                    <table id="tablaOrdenes"
+                        class="table table-striped align-middle caption-top shadow display nowrap" style="width: 100%;">
+                        <caption>Lista de Ordenes</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Ips</th>
+                                <th scope="col" data-priority="1">Afiliado</th>
+                                <th scope="col" data-priority="2">Fecha</th>
+                                <th scope="col">Medico</th>
+                                <th scope="col">Diagnostico</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
-
     <!--SIDEBAR-->
     <nav class="sidebar close">
         <header>
@@ -103,16 +85,34 @@
         <div class="menu-bar">
             <div class="menu">
                 <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="banco.html">
+                    <li class="nav-link selected">
+                        <a href="afiliados.html">
                             <i class='bx bxs-user icon'></i>
-                            <span class="text nav-text">Reportar Novedades</span>
+                            <span class="text nav-text">Gestionar Afiliados</span>
                         </a>
                     </li>
-                    <li class="nav-link selected">
-                        <a href="aportes.html">
+                    <li class="nav-link">
+                        <a href="empresas.html">
                             <i class='bx bxs-business icon'></i>
-                            <span class="text nav-text">Reportar Pago de Aportes</span>
+                            <span class="text nav-text">Gestionar Empresas</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="gestionarIps.html">
+                            <i class='bx bx-plus-medical icon'></i>
+                            <span class="text nav-text">Gestionar IPS</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="ordenes.html">
+                            <i class='bx bxs-notepad icon'></i>
+                            <span class="text nav-text">Gestionar Órdenes</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="generarReporte.html">
+                            <i class='bx bxs-report icon'></i>
+                            <span class="text nav-text">Generar Reportes</span>
                         </a>
                     </li>
                 </ul>
@@ -131,7 +131,7 @@
 
     <script src="administrador.js"></script>
     <script src="database.js"></script>
-    <script src="aportes.js"></script>
+    <script src="mainOrdenes.js"></script>
 </body>
 
 </html>
