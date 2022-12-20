@@ -9,7 +9,7 @@ await get('https://api-borvo.fly.dev/api/v1/ips/?limit=1000')
     .then(response => response.json())
     .then(data => data.results.forEach(function (element) {
         IPS_Select.innerHTML += `<option value="${element.nit}">${element.razon_social}</option>`;
-        formReporteCitasIPS['afiliados'].innerHTML += `<option value="${element.nit}">${element.razon_social}</option>`;
+        formReporteCitasIPS['ips'].innerHTML += `<option value="${element.nit}">${element.razon_social}</option>`;
     }));
 
 await get('https://api-borvo.fly.dev/api/v1/afiliados/?limit=1000')
@@ -69,7 +69,7 @@ formReporteAportes.onsubmit = function (e) {
 
 formReporteCitasIPS.onsubmit = function (e) {
     e.preventDefault();
-    window.open()
+    window.open('https://api-borvo.fly.dev/api/v1/pdf/citas/'+ formReporteCitasIPS['ips'].value +'/'+ formReporteCitasIPS['fecha'].value +'/');
 }
 
 });
