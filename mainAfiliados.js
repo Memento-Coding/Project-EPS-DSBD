@@ -162,11 +162,14 @@ function verAfiliado(tbody, table){
             email = data.email,
             estado_actual = data.estado_actual,
             username = data.username,
-            ips = data.ips
+            ips = data.ips.substring(37);
+            ipsFinal = ips.substring(0, ips.length - 1);
+            console.log(data)
         
             const miForm = document.getElementById('formVerAfiliado');
             miForm['tipo_dni'].value = tipo_dni;
             miForm['dni'].value = dni;
+            miForm['username'].value = username;
             miForm['nombre'].value = nombre;
             miForm['apellido'].value = apellido;
             miForm['fecha_nacimiento'].value = fecha_nacimiento;
@@ -176,9 +179,9 @@ function verAfiliado(tbody, table){
             miForm['telefono'].value = telefono;
             miForm['estado_civil'].value = estado_civil;
             miForm['email'].value = email;
+            miForm['IPS'].value = ipsFinal;
             miForm['estado_actual'].value = estado_actual;
-            miForm['username'].value = username;
-            miForm['ips'].value = ips;
+            
             
             
 })}
