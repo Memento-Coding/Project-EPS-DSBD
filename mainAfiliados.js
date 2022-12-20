@@ -55,7 +55,7 @@ $(document).ready(function () {
     responsive: true,
     processing: true,
     });
-    añadir(tableAfiliados);
+    añadirAfiliado(tableAfiliados);
     selectIPS();
     
 });
@@ -77,7 +77,7 @@ function cerrarModal(modal){
     modal.hide();
 }
 
-const añadir = function (table) {
+function añadirAfiliado(table) {
     const miForm = document.getElementById('formAddAfiliado');
     miForm.onsubmit = function (e) {
         e.preventDefault();
@@ -108,7 +108,7 @@ const añadir = function (table) {
     }
 }
 
-const selectIPS = function(){
+function selectIPS(){
     const url = 'https://api-borvo.fly.dev/api/v1/ips/?limit=1000';
     $.ajax({
         type: 'GET',
@@ -134,4 +134,3 @@ const selectIPS = function(){
         }
     })
 }
-
